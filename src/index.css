@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 34 53% 96%;
+    --foreground: 200 39% 18%;
+    --card: 35 45% 98%;
+    --card-foreground: 200 39% 18%;
+    --primary: 185 71% 31%;
+    --primary-foreground: 36 88% 97%;
+    --secondary: 22 66% 54%;
+    --secondary-foreground: 35 45% 98%;
+    --muted: 35 32% 92%;
+    --muted-foreground: 199 17% 39%;
+    --accent: 48 73% 60%;
+    --accent-foreground: 200 39% 18%;
+    --border: 201 23% 83%;
+    --input: 201 23% 87%;
+    --ring: 185 71% 31%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Avenir Next", "Segoe UI", "Noto Sans KR", sans-serif;
+    background-image:
+      radial-gradient(circle at top left, rgba(23, 126, 137, 0.16), transparent 28%),
+      radial-gradient(circle at 80% 4%, rgba(217, 108, 61, 0.18), transparent 24%),
+      linear-gradient(180deg, rgba(253, 249, 242, 1) 0%, rgba(246, 239, 228, 1) 100%);
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: rgba(23, 126, 137, 0.18);
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply rounded-3xl border border-white/50 bg-white/70 shadow-soft backdrop-blur-xl;
+  }
+
+  .metric-chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-primary/15 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary;
+  }
+}

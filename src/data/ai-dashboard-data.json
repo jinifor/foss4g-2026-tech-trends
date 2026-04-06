@@ -1,0 +1,2110 @@
+{
+  "meta": {
+    "sourceWorkbook": "foss4g_2026_talks_with_ai_keywords.csv",
+    "totalPresentations": 376,
+    "aiPresentationCount": 56,
+    "aiPresentationShare": 0.1489,
+    "uniqueAiKeywords": 18,
+    "uniqueContextKeywords": 53
+  },
+  "overview": {
+    "scorecards": [
+      {
+        "label": "AI-related talks",
+        "value": 56,
+        "caption": "Talks with at least one AI signal"
+      },
+      {
+        "label": "AI talk share",
+        "value": 0.1489,
+        "caption": "Share of the full submission set",
+        "format": "percent"
+      },
+      {
+        "label": "Unique AI keywords",
+        "value": 18,
+        "caption": "Normalized AI signal terms"
+      },
+      {
+        "label": "Unique context keywords",
+        "value": 53,
+        "caption": "Context terms inside AI talks"
+      }
+    ],
+    "signalBriefs": [
+      {
+        "keyword": "AI",
+        "count": 23,
+        "family": "GeoAI & Agents",
+        "relatedContexts": [
+          {
+            "keyword": "Open Source",
+            "count": 8
+          },
+          {
+            "keyword": "GIS",
+            "count": 4
+          },
+          {
+            "keyword": "Cloud",
+            "count": 3
+          },
+          {
+            "keyword": "Digital Twin",
+            "count": 2
+          },
+          {
+            "keyword": "AWS",
+            "count": 2
+          }
+        ],
+        "samples": [
+          "Using AI and Digital Twin in Solving One of the World's Most Plastic Polluting River",
+          "Mapping the Drivers of Deforestation in REDD+ Project Areas across the Brazilian Amazon",
+          "Git Blame: AI Edition"
+        ]
+      },
+      {
+        "keyword": "GeoAI",
+        "count": 10,
+        "family": "GeoAI & Agents",
+        "relatedContexts": [
+          {
+            "keyword": "Open Source",
+            "count": 3
+          },
+          {
+            "keyword": "Cloud",
+            "count": 2
+          },
+          {
+            "keyword": "STAC",
+            "count": 2
+          },
+          {
+            "keyword": "Python",
+            "count": 1
+          },
+          {
+            "keyword": "GIS",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "City2Graph: Open Source Python Library for GeoAI with Graph Neural Networks",
+          "Open Geo Embeddings: Models, Representations, and Systems",
+          "Storing your Satellite in a DGGS"
+        ]
+      },
+      {
+        "keyword": "LLM",
+        "count": 9,
+        "family": "Generative & Language AI",
+        "relatedContexts": [
+          {
+            "keyword": "Natural Language",
+            "count": 4
+          },
+          {
+            "keyword": "Geospatial Data",
+            "count": 3
+          },
+          {
+            "keyword": "Spatial Data",
+            "count": 3
+          },
+          {
+            "keyword": "Visualization",
+            "count": 2
+          },
+          {
+            "keyword": "GIS",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Bridging LLM and GIS via Model Context Protocol for Conversational Flood Data Analysis",
+          "Text2Transit: From SNS posts to Timetable Aware Multi-stop Train Itineraries with Open Geospatial Tools",
+          "GeoAgent: A QGIS Plugin for Natural Language-Driven Geospatial Analysis"
+        ]
+      },
+      {
+        "keyword": "Machine Learning",
+        "count": 5,
+        "family": "Machine Learning & Prediction",
+        "relatedContexts": [
+          {
+            "keyword": "Open Source",
+            "count": 2
+          },
+          {
+            "keyword": "Digital Twin",
+            "count": 1
+          },
+          {
+            "keyword": "Geospatial Tools",
+            "count": 1
+          },
+          {
+            "keyword": "Satellite Imagery",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Using AI and Digital Twin in Solving One of the World's Most Plastic Polluting River",
+          "From Data to Insights: Decision-Support tool application with the Goa Agriculture Department",
+          "GeoAI for Social Impact: Open-Source Flood Risk Mapping and Early Warning Systems in Informal Settlements of South Africa"
+        ]
+      },
+      {
+        "keyword": "Natural Language Interface",
+        "count": 5,
+        "family": "Generative & Language AI",
+        "relatedContexts": [
+          {
+            "keyword": "Natural Language",
+            "count": 5
+          },
+          {
+            "keyword": "MCP",
+            "count": 2
+          },
+          {
+            "keyword": "Geospatial Data",
+            "count": 2
+          },
+          {
+            "keyword": "Spatial Data",
+            "count": 2
+          },
+          {
+            "keyword": "GIS",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Bridging LLM and GIS via Model Context Protocol for Conversational Flood Data Analysis",
+          "GeoAgent: A QGIS Plugin for Natural Language-Driven Geospatial Analysis",
+          "Designing Web Map Experiences Beyond Too Much Data with Intelligent AI Processing"
+        ]
+      },
+      {
+        "keyword": "Random Forest",
+        "count": 4,
+        "family": "General AI Signals",
+        "relatedContexts": [
+          {
+            "keyword": "Machine Learning",
+            "count": 2
+          },
+          {
+            "keyword": "Open Source",
+            "count": 1
+          },
+          {
+            "keyword": "Geospatial Data",
+            "count": 1
+          },
+          {
+            "keyword": "Spatial Data",
+            "count": 1
+          },
+          {
+            "keyword": "QGIS",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Green Infrastructure Baseline using Open-Source Geospatial Data for Dammam, Saudi Arabia",
+          "Estimation of Soil Organic Carbon and Total Nitrogen in Thailand's Rubber Plantations Using Machine Learning",
+          "Soybean yield estimation using free geotechnologies: modeling with remote sensing and Random Forest"
+        ]
+      },
+      {
+        "keyword": "Deep Learning",
+        "count": 4,
+        "family": "Machine Learning & Prediction",
+        "relatedContexts": [
+          {
+            "keyword": "Remote Sensing",
+            "count": 1
+          },
+          {
+            "keyword": "OpenStreetMap",
+            "count": 1
+          },
+          {
+            "keyword": "Satellite Imagery",
+            "count": 1
+          },
+          {
+            "keyword": "Open Source",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Detecting Rooftop Solar Panels with Deep Learning, using Open Remote Sensing Data and OpenStreetMap",
+          "Near-real-time monitoring of disaster damage on individual households",
+          "End-to-End Deep Learning Analysis Pipeline for Early-Season Crop Mapping using Sentinel Data"
+        ]
+      },
+      {
+        "keyword": "Agent",
+        "count": 4,
+        "family": "GeoAI & Agents",
+        "relatedContexts": [
+          {
+            "keyword": "Open Source",
+            "count": 1
+          },
+          {
+            "keyword": "MapLibre",
+            "count": 1
+          },
+          {
+            "keyword": "OpenStreetMap",
+            "count": 1
+          },
+          {
+            "keyword": "MCP",
+            "count": 1
+          },
+          {
+            "keyword": "Open Data",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Teaching AI to Contribute to Open Source: Lessons from MapLibre Agent Skills",
+          "National Map Agent: An Open Geospatial Architecture for Knowledge Graph-Driven GeoAI",
+          "Building an AI Map Agent with Self-Hosted Planet-Scale OSM and Tiny LLMs"
+        ]
+      }
+    ],
+    "topAiKeywords": [
+      {
+        "keyword": "AI",
+        "count": 23
+      },
+      {
+        "keyword": "GeoAI",
+        "count": 10
+      },
+      {
+        "keyword": "LLM",
+        "count": 9
+      },
+      {
+        "keyword": "Machine Learning",
+        "count": 5
+      },
+      {
+        "keyword": "Natural Language Interface",
+        "count": 5
+      },
+      {
+        "keyword": "Random Forest",
+        "count": 4
+      },
+      {
+        "keyword": "Deep Learning",
+        "count": 4
+      },
+      {
+        "keyword": "Agent",
+        "count": 4
+      },
+      {
+        "keyword": "Model Context Protocol",
+        "count": 3
+      },
+      {
+        "keyword": "PyTorch",
+        "count": 2
+      },
+      {
+        "keyword": "Embeddings",
+        "count": 2
+      },
+      {
+        "keyword": "GraphRAG",
+        "count": 2
+      },
+      {
+        "keyword": "Conversational AI",
+        "count": 1
+      },
+      {
+        "keyword": "Graph Neural Networks",
+        "count": 1
+      },
+      {
+        "keyword": "RAG",
+        "count": 1
+      },
+      {
+        "keyword": "GeoLLM",
+        "count": 1
+      },
+      {
+        "keyword": "OpenCV",
+        "count": 1
+      },
+      {
+        "keyword": "Vision Language Model",
+        "count": 1
+      }
+    ],
+    "topContextKeywords": [
+      {
+        "keyword": "Open Source",
+        "count": 16
+      },
+      {
+        "keyword": "GIS",
+        "count": 7
+      },
+      {
+        "keyword": "Geospatial Data",
+        "count": 6
+      },
+      {
+        "keyword": "Spatial Data",
+        "count": 6
+      },
+      {
+        "keyword": "Natural Language",
+        "count": 5
+      },
+      {
+        "keyword": "Cloud",
+        "count": 5
+      },
+      {
+        "keyword": "QGIS",
+        "count": 4
+      },
+      {
+        "keyword": "Visualization",
+        "count": 4
+      },
+      {
+        "keyword": "MCP",
+        "count": 3
+      },
+      {
+        "keyword": "Geospatial Tools",
+        "count": 3
+      },
+      {
+        "keyword": "OpenStreetMap",
+        "count": 3
+      },
+      {
+        "keyword": "MapLibre",
+        "count": 3
+      },
+      {
+        "keyword": "DGGS",
+        "count": 3
+      },
+      {
+        "keyword": "STAC",
+        "count": 3
+      },
+      {
+        "keyword": "Open Data",
+        "count": 3
+      },
+      {
+        "keyword": "Digital Twin",
+        "count": 2
+      },
+      {
+        "keyword": "Plugin",
+        "count": 2
+      },
+      {
+        "keyword": "Geospatial Analysis",
+        "count": 2
+      },
+      {
+        "keyword": "3D",
+        "count": 2
+      },
+      {
+        "keyword": "DuckDB",
+        "count": 2
+      }
+    ],
+    "treemap": [
+      {
+        "name": "AI",
+        "size": 23,
+        "category": "GeoAI & Agents",
+        "color": "#4f9d69"
+      },
+      {
+        "name": "GeoAI",
+        "size": 10,
+        "category": "GeoAI & Agents",
+        "color": "#4f9d69"
+      },
+      {
+        "name": "LLM",
+        "size": 9,
+        "category": "Generative & Language AI",
+        "color": "#7c5cff"
+      },
+      {
+        "name": "Machine Learning",
+        "size": 5,
+        "category": "Machine Learning & Prediction",
+        "color": "#177e89"
+      },
+      {
+        "name": "Natural Language Interface",
+        "size": 5,
+        "category": "Generative & Language AI",
+        "color": "#7c5cff"
+      },
+      {
+        "name": "Random Forest",
+        "size": 4,
+        "category": "General AI Signals",
+        "color": "#3f7cac"
+      },
+      {
+        "name": "Deep Learning",
+        "size": 4,
+        "category": "Machine Learning & Prediction",
+        "color": "#177e89"
+      },
+      {
+        "name": "Agent",
+        "size": 4,
+        "category": "GeoAI & Agents",
+        "color": "#4f9d69"
+      },
+      {
+        "name": "Model Context Protocol",
+        "size": 3,
+        "category": "Generative & Language AI",
+        "color": "#7c5cff"
+      },
+      {
+        "name": "PyTorch",
+        "size": 2,
+        "category": "AI Tooling",
+        "color": "#c48a29"
+      },
+      {
+        "name": "Embeddings",
+        "size": 2,
+        "category": "Generative & Language AI",
+        "color": "#7c5cff"
+      },
+      {
+        "name": "GraphRAG",
+        "size": 2,
+        "category": "Generative & Language AI",
+        "color": "#7c5cff"
+      },
+      {
+        "name": "Conversational AI",
+        "size": 1,
+        "category": "Generative & Language AI",
+        "color": "#7c5cff"
+      },
+      {
+        "name": "Graph Neural Networks",
+        "size": 1,
+        "category": "Graph & Neural Models",
+        "color": "#b74f6f"
+      },
+      {
+        "name": "RAG",
+        "size": 1,
+        "category": "Generative & Language AI",
+        "color": "#7c5cff"
+      },
+      {
+        "name": "GeoLLM",
+        "size": 1,
+        "category": "Generative & Language AI",
+        "color": "#7c5cff"
+      },
+      {
+        "name": "Others",
+        "size": 2,
+        "category": "Other AI Signals",
+        "color": "#9aa8b3"
+      }
+    ]
+  },
+  "families": {
+    "radial": [
+      {
+        "family": "Generative & Language AI",
+        "familyId": "genai-language",
+        "count": 16,
+        "color": "#7c5cff",
+        "share": 0.2857,
+        "keywordCount": 8
+      },
+      {
+        "family": "Machine Learning & Prediction",
+        "familyId": "ml-prediction",
+        "count": 9,
+        "color": "#177e89",
+        "share": 0.1607,
+        "keywordCount": 2
+      },
+      {
+        "family": "Vision & Detection",
+        "familyId": "vision-detection",
+        "count": 2,
+        "color": "#d96c3d",
+        "share": 0.0357,
+        "keywordCount": 2
+      },
+      {
+        "family": "Graph & Neural Models",
+        "familyId": "graph-neural",
+        "count": 1,
+        "color": "#b74f6f",
+        "share": 0.0179,
+        "keywordCount": 1
+      },
+      {
+        "family": "GeoAI & Agents",
+        "familyId": "geoai-agents",
+        "count": 33,
+        "color": "#4f9d69",
+        "share": 0.5893,
+        "keywordCount": 3
+      },
+      {
+        "family": "AI Tooling",
+        "familyId": "ai-tooling",
+        "count": 2,
+        "color": "#c48a29",
+        "share": 0.0357,
+        "keywordCount": 1
+      },
+      {
+        "family": "General AI Signals",
+        "familyId": "ai-signals",
+        "count": 4,
+        "color": "#3f7cac",
+        "share": 0.0714,
+        "keywordCount": 1
+      }
+    ],
+    "radar": [
+      {
+        "family": "Generative & Language AI",
+        "talks": 16,
+        "contextBreadth": 31,
+        "keywordBreadth": 8
+      },
+      {
+        "family": "Machine Learning & Prediction",
+        "talks": 9,
+        "contextBreadth": 6,
+        "keywordBreadth": 2
+      },
+      {
+        "family": "Vision & Detection",
+        "talks": 2,
+        "contextBreadth": 2,
+        "keywordBreadth": 2
+      },
+      {
+        "family": "Graph & Neural Models",
+        "talks": 1,
+        "contextBreadth": 4,
+        "keywordBreadth": 1
+      },
+      {
+        "family": "GeoAI & Agents",
+        "talks": 33,
+        "contextBreadth": 40,
+        "keywordBreadth": 3
+      },
+      {
+        "family": "AI Tooling",
+        "talks": 2,
+        "contextBreadth": 4,
+        "keywordBreadth": 1
+      },
+      {
+        "family": "General AI Signals",
+        "talks": 4,
+        "contextBreadth": 8,
+        "keywordBreadth": 1
+      }
+    ]
+  },
+  "flows": {
+    "nodes": [
+      {
+        "name": "AI"
+      },
+      {
+        "name": "GeoAI"
+      },
+      {
+        "name": "LLM"
+      },
+      {
+        "name": "Machine Learning"
+      },
+      {
+        "name": "Natural Language Interface"
+      },
+      {
+        "name": "Random Forest"
+      },
+      {
+        "name": "Deep Learning"
+      },
+      {
+        "name": "Agent"
+      },
+      {
+        "name": "Model Context Protocol"
+      },
+      {
+        "name": "PyTorch"
+      },
+      {
+        "name": "Embeddings"
+      },
+      {
+        "name": "GraphRAG"
+      },
+      {
+        "name": "Open Source"
+      },
+      {
+        "name": "GIS"
+      },
+      {
+        "name": "Geospatial Data"
+      },
+      {
+        "name": "Spatial Data"
+      },
+      {
+        "name": "Natural Language"
+      },
+      {
+        "name": "Cloud"
+      },
+      {
+        "name": "QGIS"
+      },
+      {
+        "name": "Visualization"
+      },
+      {
+        "name": "MCP"
+      },
+      {
+        "name": "Geospatial Tools"
+      },
+      {
+        "name": "OpenStreetMap"
+      },
+      {
+        "name": "MapLibre"
+      }
+    ],
+    "links": [
+      {
+        "source": "AI",
+        "target": "Open Source",
+        "value": 8
+      },
+      {
+        "source": "Natural Language Interface",
+        "target": "Natural Language",
+        "value": 5
+      },
+      {
+        "source": "LLM",
+        "target": "Natural Language",
+        "value": 4
+      },
+      {
+        "source": "AI",
+        "target": "GIS",
+        "value": 4
+      },
+      {
+        "source": "LLM",
+        "target": "Geospatial Data",
+        "value": 3
+      },
+      {
+        "source": "LLM",
+        "target": "Spatial Data",
+        "value": 3
+      },
+      {
+        "source": "Model Context Protocol",
+        "target": "MCP",
+        "value": 3
+      },
+      {
+        "source": "GeoAI",
+        "target": "Open Source",
+        "value": 3
+      },
+      {
+        "source": "AI",
+        "target": "Cloud",
+        "value": 3
+      },
+      {
+        "source": "Model Context Protocol",
+        "target": "Geospatial Data",
+        "value": 2
+      },
+      {
+        "source": "Model Context Protocol",
+        "target": "Spatial Data",
+        "value": 2
+      },
+      {
+        "source": "Model Context Protocol",
+        "target": "Natural Language",
+        "value": 2
+      },
+      {
+        "source": "Natural Language Interface",
+        "target": "MCP",
+        "value": 2
+      },
+      {
+        "source": "Natural Language Interface",
+        "target": "Geospatial Data",
+        "value": 2
+      },
+      {
+        "source": "Natural Language Interface",
+        "target": "Spatial Data",
+        "value": 2
+      },
+      {
+        "source": "LLM",
+        "target": "Visualization",
+        "value": 2
+      },
+      {
+        "source": "AI",
+        "target": "QGIS",
+        "value": 2
+      },
+      {
+        "source": "AI",
+        "target": "Geospatial Data",
+        "value": 2
+      },
+      {
+        "source": "AI",
+        "target": "Spatial Data",
+        "value": 2
+      },
+      {
+        "source": "GeoAI",
+        "target": "Cloud",
+        "value": 2
+      },
+      {
+        "source": "Machine Learning",
+        "target": "Open Source",
+        "value": 2
+      },
+      {
+        "source": "AI",
+        "target": "OpenStreetMap",
+        "value": 2
+      },
+      {
+        "source": "AI",
+        "target": "Visualization",
+        "value": 2
+      }
+    ]
+  },
+  "explorer": {
+    "presentations": [
+      {
+        "id": "9",
+        "page": "1",
+        "title": "Green Infrastructure Baseline using Open-Source Geospatial Data for Dammam, Saudi Arabia",
+        "abstractSnippet": "This study analyzes multi decadal spatiotemporal land cover change in Dammam, Saudi Arabia (1986-2025) to establish a green infrastructure baseline using Landsat and Sentinel-2 data classified using Random Forest in QGIS.",
+        "keywords": [
+          "Random Forest",
+          "Open Source",
+          "Geospatial Data",
+          "Spatial Data",
+          "QGIS"
+        ],
+        "highlightedKeywords": [
+          "Random Forest"
+        ],
+        "aiKeywords": [
+          "Random Forest"
+        ],
+        "contextKeywords": [
+          "Open Source",
+          "Geospatial Data",
+          "Spatial Data",
+          "QGIS"
+        ]
+      },
+      {
+        "id": "10",
+        "page": "1",
+        "title": "Using AI and Digital Twin in Solving One of the World's Most Plastic Polluting River",
+        "abstractSnippet": "The Pasig River in Metro Manila is a major global source of ocean plastic pollution. Leveraging digital twin and AI-Machine Learning models, this project enables real-time monitoring and predictive analysis of plastic waste flows.",
+        "keywords": [
+          "AI",
+          "Machine Learning",
+          "Digital Twin"
+        ],
+        "highlightedKeywords": [
+          "AI",
+          "Machine Learning"
+        ],
+        "aiKeywords": [
+          "AI",
+          "Machine Learning"
+        ],
+        "contextKeywords": [
+          "Digital Twin"
+        ]
+      },
+      {
+        "id": "12",
+        "page": "1",
+        "title": "Bridging LLM and GIS via Model Context Protocol for Conversational Flood Data Analysis",
+        "abstractSnippet": "This study proposes a Conversational GIS system that integrates LLM with MCP, allowing non-technical users to access and analyze geospatial data through natural language, supporting flood risk analysis.",
+        "keywords": [
+          "LLM",
+          "Model Context Protocol",
+          "Conversational AI",
+          "Natural Language Interface",
+          "GIS",
+          "MCP",
+          "Geospatial Data",
+          "Spatial Data",
+          "Natural Language"
+        ],
+        "highlightedKeywords": [
+          "LLM",
+          "Model Context Protocol",
+          "Conversational AI",
+          "Natural Language Interface"
+        ],
+        "aiKeywords": [
+          "LLM",
+          "Model Context Protocol",
+          "Conversational AI",
+          "Natural Language Interface"
+        ],
+        "contextKeywords": [
+          "GIS",
+          "MCP",
+          "Geospatial Data",
+          "Spatial Data",
+          "Natural Language"
+        ]
+      },
+      {
+        "id": "22",
+        "page": "2",
+        "title": "City2Graph: Open Source Python Library for GeoAI with Graph Neural Networks",
+        "abstractSnippet": "City2Graph is an open-source Python library bridging GIS, network science, and geospatial artificial intelligence (GeoAI) with Graph Neural Networks (GNNs). It offers a unified pipeline with conversion between GeoPandas, NetworkX, and PyTor...",
+        "keywords": [
+          "GeoAI",
+          "Graph Neural Networks",
+          "PyTorch",
+          "Open Source",
+          "Python",
+          "GIS",
+          "GeoPandas"
+        ],
+        "highlightedKeywords": [
+          "GeoAI",
+          "Graph Neural Networks",
+          "PyTorch"
+        ],
+        "aiKeywords": [
+          "GeoAI",
+          "Graph Neural Networks",
+          "PyTorch"
+        ],
+        "contextKeywords": [
+          "Open Source",
+          "Python",
+          "GIS",
+          "GeoPandas"
+        ]
+      },
+      {
+        "id": "24",
+        "page": "2",
+        "title": "Text2Transit: From SNS posts to Timetable Aware Multi-stop Train Itineraries with Open Geospatial Tools",
+        "abstractSnippet": "We present an open geospatial workflow that adapts LLMs for structured geospatial extraction from SNS posts and uses optimization to generate timetable aware multi stop rail itineraries.",
+        "keywords": [
+          "LLM",
+          "Geospatial Tools"
+        ],
+        "highlightedKeywords": [
+          "LLM"
+        ],
+        "aiKeywords": [
+          "LLM"
+        ],
+        "contextKeywords": [
+          "Geospatial Tools"
+        ]
+      },
+      {
+        "id": "30",
+        "page": "2",
+        "title": "GeoAgent: A QGIS Plugin for Natural Language-Driven Geospatial Analysis",
+        "abstractSnippet": "GeoAgent is a QGIS plugin that integrates large language models to enable natural language interaction with geospatial data, allowing users to explore layers, perform spatial analysis, and automate geoprocessing workflows.",
+        "keywords": [
+          "Natural Language Interface",
+          "LLM",
+          "GeoAgent",
+          "QGIS",
+          "Plugin",
+          "Natural Language",
+          "Geospatial Analysis",
+          "Geospatial Data",
+          "Spatial Data"
+        ],
+        "highlightedKeywords": [
+          "Natural Language Interface",
+          "LLM"
+        ],
+        "aiKeywords": [
+          "Natural Language Interface",
+          "LLM"
+        ],
+        "contextKeywords": [
+          "GeoAgent",
+          "QGIS",
+          "Plugin",
+          "Natural Language",
+          "Geospatial Analysis",
+          "Geospatial Data",
+          "Spatial Data"
+        ]
+      },
+      {
+        "id": "39",
+        "page": "2",
+        "title": "Mapping the Drivers of Deforestation in REDD+ Project Areas across the Brazilian Amazon",
+        "abstractSnippet": "This study analyzes 95 forest carbon projects (~104,000 km²) using MapBiomas data integrated in GIS. Spatial analyses, mixed-effects models, and explainable AI identify drivers of deforestation.",
+        "keywords": [
+          "AI",
+          "GIS"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "GIS"
+        ]
+      },
+      {
+        "id": "54",
+        "page": "3",
+        "title": "Portable Spatial-Semantic RAG for 3D City Models Using DuckDB",
+        "abstractSnippet": "'Find me sunny buildings near Hiroshima Station.' This talk presents a portable DuckDB-based approach to 3D city model search that combines spatial, semantic, and geometric cues.",
+        "keywords": [
+          "RAG",
+          "3D",
+          "DuckDB"
+        ],
+        "highlightedKeywords": [
+          "RAG"
+        ],
+        "aiKeywords": [
+          "RAG"
+        ],
+        "contextKeywords": [
+          "3D",
+          "DuckDB"
+        ]
+      },
+      {
+        "id": "67",
+        "page": "4",
+        "title": "Git Blame: AI Edition",
+        "abstractSnippet": "AI is really helpful to assist in writing code, but who taught AI to code? This talk explores intellectual property issues with AI-assisted code and open source software licenses.",
+        "keywords": [
+          "AI",
+          "Open Source"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "Open Source"
+        ]
+      },
+      {
+        "id": "69",
+        "page": "4",
+        "title": "GeoLLM in the Wild: Open Source AI Meets Geospatial",
+        "abstractSnippet": "From GeoNetwork semantic search to agentic GIS automation, Camptocamp shares two years of hands-on open source GeoLLM experimentation — what works, what doesn't, and what the OSGeo community should build next.",
+        "keywords": [
+          "GeoLLM",
+          "Open Source",
+          "AI",
+          "GeoNetwork",
+          "GIS",
+          "OSGeo"
+        ],
+        "highlightedKeywords": [
+          "GeoLLM"
+        ],
+        "aiKeywords": [
+          "GeoLLM"
+        ],
+        "contextKeywords": [
+          "Open Source",
+          "AI",
+          "GeoNetwork",
+          "GIS",
+          "OSGeo"
+        ]
+      },
+      {
+        "id": "71",
+        "page": "4",
+        "title": "Awakening Dormant Geospatial Data: Structuring Large-Scale Government Documents with LLM",
+        "abstractSnippet": "We use LLM to extract and structure geospatial data buried in 100K-1M+ PDF and Office files held by Japan's MLIT, enabling visualization, spatial analysis, and evidence-based policymaking.",
+        "keywords": [
+          "LLM",
+          "Geospatial Data",
+          "Spatial Data",
+          "Visualization",
+          "Spatial Analysis"
+        ],
+        "highlightedKeywords": [
+          "LLM"
+        ],
+        "aiKeywords": [
+          "LLM"
+        ],
+        "contextKeywords": [
+          "Geospatial Data",
+          "Spatial Data",
+          "Visualization",
+          "Spatial Analysis"
+        ]
+      },
+      {
+        "id": "73",
+        "page": "4",
+        "title": "Detecting Rooftop Solar Panels with Deep Learning, using Open Remote Sensing Data and OpenStreetMap",
+        "abstractSnippet": "Introducing a deep learning-based rooftop solar model using open remote sensing data and OpenStreetMap, demonstrated through use in the Climate Action Navigator.",
+        "keywords": [
+          "Deep Learning",
+          "Remote Sensing",
+          "OpenStreetMap"
+        ],
+        "highlightedKeywords": [
+          "Deep Learning"
+        ],
+        "aiKeywords": [
+          "Deep Learning"
+        ],
+        "contextKeywords": [
+          "Remote Sensing",
+          "OpenStreetMap"
+        ]
+      },
+      {
+        "id": "75",
+        "page": "4",
+        "title": "Estimation of Soil Organic Carbon and Total Nitrogen in Thailand's Rubber Plantations Using Machine Learning",
+        "abstractSnippet": "Soil organic carbon (SOC) and total nitrogen were estimated using Sentinel-2 vegetation indices and machine learning in northeastern Thailand, with Random Forest achieving R²=0.63 for SOC.",
+        "keywords": [
+          "Random Forest",
+          "Machine Learning",
+          "R"
+        ],
+        "highlightedKeywords": [
+          "Random Forest"
+        ],
+        "aiKeywords": [
+          "Random Forest"
+        ],
+        "contextKeywords": [
+          "Machine Learning",
+          "R"
+        ]
+      },
+      {
+        "id": "83",
+        "page": "5",
+        "title": "Bridging Cloud and Community: AWS AI Services Meet Open Source Geospatial Tools",
+        "abstractSnippet": "This session showcases architectural patterns for leveraging cloud AI services with open source geospatial tools, alongside case studies demonstrating how organizations use this combination.",
+        "keywords": [
+          "AI",
+          "Cloud",
+          "AWS",
+          "Open Source",
+          "Geospatial Tools"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "Cloud",
+          "AWS",
+          "Open Source",
+          "Geospatial Tools"
+        ]
+      },
+      {
+        "id": "91",
+        "page": "5",
+        "title": "Teaching AI to Contribute to Open Source: Lessons from MapLibre Agent Skills",
+        "abstractSnippet": "This talk shares lessons from building MapLibre Agent Skills: an open, eval-tested knowledge base that corrects AI hallucination in MapLibre implementations.",
+        "keywords": [
+          "AI",
+          "Agent",
+          "Open Source",
+          "MapLibre"
+        ],
+        "highlightedKeywords": [
+          "AI",
+          "Agent"
+        ],
+        "aiKeywords": [
+          "AI",
+          "Agent"
+        ],
+        "contextKeywords": [
+          "Open Source",
+          "MapLibre"
+        ]
+      },
+      {
+        "id": "96",
+        "page": "5",
+        "title": "From Data to Insights: Decision-Support tool application with the Goa Agriculture Department",
+        "abstractSnippet": "A decision support tool provides access to machine learning (ML) features, generating insights revealing core predictors behind key outcomes in agriculture.",
+        "keywords": [
+          "Machine Learning"
+        ],
+        "highlightedKeywords": [
+          "Machine Learning"
+        ],
+        "aiKeywords": [
+          "Machine Learning"
+        ],
+        "contextKeywords": []
+      },
+      {
+        "id": "104",
+        "page": "6",
+        "title": "From Manual to AI: Building a Custom QGIS Plugin for Automated Tree Counting and Infrastructure Detection",
+        "abstractSnippet": "A custom QGIS plugin integrating YOLOv8 and DeepLabV3+ to automate palm oil tree counting, road, and drainage detection from massive drone orthophotos in precision agriculture.",
+        "keywords": [
+          "AI",
+          "QGIS",
+          "Plugin",
+          "Drone"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "QGIS",
+          "Plugin",
+          "Drone"
+        ]
+      },
+      {
+        "id": "105",
+        "page": "6",
+        "title": "Near-real-time monitoring of disaster damage on individual households",
+        "abstractSnippet": "This project utilizes deep learning and high-resolution satellite imagery to monitor post-disaster housing destruction in near-real time to support humanitarian aid prioritization.",
+        "keywords": [
+          "Deep Learning",
+          "Satellite Imagery"
+        ],
+        "highlightedKeywords": [
+          "Deep Learning"
+        ],
+        "aiKeywords": [
+          "Deep Learning"
+        ],
+        "contextKeywords": [
+          "Satellite Imagery"
+        ]
+      },
+      {
+        "id": "108",
+        "page": "6",
+        "title": "Reshaping knowledge boundaries in an age of generative-AI",
+        "abstractSnippet": "This talk summarizes findings from interviews with free and open source software community members, investigating their views, attitudes and engagement with recent advancement of generative-AI.",
+        "keywords": [
+          "AI",
+          "Open Source"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "Open Source"
+        ]
+      },
+      {
+        "id": "110",
+        "page": "6",
+        "title": "Multimodal AI-based Platform for Damage Assessment, Prediction, and Maintenance of Essential Buildings and Infrastructures in Climate Change",
+        "abstractSnippet": "We present an integrated multi-modal AI platform designed to transition infrastructure maintenance from 'aging-focused' to 'climate-proactive' using GIS-based frameworks.",
+        "keywords": [
+          "AI",
+          "Climate Change",
+          "GIS"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "Climate Change",
+          "GIS"
+        ]
+      },
+      {
+        "id": "112",
+        "page": "6",
+        "title": "Breaking the Barriers: Using Generative AI for Global Geospatial Data Accessibility",
+        "abstractSnippet": "This presentation highlights 'invisible walls' in geospatial data access due to language and local technical barriers, and explores how Generative AI can bridge these gaps.",
+        "keywords": [
+          "AI",
+          "Geospatial Data",
+          "Spatial Data"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "Geospatial Data",
+          "Spatial Data"
+        ]
+      },
+      {
+        "id": "115",
+        "page": "6",
+        "title": "Pedestrian Trajectory Mapping with MapLibre and OpenCV from Smartphone Videos",
+        "abstractSnippet": "A simple pipeline to extract pedestrian trajectories from smartphone videos and draw them on map in urban spaces using MapLibre and OpenCV.",
+        "keywords": [
+          "OpenCV",
+          "MapLibre"
+        ],
+        "highlightedKeywords": [],
+        "aiKeywords": [
+          "OpenCV"
+        ],
+        "contextKeywords": [
+          "MapLibre"
+        ]
+      },
+      {
+        "id": "118",
+        "page": "6",
+        "title": "Open Geo Embeddings: Models, Representations, and Systems",
+        "abstractSnippet": "This talk introduces a clear framework and compares GeoAI embedding approaches like Clay and TESSERA to help practitioners understand and apply geospatial embeddings in real-world workflows.",
+        "keywords": [
+          "Embeddings",
+          "GeoAI"
+        ],
+        "highlightedKeywords": [
+          "Embeddings",
+          "GeoAI"
+        ],
+        "aiKeywords": [
+          "Embeddings",
+          "GeoAI"
+        ],
+        "contextKeywords": []
+      },
+      {
+        "id": "120",
+        "page": "6",
+        "title": "Storing your Satellite in a DGGS",
+        "abstractSnippet": "DGGS gaining popularity in the GeoAI space. We'll look at pros and cons of storing vector and raster data in couple of indexing algorithms.",
+        "keywords": [
+          "GeoAI",
+          "DGGS"
+        ],
+        "highlightedKeywords": [
+          "GeoAI"
+        ],
+        "aiKeywords": [
+          "GeoAI"
+        ],
+        "contextKeywords": [
+          "DGGS"
+        ]
+      },
+      {
+        "id": "146",
+        "page": "8",
+        "title": "CDSE: Europe's Sovereign Infrastructure for Open Earth Observation",
+        "abstractSnippet": "The Copernicus Data Space Ecosystem gives every user free access to Europe's Earth observation archive through cloud-native APIs. We showcase how sovereign EU infrastructure and open standards turn this archive into a foundation for geospat...",
+        "keywords": [
+          "GeoAI",
+          "Earth Observation",
+          "Cloud",
+          "API",
+          "AI"
+        ],
+        "highlightedKeywords": [
+          "GeoAI"
+        ],
+        "aiKeywords": [
+          "GeoAI"
+        ],
+        "contextKeywords": [
+          "Earth Observation",
+          "Cloud",
+          "API",
+          "AI"
+        ]
+      },
+      {
+        "id": "159",
+        "page": "8",
+        "title": "National Map Agent: An Open Geospatial Architecture for Knowledge Graph-Driven GeoAI",
+        "abstractSnippet": "This presentation introduces a National Map Agent integrating open geospatial standards, knowledge graphs, and GraphRAG to enable intelligent, standards-aware mapping workflows.",
+        "keywords": [
+          "Agent",
+          "GeoAI",
+          "GraphRAG"
+        ],
+        "highlightedKeywords": [
+          "Agent",
+          "GeoAI",
+          "GraphRAG"
+        ],
+        "aiKeywords": [
+          "Agent",
+          "GeoAI",
+          "GraphRAG"
+        ],
+        "contextKeywords": []
+      },
+      {
+        "id": "183",
+        "page": "10",
+        "title": "GeoAI for Social Impact: Open-Source Flood Risk Mapping and Early Warning Systems in Informal Settlements of South Africa",
+        "abstractSnippet": "Open-source geospatial tools and GeoAI are used to map flood risk and support early warning systems in informal settlements using Sentinel-2 data and machine learning.",
+        "keywords": [
+          "GeoAI",
+          "Machine Learning",
+          "Open Source",
+          "Geospatial Tools"
+        ],
+        "highlightedKeywords": [
+          "GeoAI",
+          "Machine Learning"
+        ],
+        "aiKeywords": [
+          "GeoAI",
+          "Machine Learning"
+        ],
+        "contextKeywords": [
+          "Open Source",
+          "Geospatial Tools"
+        ]
+      },
+      {
+        "id": "191",
+        "page": "10",
+        "title": "Streetview Image Inpainting with Image-Edit Diffusion Models",
+        "abstractSnippet": "This talk shows how using ComfyUI and the Qwen Image model to build a 'magic eraser' for high-res street imagery using AI-driven masks.",
+        "keywords": [
+          "AI"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": []
+      },
+      {
+        "id": "215",
+        "page": "11",
+        "title": "Sharing your GeoSpatial Models, MLOps Architecture in fAIr",
+        "abstractSnippet": "Recent advancements in fAIr, specifically enabling developers to share their GeoAI models for humanitarian mapping purposes using STAC, MLM, Zenml, and Kubernetes.",
+        "keywords": [
+          "GeoAI",
+          "STAC"
+        ],
+        "highlightedKeywords": [
+          "GeoAI"
+        ],
+        "aiKeywords": [
+          "GeoAI"
+        ],
+        "contextKeywords": [
+          "STAC"
+        ]
+      },
+      {
+        "id": "222",
+        "page": "12",
+        "title": "Participatory Renewable Energy Zoning Using QGIS and Open Data: A Case Study in Urahoro, Hokkaido",
+        "abstractSnippet": "Renewable energy zoning project in Urahoro, Hokkaido, combining QGIS with open data sources and a custom-built participatory mapping system developed with generative AI.",
+        "keywords": [
+          "AI",
+          "Renewable Energy",
+          "QGIS",
+          "Open Data"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "Renewable Energy",
+          "QGIS",
+          "Open Data"
+        ]
+      },
+      {
+        "id": "230",
+        "page": "12",
+        "title": "Eyes-Free Navigation: OSM-Powered Spatial Audio and AI Navigation for Visually Impaired Users.",
+        "abstractSnippet": "Cogniscape is an open source iOS and Android app combining OpenStreetMap pedestrian data, spatial audio beacons, and on device AI obstacle detection for eyes free navigation.",
+        "keywords": [
+          "AI",
+          "OpenStreetMap",
+          "Open Source"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "OpenStreetMap",
+          "Open Source"
+        ]
+      },
+      {
+        "id": "236",
+        "page": "12",
+        "title": "Mapping the Changing Surface of the World's Roads: Open-Source Geospatial Intelligence for Humanitarian Logistics",
+        "abstractSnippet": "The first global dataset of road surface type and width for 9 million km of arterial roads using open-source GeoAI workflows, supporting a Humanitarian Passability Index.",
+        "keywords": [
+          "GeoAI",
+          "Open Source"
+        ],
+        "highlightedKeywords": [
+          "GeoAI"
+        ],
+        "aiKeywords": [
+          "GeoAI"
+        ],
+        "contextKeywords": [
+          "Open Source"
+        ]
+      },
+      {
+        "id": "237",
+        "page": "12",
+        "title": "Responding to Rapid AI Innovation: Teaching Applied Three-Tier GIS Systems for Regenerative Futures",
+        "abstractSnippet": "Our curriculum uses scaffolded project-based learning to teach an applied three-tier GIS system with cloud-based open-source tools and AI workflows.",
+        "keywords": [
+          "AI",
+          "GIS",
+          "Cloud",
+          "Open Source"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "GIS",
+          "Cloud",
+          "Open Source"
+        ]
+      },
+      {
+        "id": "245",
+        "page": "13",
+        "title": "A Reproducible Open-Source Workflow for Urban issues in Indonesia (Case study Urban Sprawl)",
+        "abstractSnippet": "A reproducible open-source workflow for analyzing urban growth in Indonesia, combining satellite data, machine learning, and accessible tools.",
+        "keywords": [
+          "Machine Learning",
+          "Open Source"
+        ],
+        "highlightedKeywords": [
+          "Machine Learning"
+        ],
+        "aiKeywords": [
+          "Machine Learning"
+        ],
+        "contextKeywords": [
+          "Open Source"
+        ]
+      },
+      {
+        "id": "248",
+        "page": "13",
+        "title": "End-to-End Deep Learning Analysis Pipeline for Early-Season Crop Mapping using Sentinel Data",
+        "abstractSnippet": "An end-to-end analysis pipeline for early-season crop mapping processing multi-sensor Sentinel data with CWT scalogram generation and PyTorch CNN models.",
+        "keywords": [
+          "Deep Learning",
+          "PyTorch"
+        ],
+        "highlightedKeywords": [
+          "Deep Learning",
+          "PyTorch"
+        ],
+        "aiKeywords": [
+          "Deep Learning",
+          "PyTorch"
+        ],
+        "contextKeywords": []
+      },
+      {
+        "id": "255",
+        "page": "13",
+        "title": "Intent-Centric Wildfire Monitoring: LLM and VLM Orchestration for Everyone",
+        "abstractSnippet": "A shift from tool-centric to intent-centric wildfire monitoring by integrating LLMs and VLMs, eliminating the technical barrier of manual tool selection for satellite data.",
+        "keywords": [
+          "Vision Language Model",
+          "LLM"
+        ],
+        "highlightedKeywords": [],
+        "aiKeywords": [
+          "Vision Language Model"
+        ],
+        "contextKeywords": [
+          "LLM"
+        ]
+      },
+      {
+        "id": "260",
+        "page": "13",
+        "title": "Visualizing Nagasaki's Peace Sites, Trees, and AI-Colorized Photos with Re:Earth",
+        "abstractSnippet": "Visualization of Atomic Bomb Ruins Using Web GIS 'Re:Earth' and Its Application to Peace Education at Nagasaki Higashi High School.",
+        "keywords": [
+          "AI",
+          "Visualization",
+          "Re:Earth",
+          "WebGIS",
+          "GIS"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "Visualization",
+          "Re:Earth",
+          "WebGIS",
+          "GIS"
+        ]
+      },
+      {
+        "id": "261",
+        "page": "14",
+        "title": "Digital Earth Canada: Unlocking the Power of Earth Observation Across Canada and Abroad",
+        "abstractSnippet": "Digital Earth Canada (DEC) is a national Earth Observation platform bringing together satellite data, cloud computing, and AI-powered analytics powered by open source technologies.",
+        "keywords": [
+          "AI",
+          "Earth Observation",
+          "Cloud",
+          "Open Source"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "Earth Observation",
+          "Cloud",
+          "Open Source"
+        ]
+      },
+      {
+        "id": "263",
+        "page": "14",
+        "title": "Building an AI Map Agent with Self-Hosted Planet-Scale OSM and Tiny LLMs",
+        "abstractSnippet": "This talk presents TRIDENT, text2geoql-dataset, and a self-hosted planet-scale OpenStreetMap stack for building a grounded, interactive AI map agent.",
+        "keywords": [
+          "AI",
+          "Agent",
+          "LLM",
+          "OpenStreetMap"
+        ],
+        "highlightedKeywords": [
+          "AI",
+          "Agent",
+          "LLM"
+        ],
+        "aiKeywords": [
+          "AI",
+          "Agent",
+          "LLM"
+        ],
+        "contextKeywords": [
+          "OpenStreetMap"
+        ]
+      },
+      {
+        "id": "267",
+        "page": "14",
+        "title": "Combining DuckDB, MapLibre GL JS, and AI for Browser-Native Map Visualization",
+        "abstractSnippet": "A conversation-first data analysis tool for Japan's MLIT LINKS project using DuckDB-WASM, Claude on AWS Bedrock, and MapLibre GL JS for in-browser data exploration.",
+        "keywords": [
+          "AI",
+          "DuckDB",
+          "MapLibre GL JS",
+          "Visualization",
+          "WebAssembly",
+          "AWS"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "DuckDB",
+          "MapLibre GL JS",
+          "Visualization",
+          "WebAssembly",
+          "AWS"
+        ]
+      },
+      {
+        "id": "273",
+        "page": "14",
+        "title": "Open Disaster Response (OpenDR) 1.0: Real-Time Cloud-Native GeoAI and Multi-Sensor Fusion for Humanitarian Intelligence",
+        "abstractSnippet": "OpenDR 1.0 is a cloud-native framework that automates multi-sensor fusion and GeoAI hazard detection for disaster response.",
+        "keywords": [
+          "GeoAI",
+          "Cloud"
+        ],
+        "highlightedKeywords": [
+          "GeoAI"
+        ],
+        "aiKeywords": [
+          "GeoAI"
+        ],
+        "contextKeywords": [
+          "Cloud"
+        ]
+      },
+      {
+        "id": "274",
+        "page": "14",
+        "title": "Soybean yield estimation using free geotechnologies: modeling with remote sensing and Random Forest",
+        "abstractSnippet": "Soybean yield estimated using NDVI and EVI from MODIS and Sentinel-2 sensors with the Random Forest algorithm applied for modeling.",
+        "keywords": [
+          "Random Forest",
+          "Remote Sensing",
+          "NDVI"
+        ],
+        "highlightedKeywords": [
+          "Random Forest"
+        ],
+        "aiKeywords": [
+          "Random Forest"
+        ],
+        "contextKeywords": [
+          "Remote Sensing",
+          "NDVI"
+        ]
+      },
+      {
+        "id": "278",
+        "page": "14",
+        "title": "State of DGGAL (Discrete Global Grid Abstraction Library)",
+        "abstractSnippet": "Update on the FOSS Discrete Global Grid Abstraction Library (DGGAL), focusing on support for new DGGRSs and use in the OGC AI-DGGS Pilot for Disaster Management.",
+        "keywords": [
+          "AI",
+          "DGGAL",
+          "DGGS",
+          "OGC"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "DGGAL",
+          "DGGS",
+          "OGC"
+        ]
+      },
+      {
+        "id": "298",
+        "page": "15",
+        "title": "Designing Web Map Experiences Beyond Too Much Data with Intelligent AI Processing",
+        "abstractSnippet": "This presentation explores how LLMs and Function Calling can transform web map experiences using MapLibre GL JS with natural language queries.",
+        "keywords": [
+          "AI",
+          "LLM",
+          "Natural Language Interface",
+          "Web Mapping",
+          "MapLibre GL JS",
+          "Natural Language"
+        ],
+        "highlightedKeywords": [
+          "AI",
+          "LLM",
+          "Natural Language Interface"
+        ],
+        "aiKeywords": [
+          "AI",
+          "LLM",
+          "Natural Language Interface"
+        ],
+        "contextKeywords": [
+          "Web Mapping",
+          "MapLibre GL JS",
+          "Natural Language"
+        ]
+      },
+      {
+        "id": "308",
+        "page": "16",
+        "title": "A Self-Hostable Open-Source Geospatial Platform for Small Teams, with Natural Language Querying via MCP",
+        "abstractSnippet": "geo-base is a self-hostable open-source geospatial platform combining a tile server, a management dashboard, and an MCP connector for natural language queries.",
+        "keywords": [
+          "Natural Language Interface",
+          "Model Context Protocol",
+          "Open Source",
+          "Geospatial Platform",
+          "Natural Language",
+          "MCP",
+          "Dashboard"
+        ],
+        "highlightedKeywords": [
+          "Natural Language Interface",
+          "Model Context Protocol"
+        ],
+        "aiKeywords": [
+          "Natural Language Interface",
+          "Model Context Protocol"
+        ],
+        "contextKeywords": [
+          "Open Source",
+          "Geospatial Platform",
+          "Natural Language",
+          "MCP",
+          "Dashboard"
+        ]
+      },
+      {
+        "id": "313",
+        "page": "16",
+        "title": "Methods for Introducing Geospatial Awareness to Large Language Models with Open Standards",
+        "abstractSnippet": "This talk demonstrates how Geo-GraphRAG and DGGS, grounded in open standards, enable geospatial reasoning in LLMs with transparent, traceable results.",
+        "keywords": [
+          "LLM",
+          "GraphRAG",
+          "DGGS"
+        ],
+        "highlightedKeywords": [
+          "LLM",
+          "GraphRAG"
+        ],
+        "aiKeywords": [
+          "LLM",
+          "GraphRAG"
+        ],
+        "contextKeywords": [
+          "DGGS"
+        ]
+      },
+      {
+        "id": "318",
+        "page": "16",
+        "title": "[FREE] and Open Source 4 Geo in the Age of Gen AI",
+        "abstractSnippet": "A few collected thoughts about the impact of the current coding revolution for the future of FOSS4G projects, including a brief take on the economics of FOSS4G.",
+        "keywords": [
+          "AI",
+          "Open Source",
+          "FOSS4G"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "Open Source",
+          "FOSS4G"
+        ]
+      },
+      {
+        "id": "324",
+        "page": "17",
+        "title": "Machine Learning-Driven Detection and Suitability Assessment of Rooftop Solar Photovoltaic Installations Using Satellite Imagery",
+        "abstractSnippet": "A machine learning framework leveraging satellite imagery to automate the detection, mapping, and suitability assessment of rooftops for solar photovoltaic (PV) installations.",
+        "keywords": [
+          "Machine Learning",
+          "Satellite Imagery"
+        ],
+        "highlightedKeywords": [
+          "Machine Learning"
+        ],
+        "aiKeywords": [
+          "Machine Learning"
+        ],
+        "contextKeywords": [
+          "Satellite Imagery"
+        ]
+      },
+      {
+        "id": "326",
+        "page": "17",
+        "title": "Efficient pixel-scale upstream covariate computation for environmental machine learning",
+        "abstractSnippet": "An efficient flow-accumulation-based method bypassing per-pixel delineation, achieving orders-of-magnitude speedups for hydrological ML, demonstrated through a countrywide Random Forest nitrogen prediction.",
+        "keywords": [
+          "Random Forest",
+          "Machine Learning"
+        ],
+        "highlightedKeywords": [
+          "Random Forest"
+        ],
+        "aiKeywords": [
+          "Random Forest"
+        ],
+        "contextKeywords": [
+          "Machine Learning"
+        ]
+      },
+      {
+        "id": "337",
+        "page": "17",
+        "title": "Building Agents for Open Data Research at Overture",
+        "abstractSnippet": "Overture Maps Foundation is experimenting with Large Language Models and agents to integrate agents for open data discovery and research into Overture's pipeline.",
+        "keywords": [
+          "LLM",
+          "Open Data",
+          "Overture Maps"
+        ],
+        "highlightedKeywords": [
+          "LLM"
+        ],
+        "aiKeywords": [
+          "LLM"
+        ],
+        "contextKeywords": [
+          "Open Data",
+          "Overture Maps"
+        ]
+      },
+      {
+        "id": "339",
+        "page": "17",
+        "title": "Reproducibility in geospatial research: a case study.",
+        "abstractSnippet": "This talk highlights challenges in deep learning reproducibility and presents practical strategies, tools, and documentation practices for transparent, repeatable experiments using open-source technologies.",
+        "keywords": [
+          "Deep Learning",
+          "Open Source"
+        ],
+        "highlightedKeywords": [
+          "Deep Learning"
+        ],
+        "aiKeywords": [
+          "Deep Learning"
+        ],
+        "contextKeywords": [
+          "Open Source"
+        ]
+      },
+      {
+        "id": "347",
+        "page": "18",
+        "title": "Building an MCP Server Ecosystem on Japan's National-Scale Geospatial Open Data Platform",
+        "abstractSnippet": "How we connected Japan's national open geospatial data platform to AI agents using the Model Context Protocol for infrastructure maintenance use cases.",
+        "keywords": [
+          "Model Context Protocol",
+          "AI",
+          "Agent",
+          "MCP",
+          "Open Data",
+          "Open Geospatial Data",
+          "Geospatial Data",
+          "Spatial Data"
+        ],
+        "highlightedKeywords": [
+          "Model Context Protocol",
+          "AI",
+          "Agent"
+        ],
+        "aiKeywords": [
+          "Model Context Protocol",
+          "AI",
+          "Agent"
+        ],
+        "contextKeywords": [
+          "MCP",
+          "Open Data",
+          "Open Geospatial Data",
+          "Geospatial Data",
+          "Spatial Data"
+        ]
+      },
+      {
+        "id": "348",
+        "page": "18",
+        "title": "Natural Language Querying of STAC Catalogs Using LLMs for Geospatial Visualization",
+        "abstractSnippet": "A framework that uses Gemma 3 to translate natural language into STAC queries, automating GISTDA's disaster data retrieval and MapLibre visualization.",
+        "keywords": [
+          "Natural Language Interface",
+          "LLM",
+          "Natural Language",
+          "STAC",
+          "Visualization",
+          "GISTDA",
+          "MapLibre"
+        ],
+        "highlightedKeywords": [
+          "Natural Language Interface",
+          "LLM"
+        ],
+        "aiKeywords": [
+          "Natural Language Interface",
+          "LLM"
+        ],
+        "contextKeywords": [
+          "Natural Language",
+          "STAC",
+          "Visualization",
+          "GISTDA",
+          "MapLibre"
+        ]
+      },
+      {
+        "id": "364",
+        "page": "19",
+        "title": "V-World Platform Enhancement for Digital Twin-Based Geospatial Services",
+        "abstractSnippet": "V-World, Korea's national geospatial platform by MOLIT, advances 3D services and analytics with improved data management and Geo-AI integration.",
+        "keywords": [
+          "AI",
+          "Digital Twin",
+          "Geospatial Platform",
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "Digital Twin",
+          "Geospatial Platform",
+          "3D"
+        ]
+      },
+      {
+        "id": "365",
+        "page": "19",
+        "title": "Beyond Metadata Search: STAC, Vector Embeddings, and GeoAI",
+        "abstractSnippet": "This talk shows how to combine STAC for structured discovery and vector embeddings for semantic similarity to support modern geospatial analysis workflows.",
+        "keywords": [
+          "Embeddings",
+          "GeoAI",
+          "Metadata",
+          "STAC",
+          "Geospatial Analysis"
+        ],
+        "highlightedKeywords": [
+          "Embeddings",
+          "GeoAI"
+        ],
+        "aiKeywords": [
+          "Embeddings",
+          "GeoAI"
+        ],
+        "contextKeywords": [
+          "Metadata",
+          "STAC",
+          "Geospatial Analysis"
+        ]
+      },
+      {
+        "id": "367",
+        "page": "19",
+        "title": "AI-accelerated development and FOSS4G - a perspective into the future",
+        "abstractSnippet": "A few collected thoughts about the impact of the current coding revolution for the future of FOSS4G projects.",
+        "keywords": [
+          "AI",
+          "FOSS4G"
+        ],
+        "highlightedKeywords": [
+          "AI"
+        ],
+        "aiKeywords": [
+          "AI"
+        ],
+        "contextKeywords": [
+          "FOSS4G"
+        ]
+      }
+    ]
+  }
+}

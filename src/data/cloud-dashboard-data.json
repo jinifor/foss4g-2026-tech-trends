@@ -1,0 +1,2273 @@
+{
+  "meta": {
+    "sourceWorkbook": "foss4g_2026_talks.csv",
+    "totalPresentations": 46,
+    "uniqueKeywords": 22,
+    "totalKeywordMentions": 77,
+    "averageKeywordsPerPresentation": 1.67,
+    "excludedKeywords": [],
+    "presentationShare": 0.1223,
+    "sourcePresentationCount": 376
+  },
+  "overview": {
+    "cards": [
+      {
+        "keyword": "STAC",
+        "count": 12,
+        "related": [
+          {
+            "keyword": "COG",
+            "count": 3
+          },
+          {
+            "keyword": "TiTiler",
+            "count": 2
+          },
+          {
+            "keyword": "Cloud Native",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Reusable Geospatial Application Design for the Global South with MapLibre, STAC, and TiTiler",
+          "Serving earth observation data with GeoServer: addressing real world requirements",
+          "State of STAC: From Specification to Infrastructure",
+          "The metadata problem"
+        ]
+      },
+      {
+        "keyword": "Cloud Native",
+        "count": 11,
+        "related": [
+          {
+            "keyword": "Auto-scaling",
+            "count": 2
+          },
+          {
+            "keyword": "AWS",
+            "count": 1
+          },
+          {
+            "keyword": "COG",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Building Modern GIS Applications on Cloud Native Infrastructure",
+          "Running pygeoapi Cloud Native at Scale",
+          "CDSE: Europe's Sovereign Infrastructure for Open Earth Observation",
+          "Idle-Aware Geo-Processing Scheduler: Auto-Scaling Workers for Cloud-Native Geospatial Processing"
+        ]
+      },
+      {
+        "keyword": "COG",
+        "count": 7,
+        "related": [
+          {
+            "keyword": "STAC",
+            "count": 3
+          },
+          {
+            "keyword": "Zarr",
+            "count": 3
+          },
+          {
+            "keyword": "Object Storage",
+            "count": 2
+          }
+        ],
+        "samples": [
+          "Serving earth observation data with GeoServer: addressing real world requirements",
+          "From Chaos to Confidence: Practical DataOps with COG Optimization and Great Expectations for National-Scale Agriculture",
+          "Using Lonboard for interactive STAC, COG, and Zarr visualization from Python",
+          "Serverless Watershed Extraction: Benchmarking Zarr vs COG for Large-Scale Flow Direction Data"
+        ]
+      },
+      {
+        "keyword": "Cloud Infrastructure",
+        "count": 7,
+        "related": [
+          {
+            "keyword": "AWS",
+            "count": 1
+          },
+          {
+            "keyword": "Deployment",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Bridging Cloud and Community: AWS AI Services Meet Open Source Geospatial Tools",
+          "Operating Maritime AIS at Enterprise Scale with GeoServer",
+          "Supporting precision farming with GeoServer: past experiences and way forward",
+          "Modernizing Earth Observation Access: The GEODES Shift to Open Source and Cloud-Optimized Architectures"
+        ]
+      },
+      {
+        "keyword": "Zarr",
+        "count": 4,
+        "related": [
+          {
+            "keyword": "COG",
+            "count": 3
+          },
+          {
+            "keyword": "Object Storage",
+            "count": 1
+          },
+          {
+            "keyword": "STAC",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "End-to-End Satellite Data Pipeline: Airflow Orchestration, Zarr Storage, and LandTrendr Analysis",
+          "Using Lonboard for interactive STAC, COG, and Zarr visualization from Python",
+          "Serverless Watershed Extraction: Benchmarking Zarr vs COG for Large-Scale Flow Direction Data",
+          "Fast, interactive, customizable raster data visualization in Python & the browser with deck.gl-raster"
+        ]
+      },
+      {
+        "keyword": "Deployment",
+        "count": 4,
+        "related": [
+          {
+            "keyword": "Auto-scaling",
+            "count": 1
+          },
+          {
+            "keyword": "Cloud Infrastructure",
+            "count": 1
+          },
+          {
+            "keyword": "Cloud Native",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Running pygeoapi Cloud Native at Scale",
+          "Supporting precision farming with GeoServer: past experiences and way forward",
+          "Waystones: Bridging the Deployment Gap for Authoritative OGC API Services",
+          "Project Update (GeoNode-k8s)"
+        ]
+      }
+    ],
+    "topKeywords": [
+      {
+        "keyword": "STAC",
+        "count": 12
+      },
+      {
+        "keyword": "Cloud Native",
+        "count": 11
+      },
+      {
+        "keyword": "COG",
+        "count": 7
+      },
+      {
+        "keyword": "Cloud Infrastructure",
+        "count": 7
+      },
+      {
+        "keyword": "Zarr",
+        "count": 4
+      },
+      {
+        "keyword": "Deployment",
+        "count": 4
+      },
+      {
+        "keyword": "Serverless",
+        "count": 3
+      },
+      {
+        "keyword": "PMTiles",
+        "count": 3
+      },
+      {
+        "keyword": "TiTiler",
+        "count": 3
+      },
+      {
+        "keyword": "AWS",
+        "count": 3
+      },
+      {
+        "keyword": "Browser Runtime",
+        "count": 3
+      },
+      {
+        "keyword": "Kubernetes",
+        "count": 3
+      },
+      {
+        "keyword": "Object Storage",
+        "count": 3
+      },
+      {
+        "keyword": "Auto-scaling",
+        "count": 2
+      },
+      {
+        "keyword": "S3-Compatible Storage",
+        "count": 2
+      },
+      {
+        "keyword": "Docker",
+        "count": 1
+      },
+      {
+        "keyword": "Workflow Orchestration",
+        "count": 1
+      },
+      {
+        "keyword": "Containers",
+        "count": 1
+      },
+      {
+        "keyword": "Data Gateway",
+        "count": 1
+      },
+      {
+        "keyword": "Distributed Workers",
+        "count": 1
+      },
+      {
+        "keyword": "Observability",
+        "count": 1
+      },
+      {
+        "keyword": "QFieldCloud",
+        "count": 1
+      }
+    ],
+    "wordCloud": [
+      {
+        "keyword": "STAC",
+        "count": 12
+      },
+      {
+        "keyword": "Cloud Native",
+        "count": 11
+      },
+      {
+        "keyword": "COG",
+        "count": 7
+      },
+      {
+        "keyword": "Cloud Infrastructure",
+        "count": 7
+      },
+      {
+        "keyword": "Zarr",
+        "count": 4
+      },
+      {
+        "keyword": "Deployment",
+        "count": 4
+      },
+      {
+        "keyword": "Serverless",
+        "count": 3
+      },
+      {
+        "keyword": "PMTiles",
+        "count": 3
+      },
+      {
+        "keyword": "TiTiler",
+        "count": 3
+      },
+      {
+        "keyword": "AWS",
+        "count": 3
+      },
+      {
+        "keyword": "Browser Runtime",
+        "count": 3
+      },
+      {
+        "keyword": "Kubernetes",
+        "count": 3
+      },
+      {
+        "keyword": "Object Storage",
+        "count": 3
+      },
+      {
+        "keyword": "Auto-scaling",
+        "count": 2
+      },
+      {
+        "keyword": "S3-Compatible Storage",
+        "count": 2
+      },
+      {
+        "keyword": "Docker",
+        "count": 1
+      },
+      {
+        "keyword": "Workflow Orchestration",
+        "count": 1
+      },
+      {
+        "keyword": "Containers",
+        "count": 1
+      },
+      {
+        "keyword": "Data Gateway",
+        "count": 1
+      },
+      {
+        "keyword": "Distributed Workers",
+        "count": 1
+      },
+      {
+        "keyword": "Observability",
+        "count": 1
+      },
+      {
+        "keyword": "QFieldCloud",
+        "count": 1
+      }
+    ]
+  },
+  "distribution": {
+    "longtail": [
+      {
+        "rank": 1,
+        "keyword": "STAC",
+        "count": 12,
+        "cumulativeShare": 0.1558
+      },
+      {
+        "rank": 2,
+        "keyword": "Cloud Native",
+        "count": 11,
+        "cumulativeShare": 0.2987
+      },
+      {
+        "rank": 3,
+        "keyword": "COG",
+        "count": 7,
+        "cumulativeShare": 0.3896
+      },
+      {
+        "rank": 4,
+        "keyword": "Cloud Infrastructure",
+        "count": 7,
+        "cumulativeShare": 0.4805
+      },
+      {
+        "rank": 5,
+        "keyword": "Zarr",
+        "count": 4,
+        "cumulativeShare": 0.5325
+      },
+      {
+        "rank": 6,
+        "keyword": "Deployment",
+        "count": 4,
+        "cumulativeShare": 0.5844
+      },
+      {
+        "rank": 7,
+        "keyword": "Serverless",
+        "count": 3,
+        "cumulativeShare": 0.6234
+      },
+      {
+        "rank": 8,
+        "keyword": "PMTiles",
+        "count": 3,
+        "cumulativeShare": 0.6623
+      },
+      {
+        "rank": 9,
+        "keyword": "TiTiler",
+        "count": 3,
+        "cumulativeShare": 0.7013
+      },
+      {
+        "rank": 10,
+        "keyword": "AWS",
+        "count": 3,
+        "cumulativeShare": 0.7403
+      },
+      {
+        "rank": 11,
+        "keyword": "Browser Runtime",
+        "count": 3,
+        "cumulativeShare": 0.7792
+      },
+      {
+        "rank": 12,
+        "keyword": "Kubernetes",
+        "count": 3,
+        "cumulativeShare": 0.8182
+      },
+      {
+        "rank": 13,
+        "keyword": "Object Storage",
+        "count": 3,
+        "cumulativeShare": 0.8571
+      },
+      {
+        "rank": 14,
+        "keyword": "Auto-scaling",
+        "count": 2,
+        "cumulativeShare": 0.8831
+      },
+      {
+        "rank": 15,
+        "keyword": "S3-Compatible Storage",
+        "count": 2,
+        "cumulativeShare": 0.9091
+      },
+      {
+        "rank": 16,
+        "keyword": "Docker",
+        "count": 1,
+        "cumulativeShare": 0.9221
+      },
+      {
+        "rank": 17,
+        "keyword": "Workflow Orchestration",
+        "count": 1,
+        "cumulativeShare": 0.9351
+      },
+      {
+        "rank": 18,
+        "keyword": "Containers",
+        "count": 1,
+        "cumulativeShare": 0.9481
+      },
+      {
+        "rank": 19,
+        "keyword": "Data Gateway",
+        "count": 1,
+        "cumulativeShare": 0.961
+      },
+      {
+        "rank": 20,
+        "keyword": "Distributed Workers",
+        "count": 1,
+        "cumulativeShare": 0.974
+      },
+      {
+        "rank": 21,
+        "keyword": "Observability",
+        "count": 1,
+        "cumulativeShare": 0.987
+      },
+      {
+        "rank": 22,
+        "keyword": "QFieldCloud",
+        "count": 1,
+        "cumulativeShare": 1.0
+      }
+    ],
+    "bubble": [
+      {
+        "keyword": "STAC",
+        "x": 12,
+        "y": 0.67,
+        "z": 12,
+        "connectionScore": 8,
+        "share": 0.2609
+      },
+      {
+        "keyword": "Cloud Native",
+        "x": 11,
+        "y": 1.09,
+        "z": 11,
+        "connectionScore": 12,
+        "share": 0.2391
+      },
+      {
+        "keyword": "COG",
+        "x": 7,
+        "y": 1.57,
+        "z": 7,
+        "connectionScore": 11,
+        "share": 0.1522
+      },
+      {
+        "keyword": "Cloud Infrastructure",
+        "x": 7,
+        "y": 0.29,
+        "z": 7,
+        "connectionScore": 2,
+        "share": 0.1522
+      },
+      {
+        "keyword": "Zarr",
+        "x": 4,
+        "y": 1.75,
+        "z": 4,
+        "connectionScore": 7,
+        "share": 0.087
+      },
+      {
+        "keyword": "Deployment",
+        "x": 4,
+        "y": 1.25,
+        "z": 4,
+        "connectionScore": 5,
+        "share": 0.087
+      },
+      {
+        "keyword": "Serverless",
+        "x": 3,
+        "y": 2.0,
+        "z": 3,
+        "connectionScore": 6,
+        "share": 0.0652
+      },
+      {
+        "keyword": "PMTiles",
+        "x": 3,
+        "y": 1.33,
+        "z": 3,
+        "connectionScore": 4,
+        "share": 0.0652
+      },
+      {
+        "keyword": "TiTiler",
+        "x": 3,
+        "y": 1.33,
+        "z": 3,
+        "connectionScore": 4,
+        "share": 0.0652
+      },
+      {
+        "keyword": "AWS",
+        "x": 3,
+        "y": 1.0,
+        "z": 3,
+        "connectionScore": 3,
+        "share": 0.0652
+      },
+      {
+        "keyword": "Browser Runtime",
+        "x": 3,
+        "y": 1.33,
+        "z": 3,
+        "connectionScore": 4,
+        "share": 0.0652
+      },
+      {
+        "keyword": "Kubernetes",
+        "x": 3,
+        "y": 0.67,
+        "z": 3,
+        "connectionScore": 2,
+        "share": 0.0652
+      },
+      {
+        "keyword": "Object Storage",
+        "x": 3,
+        "y": 2.0,
+        "z": 3,
+        "connectionScore": 6,
+        "share": 0.0652
+      },
+      {
+        "keyword": "Auto-scaling",
+        "x": 2,
+        "y": 2.5,
+        "z": 2,
+        "connectionScore": 5,
+        "share": 0.0435
+      },
+      {
+        "keyword": "S3-Compatible Storage",
+        "x": 2,
+        "y": 0.5,
+        "z": 2,
+        "connectionScore": 1,
+        "share": 0.0435
+      },
+      {
+        "keyword": "Docker",
+        "x": 1,
+        "y": 0.0,
+        "z": 1,
+        "connectionScore": 0,
+        "share": 0.0217
+      },
+      {
+        "keyword": "Workflow Orchestration",
+        "x": 1,
+        "y": 1.0,
+        "z": 1,
+        "connectionScore": 1,
+        "share": 0.0217
+      },
+      {
+        "keyword": "Containers",
+        "x": 1,
+        "y": 3.0,
+        "z": 1,
+        "connectionScore": 3,
+        "share": 0.0217
+      },
+      {
+        "keyword": "Data Gateway",
+        "x": 1,
+        "y": 1.0,
+        "z": 1,
+        "connectionScore": 1,
+        "share": 0.0217
+      },
+      {
+        "keyword": "Distributed Workers",
+        "x": 1,
+        "y": 2.0,
+        "z": 1,
+        "connectionScore": 2,
+        "share": 0.0217
+      },
+      {
+        "keyword": "Observability",
+        "x": 1,
+        "y": 1.0,
+        "z": 1,
+        "connectionScore": 1,
+        "share": 0.0217
+      },
+      {
+        "keyword": "QFieldCloud",
+        "x": 1,
+        "y": 0.0,
+        "z": 1,
+        "connectionScore": 0,
+        "share": 0.0217
+      }
+    ],
+    "treemap": [
+      {
+        "name": "STAC",
+        "size": 12,
+        "category": "Cloud Storage & Delivery",
+        "color": "#d96c3d"
+      },
+      {
+        "name": "Cloud Native",
+        "size": 11,
+        "category": "Cloud Platforms & Architecture",
+        "color": "#177e89"
+      },
+      {
+        "name": "COG",
+        "size": 7,
+        "category": "Cloud Storage & Delivery",
+        "color": "#d96c3d"
+      },
+      {
+        "name": "Cloud Infrastructure",
+        "size": 7,
+        "category": "Cloud Platforms & Architecture",
+        "color": "#177e89"
+      },
+      {
+        "name": "Zarr",
+        "size": 4,
+        "category": "Cloud Storage & Delivery",
+        "color": "#d96c3d"
+      },
+      {
+        "name": "Deployment",
+        "size": 4,
+        "category": "Cloud Platforms & Architecture",
+        "color": "#177e89"
+      },
+      {
+        "name": "Serverless",
+        "size": 3,
+        "category": "Runtime & Scalable Processing",
+        "color": "#7c5cff"
+      },
+      {
+        "name": "PMTiles",
+        "size": 3,
+        "category": "Cloud Storage & Delivery",
+        "color": "#d96c3d"
+      },
+      {
+        "name": "TiTiler",
+        "size": 3,
+        "category": "Cloud Tooling",
+        "color": "#b74f6f"
+      },
+      {
+        "name": "AWS",
+        "size": 3,
+        "category": "Cloud Platforms & Architecture",
+        "color": "#177e89"
+      },
+      {
+        "name": "Browser Runtime",
+        "size": 3,
+        "category": "Runtime & Scalable Processing",
+        "color": "#7c5cff"
+      },
+      {
+        "name": "Kubernetes",
+        "size": 3,
+        "category": "Orchestration & Operations",
+        "color": "#7a8f3c"
+      },
+      {
+        "name": "Object Storage",
+        "size": 3,
+        "category": "Cloud Storage & Delivery",
+        "color": "#d96c3d"
+      },
+      {
+        "name": "Auto-scaling",
+        "size": 2,
+        "category": "Orchestration & Operations",
+        "color": "#7a8f3c"
+      },
+      {
+        "name": "S3-Compatible Storage",
+        "size": 2,
+        "category": "Cloud Storage & Delivery",
+        "color": "#d96c3d"
+      },
+      {
+        "name": "Docker",
+        "size": 1,
+        "category": "Orchestration & Operations",
+        "color": "#7a8f3c"
+      },
+      {
+        "name": "Workflow Orchestration",
+        "size": 1,
+        "category": "Orchestration & Operations",
+        "color": "#7a8f3c"
+      },
+      {
+        "name": "Containers",
+        "size": 1,
+        "category": "Orchestration & Operations",
+        "color": "#7a8f3c"
+      },
+      {
+        "name": "Others",
+        "size": 4,
+        "category": "Other Cloud Signals",
+        "color": "#9aa8b3"
+      }
+    ]
+  },
+  "relationships": {
+    "network": {
+      "nodes": [
+        {
+          "id": "STAC",
+          "keyword": "STAC",
+          "count": 12,
+          "cluster": "cloud-storage",
+          "degree": 5
+        },
+        {
+          "id": "Cloud Native",
+          "keyword": "Cloud Native",
+          "count": 11,
+          "cluster": "cloud-platforms",
+          "degree": 11
+        },
+        {
+          "id": "COG",
+          "keyword": "COG",
+          "count": 7,
+          "cluster": "cloud-storage",
+          "degree": 6
+        },
+        {
+          "id": "Cloud Infrastructure",
+          "keyword": "Cloud Infrastructure",
+          "count": 7,
+          "cluster": "cloud-platforms",
+          "degree": 2
+        },
+        {
+          "id": "Zarr",
+          "keyword": "Zarr",
+          "count": 4,
+          "cluster": "cloud-storage",
+          "degree": 5
+        },
+        {
+          "id": "Deployment",
+          "keyword": "Deployment",
+          "count": 4,
+          "cluster": "cloud-platforms",
+          "degree": 5
+        },
+        {
+          "id": "Serverless",
+          "keyword": "Serverless",
+          "count": 3,
+          "cluster": "runtime-processing",
+          "degree": 6
+        },
+        {
+          "id": "PMTiles",
+          "keyword": "PMTiles",
+          "count": 3,
+          "cluster": "cloud-storage",
+          "degree": 4
+        },
+        {
+          "id": "TiTiler",
+          "keyword": "TiTiler",
+          "count": 3,
+          "cluster": "cloud-tooling",
+          "degree": 3
+        },
+        {
+          "id": "AWS",
+          "keyword": "AWS",
+          "count": 3,
+          "cluster": "cloud-platforms",
+          "degree": 3
+        },
+        {
+          "id": "Browser Runtime",
+          "keyword": "Browser Runtime",
+          "count": 3,
+          "cluster": "runtime-processing",
+          "degree": 4
+        },
+        {
+          "id": "Kubernetes",
+          "keyword": "Kubernetes",
+          "count": 3,
+          "cluster": "orchestration-ops",
+          "degree": 2
+        },
+        {
+          "id": "Object Storage",
+          "keyword": "Object Storage",
+          "count": 3,
+          "cluster": "cloud-storage",
+          "degree": 5
+        },
+        {
+          "id": "Auto-scaling",
+          "keyword": "Auto-scaling",
+          "count": 2,
+          "cluster": "orchestration-ops",
+          "degree": 4
+        },
+        {
+          "id": "S3-Compatible Storage",
+          "keyword": "S3-Compatible Storage",
+          "count": 2,
+          "cluster": "cloud-storage",
+          "degree": 1
+        },
+        {
+          "id": "Docker",
+          "keyword": "Docker",
+          "count": 1,
+          "cluster": "orchestration-ops",
+          "degree": 0
+        },
+        {
+          "id": "Workflow Orchestration",
+          "keyword": "Workflow Orchestration",
+          "count": 1,
+          "cluster": "orchestration-ops",
+          "degree": 1
+        },
+        {
+          "id": "Containers",
+          "keyword": "Containers",
+          "count": 1,
+          "cluster": "orchestration-ops",
+          "degree": 3
+        },
+        {
+          "id": "Data Gateway",
+          "keyword": "Data Gateway",
+          "count": 1,
+          "cluster": "cloud-platforms",
+          "degree": 1
+        },
+        {
+          "id": "Distributed Workers",
+          "keyword": "Distributed Workers",
+          "count": 1,
+          "cluster": "runtime-processing",
+          "degree": 2
+        },
+        {
+          "id": "Observability",
+          "keyword": "Observability",
+          "count": 1,
+          "cluster": "orchestration-ops",
+          "degree": 1
+        },
+        {
+          "id": "QFieldCloud",
+          "keyword": "QFieldCloud",
+          "count": 1,
+          "cluster": "cloud-platforms",
+          "degree": 0
+        }
+      ],
+      "links": [
+        {
+          "source": "COG",
+          "target": "STAC",
+          "count": 3
+        },
+        {
+          "source": "COG",
+          "target": "Zarr",
+          "count": 3
+        },
+        {
+          "source": "STAC",
+          "target": "TiTiler",
+          "count": 2
+        },
+        {
+          "source": "Auto-scaling",
+          "target": "Cloud Native",
+          "count": 2
+        },
+        {
+          "source": "COG",
+          "target": "Object Storage",
+          "count": 2
+        }
+      ]
+    },
+    "heatmap": {
+      "labels": [
+        "STAC",
+        "Cloud Native",
+        "COG",
+        "Cloud Infrastructure",
+        "Zarr",
+        "Deployment",
+        "Serverless",
+        "PMTiles",
+        "TiTiler",
+        "AWS",
+        "Browser Runtime",
+        "Kubernetes",
+        "Object Storage",
+        "Auto-scaling",
+        "S3-Compatible Storage",
+        "Docker",
+        "Workflow Orchestration",
+        "Containers"
+      ],
+      "matrix": [
+        [
+          12,
+          1,
+          3,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          11,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          7,
+          0,
+          3,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          7,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          3,
+          0,
+          4,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          3,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          3,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "max": 12
+    },
+    "clusters": [
+      {
+        "id": "cloud-storage",
+        "name": "Cloud Storage & Delivery",
+        "color": "#d96c3d",
+        "keywords": [
+          {
+            "keyword": "STAC",
+            "count": 12
+          },
+          {
+            "keyword": "COG",
+            "count": 7
+          },
+          {
+            "keyword": "Zarr",
+            "count": 4
+          },
+          {
+            "keyword": "Object Storage",
+            "count": 3
+          },
+          {
+            "keyword": "PMTiles",
+            "count": 3
+          },
+          {
+            "keyword": "S3-Compatible Storage",
+            "count": 2
+          }
+        ],
+        "total": 31
+      },
+      {
+        "id": "cloud-platforms",
+        "name": "Cloud Platforms & Architecture",
+        "color": "#177e89",
+        "keywords": [
+          {
+            "keyword": "Cloud Native",
+            "count": 11
+          },
+          {
+            "keyword": "Cloud Infrastructure",
+            "count": 7
+          },
+          {
+            "keyword": "Deployment",
+            "count": 4
+          },
+          {
+            "keyword": "AWS",
+            "count": 3
+          },
+          {
+            "keyword": "Data Gateway",
+            "count": 1
+          },
+          {
+            "keyword": "QFieldCloud",
+            "count": 1
+          }
+        ],
+        "total": 27
+      },
+      {
+        "id": "orchestration-ops",
+        "name": "Orchestration & Operations",
+        "color": "#7a8f3c",
+        "keywords": [
+          {
+            "keyword": "Kubernetes",
+            "count": 3
+          },
+          {
+            "keyword": "Auto-scaling",
+            "count": 2
+          },
+          {
+            "keyword": "Containers",
+            "count": 1
+          },
+          {
+            "keyword": "Docker",
+            "count": 1
+          },
+          {
+            "keyword": "Observability",
+            "count": 1
+          },
+          {
+            "keyword": "Workflow Orchestration",
+            "count": 1
+          }
+        ],
+        "total": 9
+      },
+      {
+        "id": "runtime-processing",
+        "name": "Runtime & Scalable Processing",
+        "color": "#7c5cff",
+        "keywords": [
+          {
+            "keyword": "Browser Runtime",
+            "count": 3
+          },
+          {
+            "keyword": "Serverless",
+            "count": 3
+          },
+          {
+            "keyword": "Distributed Workers",
+            "count": 1
+          }
+        ],
+        "total": 7
+      },
+      {
+        "id": "cloud-tooling",
+        "name": "Cloud Tooling",
+        "color": "#b74f6f",
+        "keywords": [
+          {
+            "keyword": "TiTiler",
+            "count": 3
+          }
+        ],
+        "total": 3
+      }
+    ],
+    "topPairs": [
+      {
+        "source": "COG",
+        "target": "STAC",
+        "count": 3
+      },
+      {
+        "source": "COG",
+        "target": "Zarr",
+        "count": 3
+      },
+      {
+        "source": "STAC",
+        "target": "TiTiler",
+        "count": 2
+      },
+      {
+        "source": "Auto-scaling",
+        "target": "Cloud Native",
+        "count": 2
+      },
+      {
+        "source": "COG",
+        "target": "Object Storage",
+        "count": 2
+      },
+      {
+        "source": "Cloud Native",
+        "target": "Serverless",
+        "count": 1
+      },
+      {
+        "source": "Cloud Native",
+        "target": "PMTiles",
+        "count": 1
+      },
+      {
+        "source": "PMTiles",
+        "target": "Serverless",
+        "count": 1
+      },
+      {
+        "source": "AWS",
+        "target": "Cloud Infrastructure",
+        "count": 1
+      },
+      {
+        "source": "Workflow Orchestration",
+        "target": "Zarr",
+        "count": 1
+      },
+      {
+        "source": "Cloud Native",
+        "target": "Deployment",
+        "count": 1
+      },
+      {
+        "source": "Cloud Native",
+        "target": "Containers",
+        "count": 1
+      },
+      {
+        "source": "Containers",
+        "target": "Deployment",
+        "count": 1
+      },
+      {
+        "source": "Auto-scaling",
+        "target": "Deployment",
+        "count": 1
+      },
+      {
+        "source": "Auto-scaling",
+        "target": "Containers",
+        "count": 1
+      },
+      {
+        "source": "Data Gateway",
+        "target": "S3-Compatible Storage",
+        "count": 1
+      },
+      {
+        "source": "Cloud Infrastructure",
+        "target": "Deployment",
+        "count": 1
+      },
+      {
+        "source": "Browser Runtime",
+        "target": "Serverless",
+        "count": 1
+      },
+      {
+        "source": "STAC",
+        "target": "Zarr",
+        "count": 1
+      },
+      {
+        "source": "Auto-scaling",
+        "target": "Distributed Workers",
+        "count": 1
+      },
+      {
+        "source": "Cloud Native",
+        "target": "Distributed Workers",
+        "count": 1
+      },
+      {
+        "source": "Object Storage",
+        "target": "PMTiles",
+        "count": 1
+      },
+      {
+        "source": "Browser Runtime",
+        "target": "Object Storage",
+        "count": 1
+      },
+      {
+        "source": "Browser Runtime",
+        "target": "PMTiles",
+        "count": 1
+      },
+      {
+        "source": "Kubernetes",
+        "target": "STAC",
+        "count": 1
+      },
+      {
+        "source": "Serverless",
+        "target": "Zarr",
+        "count": 1
+      },
+      {
+        "source": "COG",
+        "target": "Serverless",
+        "count": 1
+      },
+      {
+        "source": "Object Storage",
+        "target": "Serverless",
+        "count": 1
+      },
+      {
+        "source": "Object Storage",
+        "target": "Zarr",
+        "count": 1
+      },
+      {
+        "source": "Cloud Native",
+        "target": "Observability",
+        "count": 1
+      },
+      {
+        "source": "AWS",
+        "target": "Browser Runtime",
+        "count": 1
+      },
+      {
+        "source": "Cloud Native",
+        "target": "TiTiler",
+        "count": 1
+      },
+      {
+        "source": "Cloud Native",
+        "target": "STAC",
+        "count": 1
+      },
+      {
+        "source": "COG",
+        "target": "Cloud Native",
+        "count": 1
+      },
+      {
+        "source": "COG",
+        "target": "TiTiler",
+        "count": 1
+      },
+      {
+        "source": "AWS",
+        "target": "Cloud Native",
+        "count": 1
+      },
+      {
+        "source": "Deployment",
+        "target": "Kubernetes",
+        "count": 1
+      }
+    ]
+  },
+  "explorer": {
+    "presentations": [
+      {
+        "id": "15",
+        "page": "1",
+        "title": "Shifting from a monolithic to a scalable SDI architecture: is it worth it?",
+        "abstractSnippet": "This presentation concerns migrating an SDI from a single-machine, multi-container Docker architecture to a cluster-based solution, including performance testing results and evaluation of potential bottlenecks.",
+        "keywords": [
+          "Docker"
+        ],
+        "highlightedKeywords": [
+          "Docker"
+        ]
+      },
+      {
+        "id": "28",
+        "page": "2",
+        "title": "Building Modern GIS Applications on Cloud Native Infrastructure",
+        "abstractSnippet": "Eliminate idle costs with a scale-to-zero, cloud-native GIS architecture using DuckDB and serverless mapping with PMTiles. Learn to build sustainable, fast GIS applications across any cloud provider.",
+        "keywords": [
+          "Cloud Native",
+          "Serverless",
+          "PMTiles"
+        ],
+        "highlightedKeywords": [
+          "Cloud Native",
+          "Serverless",
+          "PMTiles"
+        ]
+      },
+      {
+        "id": "36",
+        "page": "2",
+        "title": "Reusable Geospatial Application Design for the Global South with MapLibre, STAC, and TiTiler",
+        "abstractSnippet": "This talk presents a reusable geospatial platform architecture for operational use in the Global South using MapLibre GL JS, STAC, and TiTiler.",
+        "keywords": [
+          "STAC",
+          "TiTiler"
+        ],
+        "highlightedKeywords": [
+          "STAC",
+          "TiTiler"
+        ]
+      },
+      {
+        "id": "40",
+        "page": "2",
+        "title": "Serving earth observation data with GeoServer: addressing real world requirements",
+        "abstractSnippet": "This presentation demonstrates how GeoServer enables efficient management, discovery, and visualization of large Earth observation datasets, covering STAC/OpenSearch, Cloud Optimized GeoTIFFs, mosaicking and more.",
+        "keywords": [
+          "STAC",
+          "COG"
+        ],
+        "highlightedKeywords": [
+          "STAC",
+          "COG"
+        ]
+      },
+      {
+        "id": "74",
+        "page": "4",
+        "title": "State of STAC: From Specification to Infrastructure",
+        "abstractSnippet": "STAC has evolved into core geospatial infrastructure. This talk covers its current state, real-world adoption, key challenges, and how it fits into emerging architectures.",
+        "keywords": [
+          "STAC"
+        ],
+        "highlightedKeywords": [
+          "STAC"
+        ]
+      },
+      {
+        "id": "83",
+        "page": "5",
+        "title": "Bridging Cloud and Community: AWS AI Services Meet Open Source Geospatial Tools",
+        "abstractSnippet": "This session showcases architectural patterns for leveraging cloud AI services with open source geospatial tools, alongside case studies demonstrating how organizations use this combination.",
+        "keywords": [
+          "AWS",
+          "Cloud Infrastructure"
+        ],
+        "highlightedKeywords": [
+          "AWS",
+          "Cloud Infrastructure"
+        ]
+      },
+      {
+        "id": "93",
+        "page": "5",
+        "title": "End-to-End Satellite Data Pipeline: Airflow Orchestration, Zarr Storage, and LandTrendr Analysis",
+        "abstractSnippet": "Apache Airflow manages tasks in a data pipeline from data ingestion and preprocessing to storage in ZARR format for multidimensional satellite imagery.",
+        "keywords": [
+          "Workflow Orchestration",
+          "Zarr"
+        ],
+        "highlightedKeywords": [
+          "Workflow Orchestration",
+          "Zarr"
+        ]
+      },
+      {
+        "id": "97",
+        "page": "5",
+        "title": "Running pygeoapi Cloud Native at Scale",
+        "abstractSnippet": "This session will explain best practices for deploying pygeoapi and scaling it within a cloud native, containerized, and horizontally scalable deployment.",
+        "keywords": [
+          "Cloud Native",
+          "Deployment",
+          "Containers",
+          "Auto-scaling"
+        ],
+        "highlightedKeywords": [
+          "Cloud Native",
+          "Deployment",
+          "Containers",
+          "Auto-scaling"
+        ]
+      },
+      {
+        "id": "98",
+        "page": "5",
+        "title": "Operating Maritime AIS at Enterprise Scale with GeoServer",
+        "abstractSnippet": "This presentation describes a cloud-based approach to managing large-scale maritime data, enabling near real-time visualization alongside historical analysis.",
+        "keywords": [
+          "Cloud Infrastructure"
+        ],
+        "highlightedKeywords": [
+          "Cloud Infrastructure"
+        ]
+      },
+      {
+        "id": "121",
+        "page": "7",
+        "title": "Multistore: An S3-compliant data distribution API",
+        "abstractSnippet": "Source Cooperative's data proxy lets users access open datasets through S3-compatible tools. We rebuilt it from scratch as Multistore, an open source S3 gateway designed to be reusable across the ecosystem.",
+        "keywords": [
+          "S3-Compatible Storage",
+          "Data Gateway"
+        ],
+        "highlightedKeywords": [
+          "S3-Compatible Storage",
+          "Data Gateway"
+        ]
+      },
+      {
+        "id": "124",
+        "page": "7",
+        "title": "Supporting precision farming with GeoServer: past experiences and way forward",
+        "abstractSnippet": "This presentation highlights how GeoSolutions leverages cloud infrastructure and geospatial technologies to enable precision farming at scale using GeoServer deployment strategies.",
+        "keywords": [
+          "Cloud Infrastructure",
+          "Deployment"
+        ],
+        "highlightedKeywords": [
+          "Cloud Infrastructure",
+          "Deployment"
+        ]
+      },
+      {
+        "id": "125",
+        "page": "7",
+        "title": "The metadata problem",
+        "abstractSnippet": "In this talk, I'll try to explain the metadata problem in geospatial data and why things like STAC are useful but cannot always solve your problem.",
+        "keywords": [
+          "STAC"
+        ],
+        "highlightedKeywords": [
+          "STAC"
+        ]
+      },
+      {
+        "id": "137",
+        "page": "7",
+        "title": "ESGF Next Generation",
+        "abstractSnippet": "The Earth System Grid Federation (ESGF) new architecture introduces STAC catalogues, Kerchunk-enabled access, and an event-driven search system synchronising two discovery nodes.",
+        "keywords": [
+          "STAC"
+        ],
+        "highlightedKeywords": [
+          "STAC"
+        ]
+      },
+      {
+        "id": "146",
+        "page": "8",
+        "title": "CDSE: Europe's Sovereign Infrastructure for Open Earth Observation",
+        "abstractSnippet": "The Copernicus Data Space Ecosystem gives every user free access to Europe's Earth observation archive through cloud-native APIs. We showcase how sovereign EU infrastructure and open standards turn this archive into a foundation for geospat...",
+        "keywords": [
+          "Cloud Native"
+        ],
+        "highlightedKeywords": [
+          "Cloud Native"
+        ]
+      },
+      {
+        "id": "148",
+        "page": "8",
+        "title": "Open Standards and Tools to Accelerate Global Crisis Response",
+        "abstractSnippet": "The IFRC launched the Global Crisis Data Bank (Montandon), the world's largest repository of natural hazard and impact data. This talk covers how we're building a harmonized data repository using open standards like STAC.",
+        "keywords": [
+          "STAC"
+        ],
+        "highlightedKeywords": [
+          "STAC"
+        ]
+      },
+      {
+        "id": "149",
+        "page": "8",
+        "title": "Breaking the Browser's Limit: High-Performance Spatial Analytics with GeoArrow & DuckDB",
+        "abstractSnippet": "A high-performance, serverless spatial analytics framework using GeoArrow, DuckDB-Wasm, and Parquet, achieving a 10x-50x performance boost over row-based GeoJSON.",
+        "keywords": [
+          "Serverless",
+          "Browser Runtime"
+        ],
+        "highlightedKeywords": [
+          "Serverless",
+          "Browser Runtime"
+        ]
+      },
+      {
+        "id": "153",
+        "page": "8",
+        "title": "From Chaos to Confidence: Practical DataOps with COG Optimization and Great Expectations for National-Scale Agriculture",
+        "abstractSnippet": "GISTDA's Dragonfly project lessons on national-scale agricultural monitoring using COG performance optimization and Great Expectations automated quality gates.",
+        "keywords": [
+          "COG"
+        ],
+        "highlightedKeywords": [
+          "COG"
+        ]
+      },
+      {
+        "id": "154",
+        "page": "8",
+        "title": "Beyond Shapefile: A Taxonomy of Modern Geospatial Data Formats",
+        "abstractSnippet": "This talk provides a structured overview of formats including MVT, MLT, 3D Tiles, PMTiles, FlatGeobuf, and GeoParquet, explaining their core concepts, trade-offs, and how to combine them.",
+        "keywords": [
+          "PMTiles"
+        ],
+        "highlightedKeywords": [
+          "PMTiles"
+        ]
+      },
+      {
+        "id": "158",
+        "page": "8",
+        "title": "Modernizing Earth Observation Access: The GEODES Shift to Open Source and Cloud-Optimized Architectures",
+        "abstractSnippet": "Our experience with the migration of GEODES (CNES Earth observation catalog) from proprietary systems to an Open Source, cloud-optimized architecture.",
+        "keywords": [
+          "Cloud Infrastructure"
+        ],
+        "highlightedKeywords": [
+          "Cloud Infrastructure"
+        ]
+      },
+      {
+        "id": "178",
+        "page": "9",
+        "title": "Using Lonboard for interactive STAC, COG, and Zarr visualization from Python",
+        "abstractSnippet": "Lonboard is the fastest, most capable Python library for interactive geospatial data visualization. This demonstration will show how to visualize STAC, COG, and Zarr in Lonboard.",
+        "keywords": [
+          "STAC",
+          "COG",
+          "Zarr"
+        ],
+        "highlightedKeywords": [
+          "STAC",
+          "COG",
+          "Zarr"
+        ]
+      },
+      {
+        "id": "179",
+        "page": "9",
+        "title": "Idle-Aware Geo-Processing Scheduler: Auto-Scaling Workers for Cloud-Native Geospatial Processing",
+        "abstractSnippet": "An idle-aware geospatial processing scheduler that auto-scales workers based on queued workloads for scalable geospatial data processing pipelines.",
+        "keywords": [
+          "Distributed Workers",
+          "Auto-scaling",
+          "Cloud Native"
+        ],
+        "highlightedKeywords": [
+          "Distributed Workers",
+          "Auto-scaling",
+          "Cloud Native"
+        ]
+      },
+      {
+        "id": "184",
+        "page": "10",
+        "title": "City-scale imagery generation using a handful of cheap consumer drones",
+        "abstractSnippet": "At HOTOSM we have been refining workflows alongside OpenDroneMap to process areas of <100 km² captured using DJI Mini series drones with Kubernetes-native processing pipelines.",
+        "keywords": [
+          "Kubernetes"
+        ],
+        "highlightedKeywords": [
+          "Kubernetes"
+        ]
+      },
+      {
+        "id": "202",
+        "page": "11",
+        "title": "Waystones: Bridging the Deployment Gap for Authoritative OGC API Services",
+        "abstractSnippet": "Waystones is an open-source tool for designing geospatial data models and deploying production-ready OGC APIs by automating the configuration of pygeoapi and QGIS Server.",
+        "keywords": [
+          "Deployment"
+        ],
+        "highlightedKeywords": [
+          "Deployment"
+        ]
+      },
+      {
+        "id": "207",
+        "page": "11",
+        "title": "From Cloud to GPU: Inside the Modern Vector Tile Rendering Pipeline",
+        "abstractSnippet": "This talk walks through the full pipeline from cloud storage to browser GPU: accessing PMTiles, decoding MVT and MLT, and rendering on the GPU with future directions like WebGPU.",
+        "keywords": [
+          "Object Storage",
+          "PMTiles",
+          "Browser Runtime"
+        ],
+        "highlightedKeywords": [
+          "Object Storage",
+          "PMTiles",
+          "Browser Runtime"
+        ]
+      },
+      {
+        "id": "215",
+        "page": "11",
+        "title": "Sharing your GeoSpatial Models, MLOps Architecture in fAIr",
+        "abstractSnippet": "Recent advancements in fAIr, specifically enabling developers to share their GeoAI models for humanitarian mapping purposes using STAC, MLM, Zenml, and Kubernetes.",
+        "keywords": [
+          "STAC",
+          "Kubernetes"
+        ],
+        "highlightedKeywords": [
+          "STAC",
+          "Kubernetes"
+        ]
+      },
+      {
+        "id": "216",
+        "page": "11",
+        "title": "Data Dashboards with Provenance using Cloud-Native Geospatial Processing",
+        "abstractSnippet": "An open-source platform to repeatedly analyse any dataset against any geometry cloud-natively, with an auditable record of every step and full provenance for each value.",
+        "keywords": [
+          "Cloud Native"
+        ],
+        "highlightedKeywords": [
+          "Cloud Native"
+        ]
+      },
+      {
+        "id": "221",
+        "page": "12",
+        "title": "Serverless Watershed Extraction: Benchmarking Zarr vs COG for Large-Scale Flow Direction Data",
+        "abstractSnippet": "A serverless function that extracts watersheds from nationwide flow direction data hosted on cloud storage, comparing performance between COG and Zarr formats.",
+        "keywords": [
+          "Serverless",
+          "Zarr",
+          "COG",
+          "Object Storage"
+        ],
+        "highlightedKeywords": [
+          "Serverless",
+          "Zarr",
+          "COG",
+          "Object Storage"
+        ]
+      },
+      {
+        "id": "231",
+        "page": "12",
+        "title": "Elevating Geospatial Cloud-Native Platforms: End-to-End Observability with Geospatial Observation Stack",
+        "abstractSnippet": "An open-source Geospatial Observation Stack using OpenTelemetry, Prometheus, Grafana, and Loki demonstrating end-to-end tracing and SLOs in cloud-native architectures.",
+        "keywords": [
+          "Cloud Native",
+          "Observability"
+        ],
+        "highlightedKeywords": [
+          "Cloud Native",
+          "Observability"
+        ]
+      },
+      {
+        "id": "234",
+        "page": "12",
+        "title": "Fast, interactive, customizable raster data visualization in Python & the browser with deck.gl-raster",
+        "abstractSnippet": "A new ecosystem for client-side raster data visualization in Python & the browser, enabling interactive WebGL rendering of COG and Zarr data.",
+        "keywords": [
+          "COG",
+          "Zarr"
+        ],
+        "highlightedKeywords": [
+          "COG",
+          "Zarr"
+        ]
+      },
+      {
+        "id": "237",
+        "page": "12",
+        "title": "Responding to Rapid AI Innovation: Teaching Applied Three-Tier GIS Systems for Regenerative Futures",
+        "abstractSnippet": "Our curriculum uses scaffolded project-based learning to teach an applied three-tier GIS system with cloud-based open-source tools and AI workflows.",
+        "keywords": [
+          "Cloud Infrastructure"
+        ],
+        "highlightedKeywords": [
+          "Cloud Infrastructure"
+        ]
+      },
+      {
+        "id": "242",
+        "page": "13",
+        "title": "Accelerating Climate Action: Building GIS Dashboards with openEO and titiler",
+        "abstractSnippet": "By using openEO and titiler, geospatial analysts can reduce data preparation time for Sentinel-2 datasets, delivering insightful GIS dashboards for forest health monitoring.",
+        "keywords": [
+          "TiTiler"
+        ],
+        "highlightedKeywords": [
+          "TiTiler"
+        ]
+      },
+      {
+        "id": "252",
+        "page": "13",
+        "title": "Modernizing Earth Observation Access: The GEODES Shift (Poster)",
+        "abstractSnippet": "This poster covers the migration of GEODES (CNES Earth observation catalog) from proprietary systems to an Open Source, cloud-optimized architecture.",
+        "keywords": [
+          "Cloud Infrastructure"
+        ],
+        "highlightedKeywords": [
+          "Cloud Infrastructure"
+        ]
+      },
+      {
+        "id": "261",
+        "page": "14",
+        "title": "Digital Earth Canada: Unlocking the Power of Earth Observation Across Canada and Abroad",
+        "abstractSnippet": "Digital Earth Canada (DEC) is a national Earth Observation platform bringing together satellite data, cloud computing, and AI-powered analytics powered by open source technologies.",
+        "keywords": [
+          "Cloud Infrastructure"
+        ],
+        "highlightedKeywords": [
+          "Cloud Infrastructure"
+        ]
+      },
+      {
+        "id": "267",
+        "page": "14",
+        "title": "Combining DuckDB, MapLibre GL JS, and AI for Browser-Native Map Visualization",
+        "abstractSnippet": "A conversation-first data analysis tool for Japan's MLIT LINKS project using DuckDB-WASM, Claude on AWS Bedrock, and MapLibre GL JS for in-browser data exploration.",
+        "keywords": [
+          "Browser Runtime",
+          "AWS"
+        ],
+        "highlightedKeywords": [
+          "Browser Runtime",
+          "AWS"
+        ]
+      },
+      {
+        "id": "273",
+        "page": "14",
+        "title": "Open Disaster Response (OpenDR) 1.0: Real-Time Cloud-Native GeoAI and Multi-Sensor Fusion for Humanitarian Intelligence",
+        "abstractSnippet": "OpenDR 1.0 is a cloud-native framework that automates multi-sensor fusion and GeoAI hazard detection for disaster response.",
+        "keywords": [
+          "Cloud Native"
+        ],
+        "highlightedKeywords": [
+          "Cloud Native"
+        ]
+      },
+      {
+        "id": "275",
+        "page": "14",
+        "title": "Cloud-Native Raster Workflows with TiTiler",
+        "abstractSnippet": "This talk explores how cloud-native principles combined with STAC, COGs, and TiTiler enable dynamic, scalable, expression-driven raster workflows.",
+        "keywords": [
+          "Cloud Native",
+          "TiTiler",
+          "STAC",
+          "COG"
+        ],
+        "highlightedKeywords": [
+          "Cloud Native",
+          "TiTiler",
+          "STAC",
+          "COG"
+        ]
+      },
+      {
+        "id": "282",
+        "page": "15",
+        "title": "Scaling Drone Imagery Processing: A Cloud-Native Approach with OpenDroneMap and AWS",
+        "abstractSnippet": "A cloud-native drone processing pipeline using OpenDroneMap (ODM) to transform 2D drone imagery into high-resolution Ortho mosaics, 3D point clouds, and elevation models.",
+        "keywords": [
+          "Cloud Native",
+          "AWS"
+        ],
+        "highlightedKeywords": [
+          "Cloud Native",
+          "AWS"
+        ]
+      },
+      {
+        "id": "284",
+        "page": "15",
+        "title": "Designing a Scalable Open-Source Workflow for Water Network Field Validation: Lessons from Costa Rica",
+        "abstractSnippet": "A scalable workflow built with QGIS, Giswater, PostGIS and QFieldCloud for large-scale and collaborative validation of urban water networks.",
+        "keywords": [
+          "QFieldCloud"
+        ],
+        "highlightedKeywords": [
+          "QFieldCloud"
+        ]
+      },
+      {
+        "id": "305",
+        "page": "16",
+        "title": "Source Cooperative: Publish, Discover, and Access Open Data with S3-Compatible Tools",
+        "abstractSnippet": "Source Cooperative is an open platform for publishing and sharing open datasets. Attendees will walk through the full lifecycle of data on Source Cooperative.",
+        "keywords": [
+          "S3-Compatible Storage"
+        ],
+        "highlightedKeywords": [
+          "S3-Compatible Storage"
+        ]
+      },
+      {
+        "id": "332",
+        "page": "17",
+        "title": "Project Update (GeoNode-k8s)",
+        "abstractSnippet": "The geonode-k8s chart is production-grade, community-driven solution for deploying GeoNode 4.x and 5 on Kubernetes.",
+        "keywords": [
+          "Kubernetes",
+          "Deployment"
+        ],
+        "highlightedKeywords": [
+          "Kubernetes",
+          "Deployment"
+        ]
+      },
+      {
+        "id": "346",
+        "page": "18",
+        "title": "Improving Water Data Access with Cloud Native Geospatial Formats",
+        "abstractSnippet": "How the Geoconnex project has leveraged FlatGeobuf and GeoParquet to improve the user experience of analyzing hydrological information across the United States.",
+        "keywords": [
+          "Cloud Native"
+        ],
+        "highlightedKeywords": [
+          "Cloud Native"
+        ]
+      },
+      {
+        "id": "348",
+        "page": "18",
+        "title": "Natural Language Querying of STAC Catalogs Using LLMs for Geospatial Visualization",
+        "abstractSnippet": "A framework that uses Gemma 3 to translate natural language into STAC queries, automating GISTDA's disaster data retrieval and MapLibre visualization.",
+        "keywords": [
+          "STAC"
+        ],
+        "highlightedKeywords": [
+          "STAC"
+        ]
+      },
+      {
+        "id": "363",
+        "page": "19",
+        "title": "Kumoy: Turn your QGIS Maps into Cloud-Native",
+        "abstractSnippet": "With Kumoy, you can push your QGIS projects into an interactive web map in just a few clicks, with role management and data sync.",
+        "keywords": [
+          "Cloud Native"
+        ],
+        "highlightedKeywords": [
+          "Cloud Native"
+        ]
+      },
+      {
+        "id": "365",
+        "page": "19",
+        "title": "Beyond Metadata Search: STAC, Vector Embeddings, and GeoAI",
+        "abstractSnippet": "This talk shows how to combine STAC for structured discovery and vector embeddings for semantic similarity to support modern geospatial analysis workflows.",
+        "keywords": [
+          "STAC"
+        ],
+        "highlightedKeywords": [
+          "STAC"
+        ]
+      },
+      {
+        "id": "371",
+        "page": "19",
+        "title": "The modern STAC software ecosystem",
+        "abstractSnippet": "A tour of the latest-and-greatest in the STAC software ecosystem, with a focus on demonstrations and use-cases.",
+        "keywords": [
+          "STAC"
+        ],
+        "highlightedKeywords": [
+          "STAC"
+        ]
+      },
+      {
+        "id": "373",
+        "page": "19",
+        "title": "Browser-based raster reprojection with GPU-accelerated pixel resampling",
+        "abstractSnippet": "A way to stream unmodified COG data directly from object storage and reproject the imagery in the browser without a server in the middle.",
+        "keywords": [
+          "COG",
+          "Object Storage"
+        ],
+        "highlightedKeywords": [
+          "COG",
+          "Object Storage"
+        ]
+      }
+    ]
+  }
+}

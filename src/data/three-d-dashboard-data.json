@@ -1,0 +1,1905 @@
+{
+  "meta": {
+    "sourceWorkbook": "foss4g_2026_talks_with_3d_keywords.csv",
+    "totalPresentations": 49,
+    "uniqueKeywords": 16,
+    "totalKeywordMentions": 70,
+    "averageKeywordsPerPresentation": 1.43,
+    "excludedKeywords": [],
+    "presentationShare": 0.1303,
+    "sourcePresentationCount": 376
+  },
+  "overview": {
+    "cards": [
+      {
+        "keyword": "3D",
+        "count": 17,
+        "related": [
+          {
+            "keyword": "Point Cloud",
+            "count": 3
+          },
+          {
+            "keyword": "CesiumJS",
+            "count": 1
+          },
+          {
+            "keyword": "CityGML",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Integration of Numerical Weather Prediction Models: A 3D Spatial Information Approach",
+          "The Challenge of Open Point Cloud Data: What has a local government brought to our communities?",
+          "Development of a Wildfire Fireline Visualization Pilot System Using Open-Source GIS Technologies",
+          "QGIS Hub: The Community Resource Ecosystem You Might Not Know About"
+        ]
+      },
+      {
+        "keyword": "Digital Twin",
+        "count": 8,
+        "related": [
+          {
+            "keyword": "3D",
+            "count": 1
+          },
+          {
+            "keyword": "PLATEAU",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Using AI and Digital Twin in Solving One of the World's Most Plastic Polluting River",
+          "Machi-Space: The Urban Digital Twin Platform Powered by Project PLATEAU",
+          "TerriaJS applications",
+          "Big Data Transportation Planning Decision Support Using an Open-Source WebGIS Digital Twin"
+        ]
+      },
+      {
+        "keyword": "Point Cloud",
+        "count": 8,
+        "related": [
+          {
+            "keyword": "3D",
+            "count": 3
+          },
+          {
+            "keyword": "Photogrammetry",
+            "count": 2
+          },
+          {
+            "keyword": "3D Tiles",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "The Challenge of Open Point Cloud Data: What has a local government brought to our communities?",
+          "Automated Slope Estimation of Retaining Walls Using Drone Photogrammetry Point Clouds",
+          "Offline-First Geospatial Architecture for Tree-Level Analysis Using FOSS4G Pipelines",
+          "Anatomy of a file"
+        ]
+      },
+      {
+        "keyword": "CesiumJS",
+        "count": 6,
+        "related": [
+          {
+            "keyword": "3D",
+            "count": 1
+          },
+          {
+            "keyword": "3D Tiles",
+            "count": 1
+          },
+          {
+            "keyword": "glTF / GLB",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Integration of Numerical Weather Prediction Models: A 3D Spatial Information Approach",
+          "From Boring XML to 3D Tiles: Building a Geological Borehole Viewer with CesiumJS",
+          "State of MapStore",
+          "Mapping the Distance to History: Reading Barefoot Gen on a Map with Open Geospatial Tools"
+        ]
+      },
+      {
+        "keyword": "PLATEAU",
+        "count": 6,
+        "related": [
+          {
+            "keyword": "3D City Model",
+            "count": 3
+          },
+          {
+            "keyword": "CityGML",
+            "count": 2
+          },
+          {
+            "keyword": "Digital Twin",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Machi-Space: The Urban Digital Twin Platform Powered by Project PLATEAU",
+          "Solar Potential Analysis on Japan's PLATEAU 3D City Model: A Visual ETL Workflow",
+          "Web-Based Urban Thermal Fluid Simulation System Using 3D City Model",
+          "Developing a QGIS Plugin for Urban Structure Evaluation"
+        ]
+      },
+      {
+        "keyword": "3D City Model",
+        "count": 5,
+        "related": [
+          {
+            "keyword": "PLATEAU",
+            "count": 3
+          },
+          {
+            "keyword": "CityGML",
+            "count": 1
+          }
+        ],
+        "samples": [
+          "Portable Spatial-Semantic RAG for 3D City Models Using DuckDB",
+          "Explore open-source tools to create digital urban models for MapStore",
+          "Solar Potential Analysis on Japan's PLATEAU 3D City Model: A Visual ETL Workflow",
+          "Web-Based Urban Thermal Fluid Simulation System Using 3D City Model"
+        ]
+      }
+    ],
+    "topKeywords": [
+      {
+        "keyword": "3D",
+        "count": 17
+      },
+      {
+        "keyword": "Digital Twin",
+        "count": 8
+      },
+      {
+        "keyword": "Point Cloud",
+        "count": 8
+      },
+      {
+        "keyword": "CesiumJS",
+        "count": 6
+      },
+      {
+        "keyword": "PLATEAU",
+        "count": 6
+      },
+      {
+        "keyword": "3D City Model",
+        "count": 5
+      },
+      {
+        "keyword": "Photogrammetry",
+        "count": 3
+      },
+      {
+        "keyword": "WebGL",
+        "count": 3
+      },
+      {
+        "keyword": "3D Tiles",
+        "count": 3
+      },
+      {
+        "keyword": "CityGML",
+        "count": 3
+      },
+      {
+        "keyword": "glTF / GLB",
+        "count": 2
+      },
+      {
+        "keyword": "Deck.gl",
+        "count": 2
+      },
+      {
+        "keyword": "Voxel",
+        "count": 1
+      },
+      {
+        "keyword": "LiDAR",
+        "count": 1
+      },
+      {
+        "keyword": "WebGPU",
+        "count": 1
+      },
+      {
+        "keyword": "Point Tiler",
+        "count": 1
+      }
+    ],
+    "wordCloud": [
+      {
+        "keyword": "3D",
+        "count": 17
+      },
+      {
+        "keyword": "Digital Twin",
+        "count": 8
+      },
+      {
+        "keyword": "Point Cloud",
+        "count": 8
+      },
+      {
+        "keyword": "CesiumJS",
+        "count": 6
+      },
+      {
+        "keyword": "PLATEAU",
+        "count": 6
+      },
+      {
+        "keyword": "3D City Model",
+        "count": 5
+      },
+      {
+        "keyword": "Photogrammetry",
+        "count": 3
+      },
+      {
+        "keyword": "WebGL",
+        "count": 3
+      },
+      {
+        "keyword": "3D Tiles",
+        "count": 3
+      },
+      {
+        "keyword": "CityGML",
+        "count": 3
+      },
+      {
+        "keyword": "glTF / GLB",
+        "count": 2
+      },
+      {
+        "keyword": "Deck.gl",
+        "count": 2
+      },
+      {
+        "keyword": "Voxel",
+        "count": 1
+      },
+      {
+        "keyword": "LiDAR",
+        "count": 1
+      },
+      {
+        "keyword": "WebGPU",
+        "count": 1
+      },
+      {
+        "keyword": "Point Tiler",
+        "count": 1
+      }
+    ]
+  },
+  "distribution": {
+    "longtail": [
+      {
+        "rank": 1,
+        "keyword": "3D",
+        "count": 17,
+        "cumulativeShare": 0.2429
+      },
+      {
+        "rank": 2,
+        "keyword": "Digital Twin",
+        "count": 8,
+        "cumulativeShare": 0.3571
+      },
+      {
+        "rank": 3,
+        "keyword": "Point Cloud",
+        "count": 8,
+        "cumulativeShare": 0.4714
+      },
+      {
+        "rank": 4,
+        "keyword": "CesiumJS",
+        "count": 6,
+        "cumulativeShare": 0.5571
+      },
+      {
+        "rank": 5,
+        "keyword": "PLATEAU",
+        "count": 6,
+        "cumulativeShare": 0.6429
+      },
+      {
+        "rank": 6,
+        "keyword": "3D City Model",
+        "count": 5,
+        "cumulativeShare": 0.7143
+      },
+      {
+        "rank": 7,
+        "keyword": "Photogrammetry",
+        "count": 3,
+        "cumulativeShare": 0.7571
+      },
+      {
+        "rank": 8,
+        "keyword": "WebGL",
+        "count": 3,
+        "cumulativeShare": 0.8
+      },
+      {
+        "rank": 9,
+        "keyword": "3D Tiles",
+        "count": 3,
+        "cumulativeShare": 0.8429
+      },
+      {
+        "rank": 10,
+        "keyword": "CityGML",
+        "count": 3,
+        "cumulativeShare": 0.8857
+      },
+      {
+        "rank": 11,
+        "keyword": "glTF / GLB",
+        "count": 2,
+        "cumulativeShare": 0.9143
+      },
+      {
+        "rank": 12,
+        "keyword": "Deck.gl",
+        "count": 2,
+        "cumulativeShare": 0.9429
+      },
+      {
+        "rank": 13,
+        "keyword": "Voxel",
+        "count": 1,
+        "cumulativeShare": 0.9571
+      },
+      {
+        "rank": 14,
+        "keyword": "LiDAR",
+        "count": 1,
+        "cumulativeShare": 0.9714
+      },
+      {
+        "rank": 15,
+        "keyword": "WebGPU",
+        "count": 1,
+        "cumulativeShare": 0.9857
+      },
+      {
+        "rank": 16,
+        "keyword": "Point Tiler",
+        "count": 1,
+        "cumulativeShare": 1.0
+      }
+    ],
+    "bubble": [
+      {
+        "keyword": "3D",
+        "x": 17,
+        "y": 0.41,
+        "z": 17,
+        "connectionScore": 7,
+        "share": 0.3469
+      },
+      {
+        "keyword": "Digital Twin",
+        "x": 8,
+        "y": 0.25,
+        "z": 8,
+        "connectionScore": 2,
+        "share": 0.1633
+      },
+      {
+        "keyword": "Point Cloud",
+        "x": 8,
+        "y": 1.0,
+        "z": 8,
+        "connectionScore": 8,
+        "share": 0.1633
+      },
+      {
+        "keyword": "CesiumJS",
+        "x": 6,
+        "y": 0.5,
+        "z": 6,
+        "connectionScore": 3,
+        "share": 0.1224
+      },
+      {
+        "keyword": "PLATEAU",
+        "x": 6,
+        "y": 1.0,
+        "z": 6,
+        "connectionScore": 6,
+        "share": 0.1224
+      },
+      {
+        "keyword": "3D City Model",
+        "x": 5,
+        "y": 0.8,
+        "z": 5,
+        "connectionScore": 4,
+        "share": 0.102
+      },
+      {
+        "keyword": "Photogrammetry",
+        "x": 3,
+        "y": 0.67,
+        "z": 3,
+        "connectionScore": 2,
+        "share": 0.0612
+      },
+      {
+        "keyword": "WebGL",
+        "x": 3,
+        "y": 0.33,
+        "z": 3,
+        "connectionScore": 1,
+        "share": 0.0612
+      },
+      {
+        "keyword": "3D Tiles",
+        "x": 3,
+        "y": 1.67,
+        "z": 3,
+        "connectionScore": 5,
+        "share": 0.0612
+      },
+      {
+        "keyword": "CityGML",
+        "x": 3,
+        "y": 1.33,
+        "z": 3,
+        "connectionScore": 4,
+        "share": 0.0612
+      },
+      {
+        "keyword": "glTF / GLB",
+        "x": 2,
+        "y": 2.5,
+        "z": 2,
+        "connectionScore": 5,
+        "share": 0.0408
+      },
+      {
+        "keyword": "Deck.gl",
+        "x": 2,
+        "y": 0.5,
+        "z": 2,
+        "connectionScore": 1,
+        "share": 0.0408
+      },
+      {
+        "keyword": "Voxel",
+        "x": 1,
+        "y": 1.0,
+        "z": 1,
+        "connectionScore": 1,
+        "share": 0.0204
+      },
+      {
+        "keyword": "LiDAR",
+        "x": 1,
+        "y": 0.0,
+        "z": 1,
+        "connectionScore": 0,
+        "share": 0.0204
+      },
+      {
+        "keyword": "WebGPU",
+        "x": 1,
+        "y": 0.0,
+        "z": 1,
+        "connectionScore": 0,
+        "share": 0.0204
+      },
+      {
+        "keyword": "Point Tiler",
+        "x": 1,
+        "y": 3.0,
+        "z": 1,
+        "connectionScore": 3,
+        "share": 0.0204
+      }
+    ],
+    "treemap": [
+      {
+        "name": "3D",
+        "size": 17,
+        "category": "3D Models & Twins",
+        "color": "#177e89"
+      },
+      {
+        "name": "Digital Twin",
+        "size": 8,
+        "category": "3D Models & Twins",
+        "color": "#177e89"
+      },
+      {
+        "name": "Point Cloud",
+        "size": 8,
+        "category": "Point Clouds & Reconstruction",
+        "color": "#d96c3d"
+      },
+      {
+        "name": "CesiumJS",
+        "size": 6,
+        "category": "Web Rendering & Streaming",
+        "color": "#7a8f3c"
+      },
+      {
+        "name": "PLATEAU",
+        "size": 6,
+        "category": "3D Platforms & Standards",
+        "color": "#7c5cff"
+      },
+      {
+        "name": "3D City Model",
+        "size": 5,
+        "category": "3D Models & Twins",
+        "color": "#177e89"
+      },
+      {
+        "name": "Photogrammetry",
+        "size": 3,
+        "category": "Point Clouds & Reconstruction",
+        "color": "#d96c3d"
+      },
+      {
+        "name": "WebGL",
+        "size": 3,
+        "category": "Web Rendering & Streaming",
+        "color": "#7a8f3c"
+      },
+      {
+        "name": "3D Tiles",
+        "size": 3,
+        "category": "Web Rendering & Streaming",
+        "color": "#7a8f3c"
+      },
+      {
+        "name": "CityGML",
+        "size": 3,
+        "category": "3D Platforms & Standards",
+        "color": "#7c5cff"
+      },
+      {
+        "name": "glTF / GLB",
+        "size": 2,
+        "category": "Web Rendering & Streaming",
+        "color": "#7a8f3c"
+      },
+      {
+        "name": "Deck.gl",
+        "size": 2,
+        "category": "Web Rendering & Streaming",
+        "color": "#7a8f3c"
+      },
+      {
+        "name": "Voxel",
+        "size": 1,
+        "category": "General 3D Signals",
+        "color": "#3f7cac"
+      },
+      {
+        "name": "LiDAR",
+        "size": 1,
+        "category": "Point Clouds & Reconstruction",
+        "color": "#d96c3d"
+      },
+      {
+        "name": "WebGPU",
+        "size": 1,
+        "category": "Web Rendering & Streaming",
+        "color": "#7a8f3c"
+      },
+      {
+        "name": "Point Tiler",
+        "size": 1,
+        "category": "Point Clouds & Reconstruction",
+        "color": "#d96c3d"
+      }
+    ]
+  },
+  "relationships": {
+    "network": {
+      "nodes": [
+        {
+          "id": "3D",
+          "keyword": "3D",
+          "count": 17,
+          "cluster": "three-d-models-twins",
+          "degree": 5
+        },
+        {
+          "id": "Digital Twin",
+          "keyword": "Digital Twin",
+          "count": 8,
+          "cluster": "three-d-models-twins",
+          "degree": 2
+        },
+        {
+          "id": "Point Cloud",
+          "keyword": "Point Cloud",
+          "count": 8,
+          "cluster": "point-clouds-reconstruction",
+          "degree": 5
+        },
+        {
+          "id": "CesiumJS",
+          "keyword": "CesiumJS",
+          "count": 6,
+          "cluster": "web-rendering-streaming",
+          "degree": 3
+        },
+        {
+          "id": "PLATEAU",
+          "keyword": "PLATEAU",
+          "count": 6,
+          "cluster": "three-d-platforms-standards",
+          "degree": 3
+        },
+        {
+          "id": "3D City Model",
+          "keyword": "3D City Model",
+          "count": 5,
+          "cluster": "three-d-models-twins",
+          "degree": 2
+        },
+        {
+          "id": "Photogrammetry",
+          "keyword": "Photogrammetry",
+          "count": 3,
+          "cluster": "point-clouds-reconstruction",
+          "degree": 1
+        },
+        {
+          "id": "WebGL",
+          "keyword": "WebGL",
+          "count": 3,
+          "cluster": "web-rendering-streaming",
+          "degree": 1
+        },
+        {
+          "id": "3D Tiles",
+          "keyword": "3D Tiles",
+          "count": 3,
+          "cluster": "web-rendering-streaming",
+          "degree": 4
+        },
+        {
+          "id": "CityGML",
+          "keyword": "CityGML",
+          "count": 3,
+          "cluster": "three-d-platforms-standards",
+          "degree": 3
+        },
+        {
+          "id": "glTF / GLB",
+          "keyword": "glTF / GLB",
+          "count": 2,
+          "cluster": "web-rendering-streaming",
+          "degree": 4
+        },
+        {
+          "id": "Deck.gl",
+          "keyword": "Deck.gl",
+          "count": 2,
+          "cluster": "web-rendering-streaming",
+          "degree": 1
+        },
+        {
+          "id": "Voxel",
+          "keyword": "Voxel",
+          "count": 1,
+          "cluster": "general-three-d-signals",
+          "degree": 1
+        },
+        {
+          "id": "LiDAR",
+          "keyword": "LiDAR",
+          "count": 1,
+          "cluster": "point-clouds-reconstruction",
+          "degree": 0
+        },
+        {
+          "id": "WebGPU",
+          "keyword": "WebGPU",
+          "count": 1,
+          "cluster": "web-rendering-streaming",
+          "degree": 0
+        },
+        {
+          "id": "Point Tiler",
+          "keyword": "Point Tiler",
+          "count": 1,
+          "cluster": "point-clouds-reconstruction",
+          "degree": 3
+        }
+      ],
+      "links": [
+        {
+          "source": "3D",
+          "target": "Point Cloud",
+          "count": 3
+        },
+        {
+          "source": "3D City Model",
+          "target": "PLATEAU",
+          "count": 3
+        },
+        {
+          "source": "Photogrammetry",
+          "target": "Point Cloud",
+          "count": 2
+        },
+        {
+          "source": "3D Tiles",
+          "target": "glTF / GLB",
+          "count": 2
+        },
+        {
+          "source": "CityGML",
+          "target": "PLATEAU",
+          "count": 2
+        }
+      ]
+    },
+    "heatmap": {
+      "labels": [
+        "3D",
+        "Digital Twin",
+        "Point Cloud",
+        "CesiumJS",
+        "PLATEAU",
+        "3D City Model",
+        "Photogrammetry",
+        "WebGL",
+        "3D Tiles",
+        "CityGML",
+        "glTF / GLB",
+        "Deck.gl",
+        "Voxel",
+        "LiDAR",
+        "WebGPU",
+        "Point Tiler"
+      ],
+      "matrix": [
+        [
+          17,
+          1,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          8,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          8,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          6,
+          3,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          5,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "max": 17
+    },
+    "clusters": [
+      {
+        "id": "three-d-models-twins",
+        "name": "3D Models & Twins",
+        "color": "#177e89",
+        "keywords": [
+          {
+            "keyword": "3D",
+            "count": 17
+          },
+          {
+            "keyword": "Digital Twin",
+            "count": 8
+          },
+          {
+            "keyword": "3D City Model",
+            "count": 5
+          }
+        ],
+        "total": 30
+      },
+      {
+        "id": "web-rendering-streaming",
+        "name": "Web Rendering & Streaming",
+        "color": "#7a8f3c",
+        "keywords": [
+          {
+            "keyword": "CesiumJS",
+            "count": 6
+          },
+          {
+            "keyword": "3D Tiles",
+            "count": 3
+          },
+          {
+            "keyword": "WebGL",
+            "count": 3
+          },
+          {
+            "keyword": "Deck.gl",
+            "count": 2
+          },
+          {
+            "keyword": "glTF / GLB",
+            "count": 2
+          },
+          {
+            "keyword": "WebGPU",
+            "count": 1
+          }
+        ],
+        "total": 17
+      },
+      {
+        "id": "point-clouds-reconstruction",
+        "name": "Point Clouds & Reconstruction",
+        "color": "#d96c3d",
+        "keywords": [
+          {
+            "keyword": "Point Cloud",
+            "count": 8
+          },
+          {
+            "keyword": "Photogrammetry",
+            "count": 3
+          },
+          {
+            "keyword": "LiDAR",
+            "count": 1
+          },
+          {
+            "keyword": "Point Tiler",
+            "count": 1
+          }
+        ],
+        "total": 13
+      },
+      {
+        "id": "three-d-platforms-standards",
+        "name": "3D Platforms & Standards",
+        "color": "#7c5cff",
+        "keywords": [
+          {
+            "keyword": "PLATEAU",
+            "count": 6
+          },
+          {
+            "keyword": "CityGML",
+            "count": 3
+          }
+        ],
+        "total": 9
+      },
+      {
+        "id": "general-three-d-signals",
+        "name": "General 3D Signals",
+        "color": "#3f7cac",
+        "keywords": [
+          {
+            "keyword": "Voxel",
+            "count": 1
+          }
+        ],
+        "total": 1
+      }
+    ],
+    "topPairs": [
+      {
+        "source": "3D",
+        "target": "Point Cloud",
+        "count": 3
+      },
+      {
+        "source": "3D City Model",
+        "target": "PLATEAU",
+        "count": 3
+      },
+      {
+        "source": "Photogrammetry",
+        "target": "Point Cloud",
+        "count": 2
+      },
+      {
+        "source": "3D Tiles",
+        "target": "glTF / GLB",
+        "count": 2
+      },
+      {
+        "source": "CityGML",
+        "target": "PLATEAU",
+        "count": 2
+      },
+      {
+        "source": "3D",
+        "target": "CesiumJS",
+        "count": 1
+      },
+      {
+        "source": "Digital Twin",
+        "target": "PLATEAU",
+        "count": 1
+      },
+      {
+        "source": "3D",
+        "target": "Voxel",
+        "count": 1
+      },
+      {
+        "source": "3D Tiles",
+        "target": "CesiumJS",
+        "count": 1
+      },
+      {
+        "source": "CesiumJS",
+        "target": "glTF / GLB",
+        "count": 1
+      },
+      {
+        "source": "3D City Model",
+        "target": "CityGML",
+        "count": 1
+      },
+      {
+        "source": "3D",
+        "target": "CityGML",
+        "count": 1
+      },
+      {
+        "source": "Deck.gl",
+        "target": "WebGL",
+        "count": 1
+      },
+      {
+        "source": "3D",
+        "target": "Digital Twin",
+        "count": 1
+      },
+      {
+        "source": "Point Cloud",
+        "target": "Point Tiler",
+        "count": 1
+      },
+      {
+        "source": "3D Tiles",
+        "target": "Point Tiler",
+        "count": 1
+      },
+      {
+        "source": "Point Tiler",
+        "target": "glTF / GLB",
+        "count": 1
+      },
+      {
+        "source": "3D Tiles",
+        "target": "Point Cloud",
+        "count": 1
+      },
+      {
+        "source": "Point Cloud",
+        "target": "glTF / GLB",
+        "count": 1
+      }
+    ]
+  },
+  "explorer": {
+    "presentations": [
+      {
+        "id": "1",
+        "page": "1",
+        "title": "Accuracy Assessment of UAV Photogrammetry for DEM Generation in an Institutional Environment",
+        "abstractSnippet": "This poster evaluates the accuracy of UAV photogrammetry for Digital Elevation Model generation through comparison with Differential GNSS ground survey data at Federal Polytechnic Nekede, Nigeria.",
+        "keywords": [
+          "Photogrammetry"
+        ],
+        "highlightedKeywords": [
+          "Photogrammetry"
+        ]
+      },
+      {
+        "id": "4",
+        "page": "1",
+        "title": "Integration of Numerical Weather Prediction Models: A 3D Spatial Information Approach",
+        "abstractSnippet": "This presentation introduces a workflow for converting numerical weather prediction data from the Korea Meteorological Administration into real-time 3D visualizations using the open-source CesiumJS platform.",
+        "keywords": [
+          "3D",
+          "CesiumJS"
+        ],
+        "highlightedKeywords": [
+          "3D",
+          "CesiumJS"
+        ]
+      },
+      {
+        "id": "10",
+        "page": "1",
+        "title": "Using AI and Digital Twin in Solving One of the World's Most Plastic Polluting River",
+        "abstractSnippet": "The Pasig River in Metro Manila is a major global source of ocean plastic pollution. Leveraging digital twin and AI-Machine Learning models, this project enables real-time monitoring and predictive analysis of plastic wa...",
+        "keywords": [
+          "Digital Twin"
+        ],
+        "highlightedKeywords": [
+          "Digital Twin"
+        ]
+      },
+      {
+        "id": "19",
+        "page": "1",
+        "title": "The Challenge of Open Point Cloud Data: What has a local government brought to our communities?",
+        "abstractSnippet": "We introduce 'Virtual Shizuoka,' a high-density 3D point cloud dataset published as open data by Shizuoka prefecture. We present its use cases, focusing mainly on transforming the community through collaborative efforts.",
+        "keywords": [
+          "Point Cloud",
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "Point Cloud",
+          "3D"
+        ]
+      },
+      {
+        "id": "54",
+        "page": "3",
+        "title": "Portable Spatial-Semantic RAG for 3D City Models Using DuckDB",
+        "abstractSnippet": "'Find me sunny buildings near Hiroshima Station.' This talk presents a portable DuckDB-based approach to 3D city model search that combines spatial, semantic, and geometric cues.",
+        "keywords": [
+          "3D City Model"
+        ],
+        "highlightedKeywords": [
+          "3D City Model"
+        ]
+      },
+      {
+        "id": "62",
+        "page": "4",
+        "title": "Development of a Wildfire Fireline Visualization Pilot System Using Open-Source GIS Technologies",
+        "abstractSnippet": "This study introduces a three-dimensional GIS-based wildfire fireline visualization system developed using open-source GIS technologies, aimed at real-time wildfire monitoring.",
+        "keywords": [
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "3D"
+        ]
+      },
+      {
+        "id": "70",
+        "page": "4",
+        "title": "Machi-Space: The Urban Digital Twin Platform Powered by Project PLATEAU",
+        "abstractSnippet": "'Machi-Space' empowers non-experts to take an active role in the planning process, effectively changing traditional urban development workflows through digital twin technology.",
+        "keywords": [
+          "Digital Twin",
+          "PLATEAU"
+        ],
+        "highlightedKeywords": [
+          "Digital Twin",
+          "PLATEAU"
+        ]
+      },
+      {
+        "id": "76",
+        "page": "4",
+        "title": "QGIS Hub: The Community Resource Ecosystem You Might Not Know About",
+        "abstractSnippet": "This talk introduces hub.qgis.org and the QGIS Hub Plugin, which lets you discover and use community resources including styles, models, 3D models, projects, and processing scripts directly from QGIS.",
+        "keywords": [
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "3D"
+        ]
+      },
+      {
+        "id": "101",
+        "page": "6",
+        "title": "Voxelization. Cubing 3D Space for Machine.",
+        "abstractSnippet": "Voxelizer, which produces 3D grid data—voxels—from 2D/3D spatial information raw data.",
+        "keywords": [
+          "Voxel",
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "Voxel",
+          "3D"
+        ]
+      },
+      {
+        "id": "109",
+        "page": "6",
+        "title": "Explore open-source tools to create digital urban models for MapStore",
+        "abstractSnippet": "The presentation describes processes and opensource tools employed to build and consume digital models for urban environments including 3D data visualizations for the MapStore WebGIS framework.",
+        "keywords": [
+          "3D City Model"
+        ],
+        "highlightedKeywords": [
+          "3D City Model"
+        ]
+      },
+      {
+        "id": "123",
+        "page": "7",
+        "title": "Automated Slope Estimation of Retaining Walls Using Drone Photogrammetry Point Clouds",
+        "abstractSnippet": "This study proposes an automated slope estimation method using cross-sectional profiles derived from large-scale point cloud data for the safety inspection and maintenance of retaining walls.",
+        "keywords": [
+          "Photogrammetry",
+          "Point Cloud"
+        ],
+        "highlightedKeywords": [
+          "Photogrammetry",
+          "Point Cloud"
+        ]
+      },
+      {
+        "id": "138",
+        "page": "7",
+        "title": "Rendering National Climate Data in the Browser: WebGL Custom Shaders with MapLibre GL JS",
+        "abstractSnippet": "We present maplibre-gl-shader-layer, an open source TypeScript library enabling custom WebGL shaders on MapLibre GL JS, demonstrated through Météo France climate datasets.",
+        "keywords": [
+          "WebGL"
+        ],
+        "highlightedKeywords": [
+          "WebGL"
+        ]
+      },
+      {
+        "id": "141",
+        "page": "8",
+        "title": "From Boring XML to 3D Tiles: Building a Geological Borehole Viewer with CesiumJS",
+        "abstractSnippet": "We present a pipeline transforming 190,000+ Japanese geological borehole records into interactive CesiumJS 3D Tiles using Implicit Tiling with glTF metadata extensions.",
+        "keywords": [
+          "3D Tiles",
+          "CesiumJS",
+          "glTF / GLB"
+        ],
+        "highlightedKeywords": [
+          "3D Tiles",
+          "CesiumJS",
+          "glTF / GLB"
+        ]
+      },
+      {
+        "id": "143",
+        "page": "8",
+        "title": "TerriaJS applications",
+        "abstractSnippet": "This demonstration showcases TerriaJS's data visualisation capabilities through real-world deployments including satellite imagery and digital twins, all running open-source in the browser.",
+        "keywords": [
+          "Digital Twin"
+        ],
+        "highlightedKeywords": [
+          "Digital Twin"
+        ]
+      },
+      {
+        "id": "150",
+        "page": "8",
+        "title": "Iwfgara: Visualizing Numerical Weather Prediction Data in an Open Source Web-based 3D GIS",
+        "abstractSnippet": "Iwfgara is an open-source web-based 3D GIS platform for visualizing numerical weather prediction data and enabling interactive exploration of atmospheric phenomena.",
+        "keywords": [
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "3D"
+        ]
+      },
+      {
+        "id": "154",
+        "page": "8",
+        "title": "Beyond Shapefile: A Taxonomy of Modern Geospatial Data Formats",
+        "abstractSnippet": "This talk provides a structured overview of formats including MVT, MLT, 3D Tiles, PMTiles, FlatGeobuf, and GeoParquet, explaining their core concepts, trade-offs, and how to combine them.",
+        "keywords": [
+          "3D Tiles"
+        ],
+        "highlightedKeywords": [
+          "3D Tiles"
+        ]
+      },
+      {
+        "id": "157",
+        "page": "8",
+        "title": "Offline-First Geospatial Architecture for Tree-Level Analysis Using FOSS4G Pipelines",
+        "abstractSnippet": "This talk presents an offline-first geospatial architecture integrating photogrammetry, point cloud processing, and tree-level analysis using FOSS4G.",
+        "keywords": [
+          "Photogrammetry",
+          "Point Cloud"
+        ],
+        "highlightedKeywords": [
+          "Photogrammetry",
+          "Point Cloud"
+        ]
+      },
+      {
+        "id": "181",
+        "page": "10",
+        "title": "Solar Potential Analysis on Japan's PLATEAU 3D City Model: A Visual ETL Workflow",
+        "abstractSnippet": "This talk walks through a solar potential analysis workflow on PLATEAU data: CityGML challenges, the transformation pipeline, and turning a one-off analysis into a reusable spatial workflow.",
+        "keywords": [
+          "PLATEAU",
+          "3D City Model",
+          "CityGML"
+        ],
+        "highlightedKeywords": [
+          "PLATEAU",
+          "3D City Model",
+          "CityGML"
+        ]
+      },
+      {
+        "id": "188",
+        "page": "10",
+        "title": "The Human Lens in a Machine-Mapped World",
+        "abstractSnippet": "Beyond LiDAR and automated sensors, human photography captures the 'why' of a place. This talk draws inspiration from Panoramio and Flickr, questioning whether human-captured imagery remains a vital layer for modern mapp...",
+        "keywords": [
+          "LiDAR"
+        ],
+        "highlightedKeywords": [
+          "LiDAR"
+        ]
+      },
+      {
+        "id": "203",
+        "page": "11",
+        "title": "Web-Based Urban Thermal Fluid Simulation System Using 3D City Model",
+        "abstractSnippet": "We developed a system that utilizes the open-source 3D city model 'PLATEAU' to enable simple thermal fluid simulations on a web application for urban planning.",
+        "keywords": [
+          "3D City Model",
+          "PLATEAU"
+        ],
+        "highlightedKeywords": [
+          "3D City Model",
+          "PLATEAU"
+        ]
+      },
+      {
+        "id": "205",
+        "page": "11",
+        "title": "Developing a QGIS Plugin for Urban Structure Evaluation",
+        "abstractSnippet": "This presentation introduces a QGIS plugin developed under Japan's Project PLATEAU to help municipal staff calculate and visualize urban structure evaluation indicators.",
+        "keywords": [
+          "PLATEAU"
+        ],
+        "highlightedKeywords": [
+          "PLATEAU"
+        ]
+      },
+      {
+        "id": "206",
+        "page": "11",
+        "title": "State of MapStore",
+        "abstractSnippet": "MapStore is an open-source webgis built on React and Redux to create and share maps, dashboards, and geostories. It is mobile-ready and supports OpenLayers, Leaflet, and Cesium.",
+        "keywords": [
+          "CesiumJS"
+        ],
+        "highlightedKeywords": [
+          "CesiumJS"
+        ]
+      },
+      {
+        "id": "207",
+        "page": "11",
+        "title": "From Cloud to GPU: Inside the Modern Vector Tile Rendering Pipeline",
+        "abstractSnippet": "This talk walks through the full pipeline from cloud storage to browser GPU: accessing PMTiles, decoding MVT and MLT, and rendering on the GPU with future directions like WebGPU.",
+        "keywords": [
+          "WebGPU"
+        ],
+        "highlightedKeywords": [
+          "WebGPU"
+        ]
+      },
+      {
+        "id": "209",
+        "page": "11",
+        "title": "Big Data Transportation Planning Decision Support Using an Open-Source WebGIS Digital Twin",
+        "abstractSnippet": "A WebGIS-based digital twin platform integrating open-source geospatial technologies and urban mobility data to support data-driven transportation planning.",
+        "keywords": [
+          "Digital Twin"
+        ],
+        "highlightedKeywords": [
+          "Digital Twin"
+        ]
+      },
+      {
+        "id": "217",
+        "page": "11",
+        "title": "Anatomy of a file",
+        "abstractSnippet": "Raster, vector, point cloud: every geospatial format solves the same core problems. Let's build a format from scratch to see these concerns in practice.",
+        "keywords": [
+          "Point Cloud"
+        ],
+        "highlightedKeywords": [
+          "Point Cloud"
+        ]
+      },
+      {
+        "id": "219",
+        "page": "11",
+        "title": "From GIS Visualization Needs to 3D City Models: The Current Trajectory of Project PLATEAU in a Global Context",
+        "abstractSnippet": "This talk explores Japan's Project PLATEAU in its mature phase and shares how open Web GIS platforms help initiate small-scale GIS projects abroad, including disaster resilience in Peru.",
+        "keywords": [
+          "3D City Model",
+          "PLATEAU"
+        ],
+        "highlightedKeywords": [
+          "3D City Model",
+          "PLATEAU"
+        ]
+      },
+      {
+        "id": "226",
+        "page": "12",
+        "title": "Establishing an Automated 3D Geospatial Data Pipeline for a National Digital Land Platform",
+        "abstractSnippet": "An automated 3D geospatial data pipeline for a national Digital Land program integrating large-scale CityGML datasets with an operational validation framework.",
+        "keywords": [
+          "3D",
+          "CityGML"
+        ],
+        "highlightedKeywords": [
+          "3D",
+          "CityGML"
+        ]
+      },
+      {
+        "id": "234",
+        "page": "12",
+        "title": "Fast, interactive, customizable raster data visualization in Python & the browser with deck.gl-raster",
+        "abstractSnippet": "A new ecosystem for client-side raster data visualization in Python & the browser, enabling interactive WebGL rendering of COG and Zarr data.",
+        "keywords": [
+          "Deck.gl",
+          "WebGL"
+        ],
+        "highlightedKeywords": [
+          "Deck.gl",
+          "WebGL"
+        ]
+      },
+      {
+        "id": "235",
+        "page": "12",
+        "title": "Not on Your Google Maps: The Map Is Not the Territory",
+        "abstractSnippet": "Think of a map as an artistic still life. Being completely factual is not the same as being factually complete. Let's learn skills to enhance our digital stories from 3D environments.",
+        "keywords": [
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "3D"
+        ]
+      },
+      {
+        "id": "238",
+        "page": "12",
+        "title": "Performance Analysis of Foundation Stereo Image Matching for 3D Terrain Extraction from Satellite Stereo Data",
+        "abstractSnippet": "This study evaluates the performance of NVIDIA's FoundationStereo for extracting high-quality 3D terrain information from high-resolution stereo satellite imagery.",
+        "keywords": [
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "3D"
+        ]
+      },
+      {
+        "id": "244",
+        "page": "13",
+        "title": "QGIS as a Digital Twins platform",
+        "abstractSnippet": "Digital Twins are becoming a standard requirement for urban planning and infrastructure, but the software landscape is still dominated by expensive, proprietary systems.",
+        "keywords": [
+          "Digital Twin"
+        ],
+        "highlightedKeywords": [
+          "Digital Twin"
+        ]
+      },
+      {
+        "id": "254",
+        "page": "13",
+        "title": "From Maps to Operational Infrastructure: Open Geospatial Digital Twin for Decentralized Wastewater Treatment",
+        "abstractSnippet": "An open geospatial digital twin framework for decentralized wastewater treatment systems built on PostgreSQL/PostGIS and OGC APIs.",
+        "keywords": [
+          "Digital Twin"
+        ],
+        "highlightedKeywords": [
+          "Digital Twin"
+        ]
+      },
+      {
+        "id": "271",
+        "page": "14",
+        "title": "Mapping the Distance to History: Reading Barefoot Gen on a Map with Open Geospatial Tools",
+        "abstractSnippet": "An experimental CesiumJS project reconnecting scenes from Barefoot Gen to real locations in Hiroshima using historical maps and open geospatial data.",
+        "keywords": [
+          "CesiumJS"
+        ],
+        "highlightedKeywords": [
+          "CesiumJS"
+        ]
+      },
+      {
+        "id": "280",
+        "page": "14",
+        "title": "Accuracy Verification of 3D Models Around the Tottori Sand Dunes from Historical Aerial Photographs",
+        "abstractSnippet": "This study used aerial photographs taken over 50+ years to evaluate the accuracy of 3D models and examined whether super-resolution processing contributes to accuracy improvement.",
+        "keywords": [
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "3D"
+        ]
+      },
+      {
+        "id": "282",
+        "page": "15",
+        "title": "Scaling Drone Imagery Processing: A Cloud-Native Approach with OpenDroneMap and AWS",
+        "abstractSnippet": "A cloud-native drone processing pipeline using OpenDroneMap (ODM) to transform 2D drone imagery into high-resolution Ortho mosaics, 3D point clouds, and elevation models.",
+        "keywords": [
+          "3D",
+          "Point Cloud"
+        ],
+        "highlightedKeywords": [
+          "3D",
+          "Point Cloud"
+        ]
+      },
+      {
+        "id": "285",
+        "page": "15",
+        "title": "Democratizing Urban Development: The Potential of \"Machi Space\" Urban Digital Twin Platform",
+        "abstractSnippet": "\"Machi-Space\" empowers diverse stakeholders to perform environmental simulations and share data effortlessly for evidence-based decision-making in urban development.",
+        "keywords": [
+          "Digital Twin"
+        ],
+        "highlightedKeywords": [
+          "Digital Twin"
+        ]
+      },
+      {
+        "id": "288",
+        "page": "15",
+        "title": "Efficient Search and Set Operations for Spatial IDs",
+        "abstractSnippet": "An efficient algorithm using 'Extended Spatial ID' and 'V-Bit' encoding to solve computational explosions in 3D overlap detection for drone 3D airspace management.",
+        "keywords": [
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "3D"
+        ]
+      },
+      {
+        "id": "293",
+        "page": "15",
+        "title": "Hearing the Map: Spatial Audio as a New Dimension in Web GIS",
+        "abstractSnippet": "geospatial-audio-js is an open-source JavaScript library that adds real-time 3D spatial audio to web maps, opening new possibilities for accessibility and immersive audio guides.",
+        "keywords": [
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "3D"
+        ]
+      },
+      {
+        "id": "322",
+        "page": "17",
+        "title": "Noodles.gl: A visual programming language for animation, geospatial and the web",
+        "abstractSnippet": "Noodles.gl is an open-source visual programming environment simplifying the creation of high-performance geospatial animations by integrating Deck.gl and MapLibre into a reactive, node-based workflow.",
+        "keywords": [
+          "Deck.gl"
+        ],
+        "highlightedKeywords": [
+          "Deck.gl"
+        ]
+      },
+      {
+        "id": "327",
+        "page": "17",
+        "title": "Making Urban Data Explorable: 3D, GeoServer, and OSS",
+        "abstractSnippet": "A lightning talk showing how 3D data helps urban planning, covering key datasets and how GeoServer publishes them with use cases for Cross-sections, Visibility, and 2D-3D Linking.",
+        "keywords": [
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "3D"
+        ]
+      },
+      {
+        "id": "328",
+        "page": "17",
+        "title": "Rendering Massive Moving Points at 60fps on CesiumJS: Real-Time Dynamic Vector Rendering with GPU Textures",
+        "abstractSnippet": "Using Vertex Texture Fetch (VTF) to store position data in GPU textures, enabling real-time updates without geometry reconstruction for satellite trajectory monitoring.",
+        "keywords": [
+          "CesiumJS"
+        ],
+        "highlightedKeywords": [
+          "CesiumJS"
+        ]
+      },
+      {
+        "id": "334",
+        "page": "17",
+        "title": "Point Cloud PNG: Efficient Web-Based Distribution of Large-Scale Point Cloud Data via Image Encoding",
+        "abstractSnippet": "Point Cloud PNG is a file format for publishing two- or three-dimensional positional data using PNG/WebP with lossless compression, encoding numerical data as pixels.",
+        "keywords": [
+          "Point Cloud",
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "Point Cloud",
+          "3D"
+        ]
+      },
+      {
+        "id": "342",
+        "page": "18",
+        "title": "Testing PLATEAU Pipelines in Re:Earth Flow When Topology Doesn't Survive",
+        "abstractSnippet": "Testing a CityGML-tileset conversion pipeline. We show how statistical + raster-based testing in Re:Earth flow catches bugs in engine development.",
+        "keywords": [
+          "PLATEAU",
+          "CityGML"
+        ],
+        "highlightedKeywords": [
+          "PLATEAU",
+          "CityGML"
+        ]
+      },
+      {
+        "id": "343",
+        "page": "18",
+        "title": "Making WebGL Maps Speak: Scaling Accessibility in FOSS Geospatial Pipelines for Wildfire Risk Communications",
+        "abstractSnippet": "The FOSS geospatial pipeline behind a nationwide wildfire risk tool, including GDAL, PostGIS, Tippecanoe, and the accessibility patterns to make interactive web maps work for everyone.",
+        "keywords": [
+          "WebGL"
+        ],
+        "highlightedKeywords": [
+          "WebGL"
+        ]
+      },
+      {
+        "id": "359",
+        "page": "18",
+        "title": "State of TerriaJS",
+        "abstractSnippet": "TerriaJS is an open-source TS/JS framework for building rich, 2D and 3D web-based geospatial data platforms deployed in Digital Earth Australia and government platforms worldwide.",
+        "keywords": [
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "3D"
+        ]
+      },
+      {
+        "id": "364",
+        "page": "19",
+        "title": "V-World Platform Enhancement for Digital Twin-Based Geospatial Services",
+        "abstractSnippet": "V-World, Korea's national geospatial platform by MOLIT, advances 3D services and analytics with improved data management and Geo-AI integration.",
+        "keywords": [
+          "Digital Twin",
+          "3D"
+        ],
+        "highlightedKeywords": [
+          "Digital Twin",
+          "3D"
+        ]
+      },
+      {
+        "id": "368",
+        "page": "19",
+        "title": "State of PDAL",
+        "abstractSnippet": "PDAL is Point Data Abstraction Library. It is a C/C++ open source library for translating and processing point cloud data. Update on new features and capabilities over the last 2 years.",
+        "keywords": [
+          "Point Cloud"
+        ],
+        "highlightedKeywords": [
+          "Point Cloud"
+        ]
+      },
+      {
+        "id": "374",
+        "page": "19",
+        "title": "Introduction to Point Tiler: A tool for converting large-scale point cloud data into 3D Tiles",
+        "abstractSnippet": "point-tiler is a Rust CLI that converts massive LAS/LAZ point clouds into modern 3D Tiles (v1.1) via a glTF/GLB-centric workflow.",
+        "keywords": [
+          "Point Tiler",
+          "Point Cloud",
+          "3D Tiles",
+          "glTF / GLB"
+        ],
+        "highlightedKeywords": [
+          "Point Tiler",
+          "Point Cloud",
+          "3D Tiles",
+          "glTF / GLB"
+        ]
+      },
+      {
+        "id": "376",
+        "page": "19",
+        "title": "Re:Earth: Empowering Non-Experts with Open Source WebGIS — Case Studies from Educational Settings",
+        "abstractSnippet": "Re:Earth is an open source, no-code WebGIS platform built on Cesium. This talk presents two educational case studies showing how open source geospatial tools empower non-expert users.",
+        "keywords": [
+          "CesiumJS"
+        ],
+        "highlightedKeywords": [
+          "CesiumJS"
+        ]
+      }
+    ]
+  }
+}

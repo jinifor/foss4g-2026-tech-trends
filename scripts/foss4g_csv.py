@@ -16,6 +16,7 @@ KEYWORDS_COLUMN = "주요 키워드"
 LIBRARY_KEYWORDS_COLUMN = "Library Keywords (Normalized)"
 AI_KEYWORDS_COLUMN = "AI Keywords (Normalized)"
 AI_CONTEXT_KEYWORDS_COLUMN = "AI Presentation Context Keywords"
+THREE_D_KEYWORDS_COLUMN = "3D Keywords (Normalized)"
 MAIN_THEME_COLUMN = "대주제"
 TECH_TOOLS_COLUMN = "기술/도구"
 APPLICATION_AREA_COLUMN = "활용 분야"
@@ -38,6 +39,11 @@ LIBRARY_CSV_CANDIDATES = [
 AI_CSV_CANDIDATES = [
     "docs/foss4g_2026_talks_with_ai_keywords.csv",
     "foss4g_2026_talks_with_ai_keywords.csv",
+]
+
+THREE_D_CSV_CANDIDATES = [
+    "docs/foss4g_2026_talks_with_3d_keywords.csv",
+    "foss4g_2026_talks_with_3d_keywords.csv",
 ]
 
 CATEGORY_CSV_CANDIDATES = [

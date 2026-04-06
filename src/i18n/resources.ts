@@ -14,14 +14,14 @@ export const resources = {
         titleLine1: "Explore the talks published for",
         titleLine2: "FOSS4G 2026 voting",
         description:
-          "This site is built from the talk list published for the FOSS4G 2026 speaker-selection voting process. Use the home page to move between dashboards focused on overall keywords, normalized open-source libraries, cloud-related signals, and AI-related keywords extracted from titles and abstracts.",
+          "This site is built from the talk list published for the FOSS4G 2026 speaker-selection voting process. Use the home page to move between dashboards focused on overall keywords, normalized open-source libraries, cloud-related signals, 3D and digital-twin signals, and AI-related keywords extracted from titles and abstracts.",
         officialSite: "Official FOSS4G Hiroshima 2026 Site",
         currentRoute: "Current route",
       },
       routes: {
         home: {
           label: "Home",
-          description: "Choose between the keyword, library, cloud, and AI dashboards",
+          description: "Choose between the keyword, library, cloud, 3D, and AI dashboards",
         },
         keyword: {
           label: "Keyword Insight",
@@ -35,6 +35,10 @@ export const resources = {
           label: "Cloud Insight",
           description: "Cloud-native platforms, storage, orchestration, and deployment signals",
         },
+        threeD: {
+          label: "3D Insight",
+          description: "3D city models, digital twins, point clouds, and browser rendering signals",
+        },
         ai: {
           label: "AI Insight",
           description: "AI keywords, methods, and AI-context relationships",
@@ -44,7 +48,7 @@ export const resources = {
         badge: "Dashboard routing",
         title: "Choose a dashboard",
         description:
-          "The keyword dashboard, the library dashboard, the cloud dashboard, and the AI-focused dashboard are split into separate routed pages so each analytical lens can be explored independently.",
+          "The keyword dashboard, the library dashboard, the cloud dashboard, the 3D dashboard, and the AI-focused dashboard are split into separate routed pages so each analytical lens can be explored independently.",
         topSignals: "Top signals",
         openDashboard: "Open dashboard",
         cards: {
@@ -63,6 +67,11 @@ export const resources = {
             description:
               "Focus on cloud-native platforms, storage formats, orchestration, and deployment patterns explicitly described in titles and abstracts.",
           },
+          threeD: {
+            title: "3D Insight",
+            description:
+              "Focus on 3D city models, digital twins, point clouds, browser rendering pipelines, and related 3D visualization signals.",
+          },
           ai: {
             title: "AI Insight",
             description:
@@ -78,6 +87,9 @@ export const resources = {
           cloudTalks: "Cloud talks",
           cloudKeywords: "Cloud keywords",
           cloudMentions: "Cloud mentions",
+          threeDTalks: "3D talks",
+          threeDKeywords: "3D keywords",
+          threeDMentions: "3D mentions",
           aiTalks: "AI talks",
           aiKeywords: "AI keywords",
           contextKeywords: "Context keywords",
@@ -99,6 +111,7 @@ export const resources = {
         noKeywordData: "No keyword data available",
         noLibraryData: "No library data available",
         noCloudData: "No cloud keyword data available",
+        noThreeDData: "No 3D keyword data available",
         keywordColumn: "Keyword",
         results: "{{count}} results",
         searchAll: "All",
@@ -206,6 +219,17 @@ export const resources = {
           "Filter by top libraries or search by title, abstract snippet, or library label to inspect the talks that mention each tool.",
         expandTitle: "Expanded library cloud",
         expandDescription: "Press ESC or use the close button to return. The full-screen version shows a denser library field.",
+        scorecards: {
+          libraryTalks: {
+            label: "Library-related talks",
+          },
+          libraryTalkShare: {
+            label: "Library talk share",
+          },
+          uniqueLibraryKeywords: {
+            label: "Unique library keywords",
+          },
+        },
       },
       cloudInsight: {
         kicker: "Cloud Insight",
@@ -257,15 +281,65 @@ export const resources = {
           },
         },
       },
+      threeDInsight: {
+        kicker: "3D Insight",
+        routeLabel: "3D Insight",
+        summary:
+          "This dashboard focuses on talks that explicitly reference 3D city models, digital twins, point clouds, photogrammetry, and browser-based 3D rendering. It highlights how the FOSS4G 2026 program discusses three-dimensional geospatial visualization, urban twins, and 3D delivery pipelines.",
+        cardsBadge: "3D cards",
+        cardsTitle: "The most visible 3D and digital-twin signals",
+        cardsDescription:
+          "Each card highlights mention frequency, the strongest co-occurring 3D terms, and representative talks where that signal appears.",
+        wordCloudBadge: "3D word cloud",
+        wordCloudTitle: "A quick visual read of the 3D landscape",
+        wordCloudDescription: "Signals that appear across more 3D-related talks are larger and more central.",
+        topBadge: "Top 3D signals",
+        topTitle: "Which 3D keywords dominate?",
+        topDescription: "Switch between the top 20, 50, and 100 3D-related signals ranked by the number of talks that mention them.",
+        bubbleBadge: "Bubble chart",
+        bubbleTitle: "Visibility versus 3D connectedness",
+        bubbleDescription:
+          "The X-axis shows talk count, the Y-axis shows the average number of companion 3D terms, and bubble size tracks overall mention volume.",
+        treemapBadge: "Treemap",
+        treemapTitle: "Share of voice across the 3D stack",
+        treemapDescription: "The treemap shows which parts of the 3D and digital-twin landscape take up the most attention in the selected talks.",
+        networkBadge: "3D co-occurrence network",
+        networkTitle: "How 3D signals connect",
+        networkDescription: "Thicker links indicate 3D terms that are mentioned together in more talks.",
+        heatmapBadge: "3D × 3D heatmap",
+        heatmapTitle: "Where the strongest overlaps happen",
+        heatmapDescription:
+          "Diagonal cells show talk count per 3D keyword. Off-diagonal cells show how often two 3D signals appear in the same talk.",
+        clusterBadge: "3D cluster map",
+        clusterTitle: "3D visualization groups at a glance",
+        clusterDescription: "Models, point clouds, rendering pipelines, and standards are grouped into readable clusters.",
+        explorerBadge: "3D explorer",
+        explorerTitle: "Search the talks behind the 3D signals",
+        explorerDescription:
+          "Filter by top 3D keywords or search by title, abstract snippet, or keyword label to inspect the talks behind each signal.",
+        expandTitle: "Expanded 3D word cloud",
+        expandDescription: "Press ESC or use the close button to return. The full-screen version shows a denser 3D signal field.",
+        scorecards: {
+          threeDTalks: {
+            label: "3D-related talks",
+          },
+          threeDTalkShare: {
+            label: "3D talk share",
+          },
+          uniqueThreeDKeywords: {
+            label: "Unique 3D keywords",
+          },
+        },
+      },
       aiInsight: {
         badge: "AI Insight",
         title: "AI-related proposals through a different lens",
         description:
           "This AI-specific dashboard focuses only on talks with explicit AI keywords and uses a distinct perspective on AI usage, method families, and the way AI appears inside geospatial presentations.",
-        signalBoardBadge: "AI overview",
-        signalBoardTitle: "Quick read of the AI proposal set",
+        signalBoardBadge: "AI cards",
+        signalBoardTitle: "The most visible AI signals",
         signalBoardDescription:
-          "These scorecards summarize how much of the event is AI-related and how wide the AI and context vocabulary is.",
+          "Each card highlights mention frequency, the strongest context pairings, and representative talks where that signal appears.",
         wordCloudBadge: "AI word cloud",
         wordCloudTitle: "A quick visual read of the AI keyword vocabulary",
         wordCloudDescription:
@@ -350,6 +424,11 @@ export const resources = {
         runtimeScalableProcessing: "Runtime & Scalable Processing",
         cloudTooling: "Cloud Tooling",
         otherCloudSignals: "Other Cloud Signals",
+        threeDModelsTwins: "3D Models & Twins",
+        pointCloudsReconstruction: "Point Clouds & Reconstruction",
+        webRenderingStreaming: "Web Rendering & Streaming",
+        threeDPlatformsStandards: "3D Platforms & Standards",
+        general3dSignals: "General 3D Signals",
       },
     },
   },
@@ -368,14 +447,14 @@ export const resources = {
         titleLine1: "FOSS4G 2026 투표에 올라온",
         titleLine2: "발표 목록 탐색",
         description:
-          "이 사이트는 FOSS4G 2026 발표자 선정 투표 과정에서 공개된 발표 목록을 바탕으로 만들어졌습니다. 홈 화면에서 전체 키워드, 정규화된 오픈소스 라이브러리, 클라우드 관련 신호, AI 관련 키워드를 중심으로 한 대시보드로 이동할 수 있습니다.",
+          "이 사이트는 FOSS4G 2026 발표자 선정 투표 과정에서 공개된 발표 목록을 바탕으로 만들어졌습니다. 홈 화면에서 전체 키워드, 정규화된 오픈소스 라이브러리, 클라우드 관련 신호, 3D 및 디지털 트윈 신호, AI 관련 키워드를 중심으로 한 대시보드로 이동할 수 있습니다.",
         officialSite: "FOSS4G 히로시마 2026 공식 사이트",
         currentRoute: "현재 페이지",
       },
       routes: {
         home: {
           label: "홈",
-          description: "키워드, 라이브러리, 클라우드, AI 대시보드 선택",
+          description: "키워드, 라이브러리, 클라우드, 3D, AI 대시보드 선택",
         },
         keyword: {
           label: "키워드 인사이트",
@@ -389,6 +468,10 @@ export const resources = {
           label: "클라우드 인사이트",
           description: "클라우드 네이티브 플랫폼, 스토리지, 오케스트레이션, 배포 신호 분석",
         },
+        threeD: {
+          label: "3D 인사이트",
+          description: "3D 도시 모델, 디지털 트윈, 포인트 클라우드, 브라우저 렌더링 신호 분석",
+        },
         ai: {
           label: "AI 인사이트",
           description: "AI 키워드, 방법론, 맥락 관계 분석",
@@ -398,7 +481,7 @@ export const resources = {
         badge: "대시보드 이동",
         title: "대시보드 선택",
         description:
-          "키워드 대시보드, 라이브러리 대시보드, 클라우드 대시보드, AI 대시보드를 별도 라우팅 페이지로 분리해 각 분석 관점을 독립적으로 살펴볼 수 있습니다.",
+          "키워드 대시보드, 라이브러리 대시보드, 클라우드 대시보드, 3D 대시보드, AI 대시보드를 별도 라우팅 페이지로 분리해 각 분석 관점을 독립적으로 살펴볼 수 있습니다.",
         topSignals: "상위 신호",
         openDashboard: "대시보드 열기",
         cards: {
@@ -417,6 +500,11 @@ export const resources = {
             description:
               "제목과 초록에 드러난 클라우드 네이티브 플랫폼, 스토리지 포맷, 오케스트레이션, 배포 패턴을 중심으로 살펴봅니다.",
           },
+          threeD: {
+            title: "3D 인사이트",
+            description:
+              "3D 도시 모델, 디지털 트윈, 포인트 클라우드, 브라우저 렌더링 파이프라인 등 3차원 시각화 신호를 중심으로 살펴봅니다.",
+          },
           ai: {
             title: "AI 인사이트",
             description:
@@ -432,6 +520,9 @@ export const resources = {
           cloudTalks: "클라우드 발표 수",
           cloudKeywords: "클라우드 키워드",
           cloudMentions: "클라우드 언급 수",
+          threeDTalks: "3D 발표 수",
+          threeDKeywords: "3D 키워드",
+          threeDMentions: "3D 언급 수",
           aiTalks: "AI 발표 수",
           aiKeywords: "AI 키워드",
           contextKeywords: "맥락 키워드",
@@ -453,6 +544,7 @@ export const resources = {
         noKeywordData: "표시할 키워드 데이터가 없습니다.",
         noLibraryData: "표시할 라이브러리 데이터가 없습니다.",
         noCloudData: "표시할 클라우드 키워드 데이터가 없습니다.",
+        noThreeDData: "표시할 3D 키워드 데이터가 없습니다.",
         keywordColumn: "키워드",
         results: "{{count}}건",
         searchAll: "전체",
@@ -552,6 +644,17 @@ export const resources = {
         explorerDescription: "상위 라이브러리 필터와 검색으로 관련 발표를 탐색할 수 있습니다.",
         expandTitle: "확장 라이브러리 클라우드",
         expandDescription: "ESC 키 또는 닫기 버튼으로 돌아올 수 있습니다. 전체 화면에서는 더 많은 라이브러리를 볼 수 있습니다.",
+        scorecards: {
+          libraryTalks: {
+            label: "라이브러리 관련 발표",
+          },
+          libraryTalkShare: {
+            label: "라이브러리 발표 비중",
+          },
+          uniqueLibraryKeywords: {
+            label: "고유 라이브러리 키워드",
+          },
+        },
       },
       cloudInsight: {
         kicker: "클라우드 인사이트",
@@ -599,14 +702,60 @@ export const resources = {
           },
         },
       },
+      threeDInsight: {
+        kicker: "3D 인사이트",
+        routeLabel: "3D 인사이트",
+        summary:
+          "이 대시보드는 3D 도시 모델, 디지털 트윈, 포인트 클라우드, 사진측량, 브라우저 기반 3D 렌더링을 명시적으로 언급한 발표에 초점을 맞춥니다. FOSS4G 2026 발표 세트에서 3차원 공간 시각화, 도시 트윈, 3D 전달 파이프라인이 어떻게 이야기되는지 읽어낼 수 있습니다.",
+        cardsBadge: "3D 카드",
+        cardsTitle: "가장 두드러진 3D 및 디지털 트윈 신호",
+        cardsDescription: "각 카드는 언급 빈도, 함께 등장한 3D 용어, 대표 발표 제목을 함께 보여줍니다.",
+        wordCloudBadge: "3D 워드 클라우드",
+        wordCloudTitle: "3D 지형을 빠르게 읽는 시각화",
+        wordCloudDescription: "더 많은 3D 관련 발표에 등장한 신호일수록 더 크게, 중심에 가깝게 배치됩니다.",
+        topBadge: "상위 3D 신호",
+        topTitle: "어떤 3D 키워드가 가장 두드러지는가",
+        topDescription: "발표에서 언급된 횟수를 기준으로 상위 20, 50, 100개 3D 신호를 비교합니다.",
+        bubbleBadge: "버블 차트",
+        bubbleTitle: "가시성과 3D 연결성",
+        bubbleDescription: "X축은 발표 수, Y축은 평균 동반 3D 용어 수이며, 버블 크기는 언급 규모를 뜻합니다.",
+        treemapBadge: "트리맵",
+        treemapTitle: "3D 스택별 비중",
+        treemapDescription: "선별된 발표 세트에서 어떤 3D 및 디지털 트윈 영역이 더 큰 비중을 차지하는지 보여줍니다.",
+        networkBadge: "3D 공동출현 네트워크",
+        networkTitle: "3D 신호가 어떻게 연결되는가",
+        networkDescription: "선이 굵을수록 같은 발표에서 함께 등장한 3D 용어 조합이 더 많다는 뜻입니다.",
+        heatmapBadge: "3D × 3D 히트맵",
+        heatmapTitle: "강한 중첩이 일어나는 지점",
+        heatmapDescription: "대각선은 각 3D 키워드의 발표 수, 나머지 셀은 두 3D 신호가 함께 등장한 횟수를 보여줍니다.",
+        clusterBadge: "3D 클러스터 맵",
+        clusterTitle: "3D 시각화 군집",
+        clusterDescription: "모델, 포인트 클라우드, 렌더링 파이프라인, 표준을 읽기 쉬운 군집으로 묶었습니다.",
+        explorerBadge: "3D 탐색",
+        explorerTitle: "3D 신호 뒤의 발표 보기",
+        explorerDescription: "상위 3D 키워드로 필터링하거나 제목, 초록, 키워드로 검색할 수 있습니다.",
+        expandTitle: "확장 3D 워드 클라우드",
+        expandDescription: "ESC 키 또는 닫기 버튼으로 돌아올 수 있습니다. 전체 화면에서는 더 많은 3D 신호를 한 번에 볼 수 있습니다.",
+        scorecards: {
+          threeDTalks: {
+            label: "3D 관련 발표",
+          },
+          threeDTalkShare: {
+            label: "3D 발표 비중",
+          },
+          uniqueThreeDKeywords: {
+            label: "고유 3D 키워드",
+          },
+        },
+      },
       aiInsight: {
         badge: "AI 인사이트",
         title: "다른 관점에서 보는 AI 관련 발표",
         description:
           "이 AI 전용 대시보드는 명시적인 AI 키워드가 포함된 발표만 대상으로 하며, AI 사용 방식과 방법론, 그리고 공간정보 발표 안에서 AI가 등장하는 맥락을 별도의 렌즈로 보여줍니다.",
-        signalBoardBadge: "AI 개요",
-        signalBoardTitle: "AI 발표 세트 빠르게 읽기",
-        signalBoardDescription: "이 점수판은 행사에서 AI 발표가 차지하는 비중과 AI/맥락 어휘 폭을 요약합니다.",
+        signalBoardBadge: "AI 카드",
+        signalBoardTitle: "가장 두드러진 AI 신호",
+        signalBoardDescription: "각 카드는 언급 빈도, 함께 등장한 맥락 키워드, 대표 발표 제목을 함께 보여줍니다.",
         wordCloudBadge: "AI 워드 클라우드",
         wordCloudTitle: "AI 키워드 어휘를 빠르게 읽는 시각화",
         wordCloudDescription: "추출된 AI 발표 세트에서 어떤 방법, 모델, 상호작용 유형이 두드러지는지 보여줍니다.",
@@ -685,6 +834,11 @@ export const resources = {
         runtimeScalableProcessing: "런타임 및 확장 처리",
         cloudTooling: "클라우드 도구",
         otherCloudSignals: "기타 클라우드 신호",
+        threeDModelsTwins: "3D 모델 및 디지털 트윈",
+        pointCloudsReconstruction: "포인트 클라우드 및 재구성",
+        webRenderingStreaming: "웹 렌더링 및 스트리밍",
+        threeDPlatformsStandards: "3D 플랫폼 및 표준",
+        general3dSignals: "일반 3D 신호",
       },
     },
   },
@@ -703,14 +857,14 @@ export const resources = {
         titleLine1: "FOSS4G 2026 投票に掲載された",
         titleLine2: "発表一覧を探索する",
         description:
-          "このサイトは、FOSS4G 2026 の発表者選定投票で公開された発表一覧をもとに作成されています。ホーム画面から、全体キーワード、正規化したオープンソースライブラリ、クラウド関連シグナル、AI関連キーワードに焦点を当てたダッシュボードへ移動できます。",
+          "このサイトは、FOSS4G 2026 の発表者選定投票で公開された発表一覧をもとに作成されています。ホーム画面から、全体キーワード、正規化したオープンソースライブラリ、クラウド関連シグナル、3D とデジタルツインのシグナル、AI 関連キーワードに焦点を当てたダッシュボードへ移動できます。",
         officialSite: "FOSS4G ヒロシマ 2026 公式サイト",
         currentRoute: "現在のページ",
       },
       routes: {
         home: {
           label: "ホーム",
-          description: "キーワード、ライブラリ、クラウド、AI ダッシュボードを選択",
+          description: "キーワード、ライブラリ、クラウド、3D、AI ダッシュボードを選択",
         },
         keyword: {
           label: "キーワードインサイト",
@@ -724,6 +878,10 @@ export const resources = {
           label: "クラウドインサイト",
           description: "クラウドネイティブ基盤、ストレージ、オーケストレーション、デプロイのシグナル分析",
         },
+        threeD: {
+          label: "3D インサイト",
+          description: "3D 都市モデル、デジタルツイン、ポイントクラウド、ブラウザ描画のシグナル分析",
+        },
         ai: {
           label: "AI インサイト",
           description: "AI キーワード、手法、文脈関係の分析",
@@ -733,7 +891,7 @@ export const resources = {
         badge: "ダッシュボード移動",
         title: "ダッシュボードを選択",
         description:
-          "キーワードダッシュボード、ライブラリダッシュボード、クラウドダッシュボード、AI ダッシュボードは別々のルーティングページに分かれており、それぞれの分析視点を独立して確認できます。",
+          "キーワードダッシュボード、ライブラリダッシュボード、クラウドダッシュボード、3D ダッシュボード、AI ダッシュボードは別々のルーティングページに分かれており、それぞれの分析視点を独立して確認できます。",
         topSignals: "主要シグナル",
         openDashboard: "ダッシュボードを開く",
         cards: {
@@ -752,6 +910,11 @@ export const resources = {
             description:
               "タイトルと概要に現れるクラウドネイティブ基盤、ストレージ形式、オーケストレーション、デプロイパターンに注目します。",
           },
+          threeD: {
+            title: "3D インサイト",
+            description:
+              "3D 都市モデル、デジタルツイン、ポイントクラウド、ブラウザ描画パイプラインなど、三次元可視化シグナルに注目します。",
+          },
           ai: {
             title: "AI インサイト",
             description:
@@ -767,6 +930,9 @@ export const resources = {
           cloudTalks: "クラウド発表数",
           cloudKeywords: "クラウドキーワード",
           cloudMentions: "クラウド言及数",
+          threeDTalks: "3D 発表数",
+          threeDKeywords: "3D キーワード",
+          threeDMentions: "3D 言及数",
           aiTalks: "AI 発表数",
           aiKeywords: "AI キーワード",
           contextKeywords: "文脈キーワード",
@@ -788,6 +954,7 @@ export const resources = {
         noKeywordData: "表示できるキーワードデータがありません。",
         noLibraryData: "表示できるライブラリデータがありません。",
         noCloudData: "表示できるクラウドキーワードデータがありません。",
+        noThreeDData: "表示できる 3D キーワードデータがありません。",
         keywordColumn: "キーワード",
         results: "{{count}} 件",
         searchAll: "すべて",
@@ -887,6 +1054,17 @@ export const resources = {
         explorerDescription: "上位ライブラリフィルタや検索で関連発表を探索できます。",
         expandTitle: "拡張ライブラリクラウド",
         expandDescription: "ESC キーまたは閉じるボタンで戻れます。全画面ではより多くのライブラリを一度に確認できます。",
+        scorecards: {
+          libraryTalks: {
+            label: "ライブラリ関連発表",
+          },
+          libraryTalkShare: {
+            label: "ライブラリ発表比率",
+          },
+          uniqueLibraryKeywords: {
+            label: "固有ライブラリキーワード",
+          },
+        },
       },
       cloudInsight: {
         kicker: "クラウドインサイト",
@@ -934,14 +1112,60 @@ export const resources = {
           },
         },
       },
+      threeDInsight: {
+        kicker: "3D インサイト",
+        routeLabel: "3D インサイト",
+        summary:
+          "このダッシュボードは、3D 都市モデル、デジタルツイン、ポイントクラウド、写真測量、ブラウザベースの 3D レンダリングを明示的に扱う発表に焦点を当てています。FOSS4G 2026 の発表群が、三次元地理空間可視化、都市ツイン、3D 配信パイプラインをどう語っているかを俯瞰できます。",
+        cardsBadge: "3D カード",
+        cardsTitle: "最も目立つ 3D とデジタルツインのシグナル",
+        cardsDescription: "各カードは言及頻度、強い共起 3D 用語、代表的な発表タイトルを示します。",
+        wordCloudBadge: "3D ワードクラウド",
+        wordCloudTitle: "3D 分野を素早く読む可視化",
+        wordCloudDescription: "より多くの 3D 関連発表に現れるシグナルほど大きく、中央に近く配置されます。",
+        topBadge: "上位 3D シグナル",
+        topTitle: "どの 3D キーワードが支配的か",
+        topDescription: "発表で言及された回数を基準に、上位 20 / 50 / 100 の 3D シグナルを比較します。",
+        bubbleBadge: "バブルチャート",
+        bubbleTitle: "可視性と 3D 接続性",
+        bubbleDescription: "X 軸は発表数、Y 軸は平均共起 3D 用語数、バブルの大きさは言及規模を示します。",
+        treemapBadge: "ツリーマップ",
+        treemapTitle: "3D スタック別の比重",
+        treemapDescription: "選定された発表セットの中で、どの 3D / デジタルツイン領域が大きな存在感を持つかを示します。",
+        networkBadge: "3D 共起ネットワーク",
+        networkTitle: "3D シグナルはどうつながるか",
+        networkDescription: "線が太いほど、同じ発表内で一緒に登場した 3D 用語の組み合わせが多いことを示します。",
+        heatmapBadge: "3D × 3D ヒートマップ",
+        heatmapTitle: "強い重なりが起きる地点",
+        heatmapDescription: "対角線は各 3D キーワードの発表数、それ以外のセルは 2 つの 3D シグナルが同時に現れた回数を示します。",
+        clusterBadge: "3D クラスターマップ",
+        clusterTitle: "3D 可視化グループ",
+        clusterDescription: "モデル、ポイントクラウド、レンダリングパイプライン、標準を読みやすいクラスタにまとめています。",
+        explorerBadge: "3D 探索",
+        explorerTitle: "3D シグナルの背後にある発表を見る",
+        explorerDescription: "上位 3D キーワードで絞り込んだり、タイトル・概要・キーワードで検索できます。",
+        expandTitle: "拡張 3D ワードクラウド",
+        expandDescription: "ESC キーまたは閉じるボタンで戻れます。全画面ではより多くの 3D シグナルを一度に確認できます。",
+        scorecards: {
+          threeDTalks: {
+            label: "3D 関連発表",
+          },
+          threeDTalkShare: {
+            label: "3D 発表比率",
+          },
+          uniqueThreeDKeywords: {
+            label: "固有 3D キーワード",
+          },
+        },
+      },
       aiInsight: {
         badge: "AI インサイト",
         title: "別の視点で見る AI 関連発表",
         description:
           "この AI 専用ダッシュボードは、明示的な AI キーワードを含む発表だけを対象とし、AI の使い方、手法ファミリー、地理空間発表の中で AI がどのように現れるかを別のレンズで示します。",
-        signalBoardBadge: "AI 概要",
-        signalBoardTitle: "AI 発表セットを素早く把握する",
-        signalBoardDescription: "このスコアカードは、イベント全体に占める AI 発表の割合と AI / 文脈語彙の広さを要約します。",
+        signalBoardBadge: "AI カード",
+        signalBoardTitle: "最も目立つ AI シグナル",
+        signalBoardDescription: "各カードは言及頻度、強い文脈キーワードの組み合わせ、代表的な発表タイトルを示します。",
         wordCloudBadge: "AI ワードクラウド",
         wordCloudTitle: "AI キーワード語彙を素早く読む可視化",
         wordCloudDescription: "抽出された AI 発表セットの中で目立つ手法、モデルタイプ、インタラクション形態を示します。",
@@ -1020,6 +1244,11 @@ export const resources = {
         runtimeScalableProcessing: "ランタイムとスケーラブル処理",
         cloudTooling: "クラウドツーリング",
         otherCloudSignals: "その他のクラウドシグナル",
+        threeDModelsTwins: "3D モデルとデジタルツイン",
+        pointCloudsReconstruction: "ポイントクラウドと再構成",
+        webRenderingStreaming: "Web レンダリングとストリーミング",
+        threeDPlatformsStandards: "3D プラットフォームと標準",
+        general3dSignals: "一般 3D シグナル",
       },
     },
   },

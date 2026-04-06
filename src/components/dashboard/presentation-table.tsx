@@ -61,7 +61,6 @@ export function PresentationTable({
         <TableHeader>
           <TableRow>
             <TableHead className="w-[70px]">{t("common.no")}</TableHead>
-            <TableHead className="w-[90px]">{t("common.page")}</TableHead>
             <TableHead className="min-w-[260px]">{t("common.talkTitle")}</TableHead>
             <TableHead className="min-w-[360px]">{t("common.abstractSnippet")}</TableHead>
             <TableHead className="min-w-[280px]">{t("common.keywords")}</TableHead>
@@ -71,7 +70,6 @@ export function PresentationTable({
           {filtered.map((row) => (
             <TableRow key={row.id}>
               <TableCell className="font-semibold text-muted-foreground">{row.id}</TableCell>
-              <TableCell className="text-muted-foreground">{row.page}</TableCell>
               <TableCell>
                 <div className="space-y-2">
                   <div className="font-semibold">{row.title}</div>

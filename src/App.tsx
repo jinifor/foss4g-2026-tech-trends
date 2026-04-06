@@ -17,6 +17,7 @@ import {
 import {
   Boxes,
   Cloud,
+  Cuboid,
   Expand,
   Home,
   Languages,
@@ -32,6 +33,7 @@ import keywordDashboardData from "@/data/dashboard-data.json";
 import libraryDashboardData from "@/data/library-dashboard-data.json";
 import aiDashboardData from "@/data/ai-dashboard-data.json";
 import cloudDashboardData from "@/data/cloud-dashboard-data.json";
+import threeDDashboardData from "@/data/three-d-dashboard-data.json";
 import { AiDashboard } from "@/components/dashboard/ai-dashboard";
 import { ClusterMap } from "@/components/dashboard/cluster-map";
 import { KeywordHeatmap } from "@/components/dashboard/keyword-heatmap";
@@ -48,7 +50,7 @@ import type { TFunction } from "i18next";
 import type { NameType, ValueType } from "recharts/types/component/DefaultTooltipContent";
 import type { TooltipProps } from "recharts";
 
-type RouteId = "home" | "keyword" | "library" | "cloud" | "ai";
+type RouteId = "home" | "keyword" | "library" | "cloud" | "threeD" | "ai";
 type SectionId = "overview" | "network" | "explorer";
 
 type RouteItem = {
@@ -63,7 +65,7 @@ type InsightCopy = {
   routeDescription: string;
   kicker: string;
   summary: string;
-  summaryMode?: "default" | "cloud";
+  summaryMode?: "default" | "library" | "cloud" | "threeD";
   disabledSections?: SectionId[];
   cardsBadge: string;
   cardsTitle: string;
@@ -104,6 +106,7 @@ type InsightCopy = {
 const keywordData = keywordDashboardData as DashboardData;
 const libraryData = libraryDashboardData as DashboardData;
 const cloudData = cloudDashboardData as DashboardData;
+const threeDData = threeDDashboardData as DashboardData;
 const aiData = aiDashboardData as AiDashboardData;
 
 const CATEGORY_KEY_MAP: Record<string, string> = {
@@ -136,6 +139,11 @@ const CATEGORY_KEY_MAP: Record<string, string> = {
   "Runtime & Scalable Processing": "categories.runtimeScalableProcessing",
   "Cloud Tooling": "categories.cloudTooling",
   "Other Cloud Signals": "categories.otherCloudSignals",
+  "3D Models & Twins": "categories.threeDModelsTwins",
+  "Point Clouds & Reconstruction": "categories.pointCloudsReconstruction",
+  "Web Rendering & Streaming": "categories.webRenderingStreaming",
+  "3D Platforms & Standards": "categories.threeDPlatformsStandards",
+  "General 3D Signals": "categories.general3dSignals",
 };
 
 function buildRouteItems(t: TFunction): RouteItem[] {
@@ -144,6 +152,7 @@ function buildRouteItems(t: TFunction): RouteItem[] {
     { id: "keyword", label: t("routes.keyword.label"), description: t("routes.keyword.description"), icon: Sparkles },
     { id: "library", label: t("routes.library.label"), description: t("routes.library.description"), icon: Boxes },
     { id: "cloud", label: t("routes.cloud.label"), description: t("routes.cloud.description"), icon: Cloud },
+    { id: "threeD", label: t("routes.threeD.label"), description: t("routes.threeD.description"), icon: Cuboid },
     { id: "ai", label: t("routes.ai.label"), description: t("routes.ai.description"), icon: Network },
   ];
 }
@@ -204,7 +213,7 @@ function buildInsightCopy(t: TFunction): Record<Exclude<RouteId, "home" | "ai">,
       routeDescription: t("routes.library.description"),
       kicker: t("libraryInsight.kicker"),
       summary: t("libraryInsight.summary"),
-      summaryMode: "default",
+      summaryMode: "library",
       cardsBadge: t("libraryInsight.cardsBadge"),
       cardsTitle: t("libraryInsight.cardsTitle"),
       cardsDescription: t("libraryInsight.cardsDescription"),
@@ -281,6 +290,47 @@ function buildInsightCopy(t: TFunction): Record<Exclude<RouteId, "home" | "ai">,
       unitLabel: t("common.talksUnit"),
       topEmptyLabel: t("common.noCloudData"),
     },
+    threeD: {
+      routeLabel: t("threeDInsight.routeLabel"),
+      routeDescription: t("routes.threeD.description"),
+      kicker: t("threeDInsight.kicker"),
+      summary: t("threeDInsight.summary"),
+      summaryMode: "threeD",
+      cardsBadge: t("threeDInsight.cardsBadge"),
+      cardsTitle: t("threeDInsight.cardsTitle"),
+      cardsDescription: t("threeDInsight.cardsDescription"),
+      wordCloudBadge: t("threeDInsight.wordCloudBadge"),
+      wordCloudTitle: t("threeDInsight.wordCloudTitle"),
+      wordCloudDescription: t("threeDInsight.wordCloudDescription"),
+      topBadge: t("threeDInsight.topBadge"),
+      topTitle: t("threeDInsight.topTitle"),
+      topDescription: t("threeDInsight.topDescription"),
+      longtailBadge: "",
+      longtailTitle: "",
+      longtailDescription: "",
+      bubbleBadge: t("threeDInsight.bubbleBadge"),
+      bubbleTitle: t("threeDInsight.bubbleTitle"),
+      bubbleDescription: t("threeDInsight.bubbleDescription"),
+      treemapBadge: t("threeDInsight.treemapBadge"),
+      treemapTitle: t("threeDInsight.treemapTitle"),
+      treemapDescription: t("threeDInsight.treemapDescription"),
+      networkBadge: t("threeDInsight.networkBadge"),
+      networkTitle: t("threeDInsight.networkTitle"),
+      networkDescription: t("threeDInsight.networkDescription"),
+      heatmapBadge: t("threeDInsight.heatmapBadge"),
+      heatmapTitle: t("threeDInsight.heatmapTitle"),
+      heatmapDescription: t("threeDInsight.heatmapDescription"),
+      clusterBadge: t("threeDInsight.clusterBadge"),
+      clusterTitle: t("threeDInsight.clusterTitle"),
+      clusterDescription: t("threeDInsight.clusterDescription"),
+      explorerBadge: t("threeDInsight.explorerBadge"),
+      explorerTitle: t("threeDInsight.explorerTitle"),
+      explorerDescription: t("threeDInsight.explorerDescription"),
+      expandTitle: t("threeDInsight.expandTitle"),
+      expandDescription: t("threeDInsight.expandDescription"),
+      unitLabel: t("common.talksUnit"),
+      topEmptyLabel: t("common.noThreeDData"),
+    },
   };
 }
 
@@ -307,7 +357,7 @@ const percentFormat = new Intl.NumberFormat("en-US", {
 
 function getInitialRoute(): RouteId {
   const hash = window.location.hash.replace("#", "") as RouteId;
-  return ["home", "keyword", "library", "cloud", "ai"].includes(hash) ? hash : "home";
+  return ["home", "keyword", "library", "cloud", "threeD", "ai"].includes(hash) ? hash : "home";
 }
 
 export default function App() {
@@ -392,6 +442,10 @@ export default function App() {
               window.location.hash = "cloud";
               setRoute("cloud");
             }}
+            onOpenThreeD={() => {
+              window.location.hash = "threeD";
+              setRoute("threeD");
+            }}
             onOpenAi={() => {
               window.location.hash = "ai";
               setRoute("ai");
@@ -402,6 +456,7 @@ export default function App() {
         {route === "keyword" ? <InsightDashboard data={keywordData} copy={insightCopy.keyword} sectionTabs={sectionTabs} /> : null}
         {route === "library" ? <InsightDashboard data={libraryData} copy={insightCopy.library} sectionTabs={sectionTabs} /> : null}
         {route === "cloud" ? <InsightDashboard data={cloudData} copy={insightCopy.cloud} sectionTabs={sectionTabs} /> : null}
+        {route === "threeD" ? <InsightDashboard data={threeDData} copy={insightCopy.threeD} sectionTabs={sectionTabs} /> : null}
         {route === "ai" ? <AiDashboard data={aiData} /> : null}
       </div>
     </div>
@@ -477,11 +532,13 @@ function HomePage({
   onOpenKeyword,
   onOpenLibrary,
   onOpenCloud,
+  onOpenThreeD,
   onOpenAi,
 }: {
   onOpenKeyword: () => void;
   onOpenLibrary: () => void;
   onOpenCloud: () => void;
+  onOpenThreeD: () => void;
   onOpenAi: () => void;
 }) {
   const { t } = useTranslation();
@@ -494,7 +551,7 @@ function HomePage({
           <CardDescription>{t("home.description")}</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid gap-4 xl:grid-cols-4">
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
             <HomeRouteCard
               title={t("home.cards.keyword.title")}
               description={t("home.cards.keyword.description")}
@@ -527,6 +584,17 @@ function HomePage({
               ]}
               highlights={cloudData.overview.topKeywords.slice(0, 5).map((item) => `${item.keyword} (${item.count})`)}
               onOpen={onOpenCloud}
+            />
+            <HomeRouteCard
+              title={t("home.cards.threeD.title")}
+              description={t("home.cards.threeD.description")}
+              stats={[
+                { label: t("home.stats.threeDTalks"), value: threeDData.meta.totalPresentations },
+                { label: t("home.stats.threeDKeywords"), value: threeDData.meta.uniqueKeywords },
+                { label: t("home.stats.threeDMentions"), value: threeDData.meta.totalKeywordMentions },
+              ]}
+              highlights={threeDData.overview.topKeywords.slice(0, 5).map((item) => `${item.keyword} (${item.count})`)}
+              onOpen={onOpenThreeD}
             />
             <HomeRouteCard
               title={t("home.cards.ai.title")}
@@ -604,6 +672,8 @@ function InsightDashboard({
   const { t } = useTranslation();
   const [activeSection, setActiveSection] = useState<SectionId>("overview");
   const disabledSections = copy.disabledSections ?? [];
+  const libraryRelatedTalkCount = data.explorer.presentations.filter((row) => row.keywords.length > 0).length;
+  const libraryTalkShare = data.meta.totalPresentations ? libraryRelatedTalkCount / data.meta.totalPresentations : 0;
   const summaryMetrics =
     copy.summaryMode === "cloud"
       ? [
@@ -611,6 +681,18 @@ function InsightDashboard({
         { label: t("cloudInsight.scorecards.cloudTalkShare.label"), value: data.meta.presentationShare ?? 0, format: "percent" as const },
         { label: t("cloudInsight.scorecards.uniqueCloudKeywords.label"), value: data.meta.uniqueKeywords },
       ]
+      : copy.summaryMode === "library"
+        ? [
+          { label: t("libraryInsight.scorecards.libraryTalks.label"), value: libraryRelatedTalkCount },
+          { label: t("libraryInsight.scorecards.libraryTalkShare.label"), value: libraryTalkShare, format: "percent" as const },
+          { label: t("libraryInsight.scorecards.uniqueLibraryKeywords.label"), value: data.meta.uniqueKeywords },
+        ]
+      : copy.summaryMode === "threeD"
+        ? [
+          { label: t("threeDInsight.scorecards.threeDTalks.label"), value: data.meta.totalPresentations },
+          { label: t("threeDInsight.scorecards.threeDTalkShare.label"), value: data.meta.presentationShare ?? 0, format: "percent" as const },
+          { label: t("threeDInsight.scorecards.uniqueThreeDKeywords.label"), value: data.meta.uniqueKeywords },
+        ]
       : [
         { label: t("common.totalTalks"), value: data.meta.totalPresentations },
         { label: t("common.uniqueTerms"), value: data.meta.uniqueKeywords },

@@ -40,6 +40,7 @@ type AiSectionId = (typeof aiSectionTabs)[number]["id"];
 export function AiDashboard({ data }: { data: AiDashboardData }) {
   const { t } = useTranslation();
   const [activeSection, setActiveSection] = useState<AiSectionId>("overview");
+  const topAiKeyword = data.overview.topAiKeywords[0];
   const selectedKeywords = data.overview.topAiKeywords;
   const selectedContexts = data.overview.topContextKeywords.slice(0, 16);
   const chartHeight = Math.max(420, selectedKeywords.length * 34);
@@ -48,6 +49,14 @@ export function AiDashboard({ data }: { data: AiDashboardData }) {
     new Map(
       data.overview.treemap.map((item) => [item.category, { category: item.category, color: item.color }]),
     ).values(),
+  );
+  const randomizedSignalBriefs = useMemo(
+    () =>
+      data.overview.signalBriefs.map((brief) => ({
+        ...brief,
+        samples: pickRandomItems(brief.samples, 2),
+      })),
+    [data.overview.signalBriefs],
   );
   const aiNetwork = useMemo(() => {
     const aiClusterId = "ai-keywords";
@@ -154,40 +163,66 @@ export function AiDashboard({ data }: { data: AiDashboardData }) {
         <>
           <Card>
             <CardHeader>
-              <Badge>{t("aiInsight.signalBoardBadge")}</Badge>
+              <div className="flex flex-wrap items-center gap-3">
+                <Badge>{t("aiInsight.signalBoardBadge")}</Badge>
+                {topAiKeyword ? (
+                  <Badge variant="secondary">
+                    {topAiKeyword.keyword} · {topAiKeyword.count} {t("common.talksUnit")}
+                  </Badge>
+                ) : null}
+              </div>
               <CardTitle className="text-3xl">{t("aiInsight.signalBoardTitle")}</CardTitle>
               <CardDescription>{t("aiInsight.signalBoardDescription")}</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-                {data.overview.scorecards.map((card) => (
-                  <div key={card.label} className="rounded-[1.5rem] border border-white/60 bg-white/70 p-5">
-                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                      {t(
-                        card.label === "AI-related talks"
-                          ? "aiInsight.scorecards.aiTalks.label"
-                          : card.label === "AI talk share"
-                            ? "aiInsight.scorecards.aiShare.label"
-                            : card.label === "Unique AI keywords"
-                              ? "aiInsight.scorecards.uniqueAiKeywords.label"
-                              : "aiInsight.scorecards.uniqueContextKeywords.label",
-                      )}
-                    </p>
-                    <p className="mt-3 text-3xl font-semibold">
-                      {card.format === "percent" ? percentFormat.format(card.value) : numberFormat.format(card.value)}
-                    </p>
-                    <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                      {t(
-                        card.label === "AI-related talks"
-                          ? "aiInsight.scorecards.aiTalks.caption"
-                          : card.label === "AI talk share"
-                            ? "aiInsight.scorecards.aiShare.caption"
-                            : card.label === "Unique AI keywords"
-                              ? "aiInsight.scorecards.uniqueAiKeywords.caption"
-                              : "aiInsight.scorecards.uniqueContextKeywords.caption",
-                      )}
-                    </p>
-                  </div>
+              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                {randomizedSignalBriefs.map((brief) => (
+                  <Card key={brief.keyword} className="border-white/60 bg-white/65 shadow-none">
+                    <CardHeader className="pb-4">
+                      <div className="flex items-start justify-between gap-3">
+                        <div>
+                          <Badge variant="secondary">{translateAiCategory(t, brief.family)}</Badge>
+                          <CardTitle className="mt-3 text-2xl">{brief.keyword}</CardTitle>
+                          <CardDescription className="mt-1">
+                            {numberFormat.format(brief.count)} {t("common.talksUnit")}
+                          </CardDescription>
+                        </div>
+                        <div className="rounded-full bg-primary/10 px-3 py-2 text-sm font-semibold text-primary">
+                          #{Math.max(1, data.overview.topAiKeywords.findIndex((item) => item.keyword === brief.keyword) + 1)}
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <div>
+                        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                          {t("common.relatedTerms")}
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {brief.relatedContexts.map((item) => (
+                            <Badge key={`${brief.keyword}-${item.keyword}`} variant="muted">
+                              {item.keyword}
+                              <span className="ml-1 opacity-70">{item.count}</span>
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                      <div>
+                        <div className="mb-2 flex items-center gap-2">
+                          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                            {t("common.representativeTalks")}
+                          </p>
+                          <span className="text-[11px] text-muted-foreground/80">{t("common.randomTalksNote")}</span>
+                        </div>
+                        <ul className="space-y-2 text-sm leading-6 text-muted-foreground">
+                          {brief.samples.map((sample) => (
+                            <li key={sample} className="rounded-2xl bg-muted/50 px-3 py-2">
+                              {sample}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </CardContent>
+                  </Card>
                 ))}
               </div>
             </CardContent>
@@ -510,7 +545,6 @@ function AiExplorerTable({
         <TableHeader>
           <TableRow>
             <TableHead className="w-[70px]">{t("common.no")}</TableHead>
-            <TableHead className="w-[80px]">{t("common.page")}</TableHead>
             <TableHead className="min-w-[260px]">{t("common.talkTitle")}</TableHead>
             <TableHead className="min-w-[340px]">{t("common.abstractSnippet")}</TableHead>
             <TableHead className="min-w-[220px]">{t("aiInsight.aiKeywords")}</TableHead>
@@ -521,7 +555,6 @@ function AiExplorerTable({
           {filteredRows.map((row) => (
             <TableRow key={row.id}>
               <TableCell className="font-semibold text-muted-foreground">{row.id}</TableCell>
-              <TableCell className="text-muted-foreground">{row.page}</TableCell>
               <TableCell className="font-semibold">{row.title}</TableCell>
               <TableCell className="text-sm leading-6 text-muted-foreground">{row.abstractSnippet}</TableCell>
               <TableCell>
@@ -563,4 +596,18 @@ function translateAiCategory(t: ReturnType<typeof useTranslation>["t"], category
     "Other AI Signals": "categories.otherAiSignals",
   };
   return map[category] ? t(map[category]) : category;
+}
+
+function pickRandomItems<T>(items: T[], count: number): T[] {
+  if (items.length <= count) {
+    return items;
+  }
+
+  const pool = [...items];
+  for (let index = pool.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [pool[index], pool[randomIndex]] = [pool[randomIndex], pool[index]];
+  }
+
+  return pool.slice(0, count);
 }

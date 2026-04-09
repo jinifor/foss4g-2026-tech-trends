@@ -16,17 +16,22 @@ export function ChartContainer({
   config,
   className,
   children,
+  style,
 }: {
   config: ChartConfig;
   className?: string;
   children: React.ReactNode;
+  style?: React.CSSProperties;
 }) {
-  const style = Object.fromEntries(
+  const colorVariables = Object.fromEntries(
     Object.entries(config).map(([key, value]) => [`--color-${key}`, value.color]),
   ) as React.CSSProperties;
 
   return (
-    <div className={cn("h-[320px] w-full [&_.recharts-cartesian-axis-tick_text]:fill-hsl(var(--muted-foreground))", className)} style={style}>
+    <div
+      className={cn("h-[320px] w-full [&_.recharts-cartesian-axis-tick_text]:fill-hsl(var(--muted-foreground))", className)}
+      style={{ ...colorVariables, ...style }}
+    >
       {children}
     </div>
   );

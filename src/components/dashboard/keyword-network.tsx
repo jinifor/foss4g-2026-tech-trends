@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 
+import { useLocaleFormatters } from "@/lib/format";
 import type { ClusterGroup, NetworkLink, NetworkNode } from "@/types/dashboard";
 
 type PositionedNode = NetworkNode & { x: number; y: number; color: string };
@@ -17,8 +19,10 @@ export function KeywordNetwork({
   links: NetworkLink[];
   clusters: ClusterGroup[];
 }) {
+  const { t } = useTranslation();
+  const { number } = useLocaleFormatters();
   const [hoveredItem, setHoveredItem] = useState<HoverState>(null);
-  const { positionedNodes, filteredLinks, clusterLabels } = useMemo(() => {
+  const { positionedNodes, filteredLinks, clusterLabels, positionedNodesByCluster } = useMemo(() => {
     const filteredNodes = nodes.slice(0, 24);
     const nodesByCluster = new Map<string, NetworkNode[]>();
     filteredNodes.forEach((node) => {
@@ -31,19 +35,22 @@ export function KeywordNetwork({
     const totalWidth = 1280;
     const gap = orderedClusters.length > 1 ? (totalWidth - 240) / (orderedClusters.length - 1) : 0;
     const positionedNodes: PositionedNode[] = [];
+    const positionedNodesByCluster = new Map<string, PositionedNode[]>();
 
+    // 클러스터별 세로 정렬 좌표를 먼저 계산해 네트워크 배치를 단순화한다.
     orderedClusters.forEach((cluster, clusterIndex) => {
       const bucket = (nodesByCluster.get(cluster.id) ?? []).sort((a, b) => b.count - a.count);
       const x = 120 + clusterIndex * gap;
       const verticalGap = bucket.length > 1 ? 540 / (bucket.length - 1) : 0;
-      bucket.forEach((node, nodeIndex) => {
-        positionedNodes.push({
+      const clusterNodes = bucket.map((node, nodeIndex) => ({
           ...node,
           x,
           y: 110 + nodeIndex * verticalGap,
           color: cluster.color,
-        });
-      });
+        }));
+
+      clusterNodes.forEach((node) => positionedNodes.push(node));
+      positionedNodesByCluster.set(cluster.id, clusterNodes);
     });
 
     const nodeLookup = new Map(positionedNodes.map((node) => [node.id, node]));
@@ -56,6 +63,7 @@ export function KeywordNetwork({
       positionedNodes,
       filteredLinks,
       clusterLabels: orderedClusters,
+      positionedNodesByCluster,
     };
   }, [clusters, links, nodes]);
 
@@ -111,7 +119,7 @@ export function KeywordNetwork({
     >
       <svg viewBox="0 0 1280 700" className="min-h-[700px] w-full min-w-[980px]">
         {clusterLabels.map((cluster) => {
-          const clusterNodes = positionedNodes.filter((node) => node.cluster === cluster.id);
+          const clusterNodes = positionedNodesByCluster.get(cluster.id) ?? [];
           if (!clusterNodes.length) return null;
           const x = clusterNodes[0].x;
           const isActiveCluster = !activeClusterIds || activeClusterIds.has(cluster.id);
@@ -169,7 +177,14 @@ export function KeywordNetwork({
                 strokeLinecap="round"
                 style={{ transition: "stroke 160ms ease, stroke-width 160ms ease, opacity 160ms ease" }}
               >
-                <title>{`${link.source} ↔ ${link.target}: ${link.count} talks`}</title>
+                <title>
+                  {t("common.networkLinkTitle", {
+                    source: source.keyword,
+                    target: target.keyword,
+                    count: number.format(link.count),
+                    unit: t("common.talksUnit"),
+                  })}
+                </title>
               </path>
             </g>
           );
@@ -205,7 +220,15 @@ export function KeywordNetwork({
                 strokeWidth={isHoveredNode ? 3 : isActiveNode ? 2 : 1}
                 style={{ transition: "r 160ms ease, fill-opacity 160ms ease, stroke-width 160ms ease" }}
               >
-                <title>{`${node.keyword}: ${node.count} talks · ${node.degree} links`}</title>
+                <title>
+                  {t("common.networkNodeTitle", {
+                    keyword: node.keyword,
+                    count: number.format(node.count),
+                    talksUnit: t("common.talksUnit"),
+                    degree: number.format(node.degree),
+                    linksUnit: t("common.linksUnit"),
+                  })}
+                </title>
               </circle>
               <text
                 x={node.x}

@@ -1,10 +1,10 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
+import { normalizeLanguage, supportedLanguages } from "@/lib/format";
 import { resources } from "@/i18n/resources";
 
 const STORAGE_KEY = "foss4g-dashboard-language";
-const supportedLanguages = ["en", "ko", "ja"] as const;
 
 function detectInitialLanguage() {
   if (typeof window === "undefined") {
@@ -12,8 +12,8 @@ function detectInitialLanguage() {
   }
 
   const saved = window.localStorage.getItem(STORAGE_KEY);
-  if (saved && supportedLanguages.includes(saved as (typeof supportedLanguages)[number])) {
-    return saved;
+  if (saved) {
+    return normalizeLanguage(saved);
   }
 
   return "en";
@@ -31,13 +31,13 @@ if (!i18n.isInitialized) {
   });
 
   if (typeof window !== "undefined") {
-    window.document.documentElement.lang = i18n.language;
+    window.document.documentElement.lang = normalizeLanguage(i18n.language);
   }
 
   i18n.on("languageChanged", (language) => {
     if (typeof window !== "undefined") {
       window.localStorage.setItem(STORAGE_KEY, language);
-      window.document.documentElement.lang = language;
+      window.document.documentElement.lang = normalizeLanguage(language);
     }
   });
 }

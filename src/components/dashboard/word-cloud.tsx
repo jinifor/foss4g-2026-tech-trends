@@ -1,6 +1,8 @@
 import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 
 import { cn } from "@/lib/utils";
+import { useLocaleFormatters } from "@/lib/format";
 import type { KeywordCountItem } from "@/types/dashboard";
 
 function polarPosition(index: number, total: number) {
@@ -22,9 +24,13 @@ export function WordCloud({
   className?: string;
   maxWords?: number;
 }) {
+  const { t } = useTranslation();
+  const { number } = useLocaleFormatters();
   const layout = useMemo(() => {
     const max = Math.max(...words.map((word) => word.count), 1);
     const min = Math.min(...words.map((word) => word.count), 1);
+
+    // 단순한 극좌표 배치로 매 렌더마다 같은 형태의 워드클라우드를 유지한다.
     return words.slice(0, maxWords).map((word, index) => {
       const pos = polarPosition(index, words.length);
       const ratio = max === min ? 1 : (word.count - min) / (max - min);
@@ -45,7 +51,11 @@ export function WordCloud({
       {layout.map((word) => (
         <span
           key={word.keyword}
-          title={`${word.keyword}: ${word.count} talks`}
+          title={t("common.wordCloudItemTitle", {
+            keyword: word.keyword,
+            count: number.format(word.count),
+            unit: t("common.talksUnit"),
+          })}
           className="absolute rounded-full px-2 py-1 font-semibold text-foreground/90 transition-transform duration-200 hover:scale-105"
           style={{
             left: word.left,
